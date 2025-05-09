@@ -1,423 +1,1473 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-         <loc>https://www.guyuehome.com/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/about/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/about/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/about/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/audio_control/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/audio_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/audio_control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/audio_control/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/basic_program/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/basic_program/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/basic_program/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/basic_program/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/body_detection/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/body_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/body_detection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/body_detection/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/cv_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/cv_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/cv_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/cv_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/deeplearning_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/deeplearning_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/deeplearning_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/deeplearning_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/deeplearning_line_follower_x3/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/deeplearning_line_follower_x3/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/deeplearning_line_follower_x3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/gazebo_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/gazebo_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/gazebo_navigation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/gazebo_navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_navigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_navigation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/gazebo_simulation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/gazebo_simulation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_simulation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_simulation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/gazebo_slam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/gazebo_slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_slam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_slam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/gesture_control/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/gesture_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gesture_control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gesture_control/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/mobilesam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/mobilesam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/mobilesam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/mobilesam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/navigation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/navigation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/parking_search/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/parking_search/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/parking_search/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/parking_search/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/play_football/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/play_football/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/play_football/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/play_football/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/qrcode_detection/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/qrcode_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/qrcode_detection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/qrcode_detection/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/slam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/slam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/slam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/take_pictures/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/take_pictures/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/take_pictures/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/take_pictures/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/tracking/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/tracking/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/tracking/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/tracking/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/application/vlpr/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/application/vlpr/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/vlpr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/vlpr/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/course/courses/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/course/courses/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/course/courses/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/course/courses/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/about/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/about/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/about/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/about/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/audio_control/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/audio_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/audio_control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/audio_control/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/basic_program/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/basic_program/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/basic_program/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/basic_program/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/body_detection/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/body_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/body_detection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/body_detection/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/cv_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/cv_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/cv_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/cv_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/deeplearning_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/deeplearning_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/deeplearning_line_follower_x3/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/gazebo_line_follower/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/gazebo_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_line_follower/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/gazebo_navigation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/gazebo_navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_navigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_navigation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/gazebo_simulation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/gazebo_simulation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_simulation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_simulation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/gazebo_slam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/gazebo_slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_slam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_slam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/gesture_control/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/gesture_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gesture_control/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gesture_control/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/mobilesam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/mobilesam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/mobilesam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/mobilesam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/navigation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/navigation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/parking_search/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/parking_search/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/parking_search/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/parking_search/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/play_football/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/play_football/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/play_football/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/play_football/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/qrcode_detection/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/qrcode_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/qrcode_detection/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/qrcode_detection/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/slam/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/slam/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/slam/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/take_pictures/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/take_pictures/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/take_pictures/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/take_pictures/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/tracking/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/tracking/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/tracking/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/tracking/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/application/vlpr/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/application/vlpr/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/vlpr/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/vlpr/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/course/courses/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/course/courses/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/course/courses/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/course/courses/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/easy_start/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/easy_start/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/easy_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/easy_start/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/firmware_install/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/firmware_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/firmware_install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/firmware_install/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/hardware_setup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/hardware_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/hardware_setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/hardware_setup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/image_install/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/image_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/image_install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/image_install/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/pc_config/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/pc_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/pc_config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/pc_config/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/guide/quick_guide/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/guide/quick_guide/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/quick_guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/quick_guide/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/camera_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/camera_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/camera_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/camera_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/ekf/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/ekf/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/ekf/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/ekf/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/hmi/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/hmi/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/hmi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/hmi/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/ide_setup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/ide_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/ide_setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/ide_setup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/imu_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/imu_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/imu_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/imu_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/lidar_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/lidar_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/lidar_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/lidar_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/odom_calibration/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/odom_calibration/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/odom_calibration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/odom_calibration/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/originbot_bringup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/originbot_bringup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_bringup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_bringup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/originbot_charging/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/originbot_charging/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_charging/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_charging/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/originbot_freertos/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/originbot_freertos/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_freertos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_freertos/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/package_develop/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/package_develop/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/package_develop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/package_develop/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/parameter_config/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/parameter_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/parameter_config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/parameter_config/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/protocol_description/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/protocol_description/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/protocol_description/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/protocol_description/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/teleoperation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/teleoperation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/teleoperation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/teleoperation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/manual/webviz/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/manual/webviz/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/webviz/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/webviz/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/material/common_software/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/material/common_software/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/common_software/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/common_software/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/material/hardware_interface/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/material/hardware_interface/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/hardware_interface/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/hardware_interface/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/material/material_list/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/material/material_list/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/material_list/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/material_list/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/material/open_source_link/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/material/open_source_link/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/open_source_link/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/open_source_link/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/reference/changelog/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/reference/changelog/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/changelog/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/reference/contributing/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/reference/contributing/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/contributing/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/reference/faq/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/reference/faq/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/faq/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/en/reference/reference/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/en/reference/reference/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/reference/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/reference/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/easy_start/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/easy_start/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/easy_start/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/easy_start/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/firmware_install/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/firmware_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/firmware_install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/firmware_install/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/hardware_setup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/hardware_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/hardware_setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/hardware_setup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/image_install/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/image_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/image_install/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/image_install/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/pc_config/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/pc_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/pc_config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/pc_config/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/guide/quick_guide/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/guide/quick_guide/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/quick_guide/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/quick_guide/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/camera_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/camera_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/camera_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/camera_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/ekf/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/ekf/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/ekf/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/ekf/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/hmi/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/hmi/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/hmi/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/hmi/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/ide_setup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/ide_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/ide_setup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/ide_setup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/imu_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/imu_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/imu_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/imu_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/lidar_visualization/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/lidar_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/lidar_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/lidar_visualization/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/odom_calibration/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/odom_calibration/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/odom_calibration/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/odom_calibration/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/originbot_bringup/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/originbot_bringup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_bringup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_bringup/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/originbot_charging/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/originbot_charging/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_charging/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_charging/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/originbot_freertos/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/originbot_freertos/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_freertos/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_freertos/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/package_develop/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/package_develop/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/package_develop/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/package_develop/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/parameter_config/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/parameter_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/parameter_config/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/parameter_config/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/protocol_description/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/protocol_description/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/protocol_description/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/protocol_description/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/teleoperation/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/teleoperation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/teleoperation/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/teleoperation/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/manual/webviz/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/manual/webviz/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/webviz/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/webviz/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/material/common_software/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/material/common_software/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/common_software/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/common_software/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/material/hardware_interface/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/material/hardware_interface/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/hardware_interface/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/hardware_interface/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/material/material_list/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/material/material_list/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/material_list/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/material_list/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/material/open_source_link/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/material/open_source_link/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/open_source_link/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/open_source_link/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/reference/changelog/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/reference/changelog/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/changelog/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/reference/contributing/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/reference/contributing/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/contributing/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/reference/faq/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/reference/faq/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/faq/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/reference/reference/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/reference/reference/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/reference/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/reference/"/>
     </url>
     <url>
-         <loc>https://www.guyuehome.com/reference/third_party_kits/</loc>
-         <lastmod>2025-05-09</lastmod>
+        <loc>https://www.guyuehome.com/reference/third_party_kits/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/third_party_kits/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/third_party_kits/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/about/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/about/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/about/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/audio_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/audio_control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/audio_control/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/basic_program/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/basic_program/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/basic_program/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/body_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/body_detection/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/body_detection/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/cv_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/cv_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/cv_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/deeplearning_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/deeplearning_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/deeplearning_line_follower_x3/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/gazebo_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/gazebo_navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_navigation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_navigation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/gazebo_simulation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_simulation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_simulation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/gazebo_slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gazebo_slam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gazebo_slam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/gesture_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/gesture_control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/gesture_control/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/mobilesam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/mobilesam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/mobilesam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/navigation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/parking_search/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/parking_search/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/parking_search/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/play_football/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/play_football/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/play_football/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/qrcode_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/qrcode_detection/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/qrcode_detection/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/slam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/slam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/take_pictures/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/take_pictures/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/take_pictures/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/tracking/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/tracking/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/tracking/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/application/vlpr/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/application/vlpr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/application/vlpr/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/course/courses/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/course/courses/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/course/courses/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/about/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/about/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/about/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/audio_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/audio_control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/audio_control/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/basic_program/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/basic_program/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/basic_program/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/body_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/body_detection/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/body_detection/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/cv_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/cv_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/cv_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/deeplearning_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/deeplearning_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/deeplearning_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/deeplearning_line_follower_x3/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/deeplearning_line_follower_x3/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/gazebo_line_follower/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_line_follower/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_line_follower/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/gazebo_navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_navigation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_navigation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/gazebo_simulation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_simulation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_simulation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/gazebo_slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gazebo_slam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gazebo_slam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/gesture_control/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/gesture_control/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/gesture_control/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/mobilesam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/mobilesam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/mobilesam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/navigation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/navigation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/navigation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/parking_search/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/parking_search/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/parking_search/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/play_football/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/play_football/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/play_football/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/qrcode_detection/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/qrcode_detection/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/qrcode_detection/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/slam/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/slam/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/slam/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/take_pictures/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/take_pictures/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/take_pictures/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/tracking/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/tracking/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/tracking/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/application/vlpr/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/application/vlpr/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/application/vlpr/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/course/courses/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/course/courses/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/course/courses/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/easy_start/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/easy_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/easy_start/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/firmware_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/firmware_install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/firmware_install/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/hardware_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/hardware_setup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/hardware_setup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/image_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/image_install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/image_install/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/pc_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/pc_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/pc_config/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/guide/quick_guide/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/guide/quick_guide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/guide/quick_guide/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/camera_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/camera_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/camera_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/ekf/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/ekf/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/ekf/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/hmi/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/hmi/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/hmi/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/ide_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/ide_setup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/ide_setup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/imu_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/imu_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/imu_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/lidar_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/lidar_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/lidar_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/odom_calibration/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/odom_calibration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/odom_calibration/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/originbot_bringup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_bringup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_bringup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/originbot_charging/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_charging/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_charging/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/originbot_freertos/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/originbot_freertos/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/originbot_freertos/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/package_develop/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/package_develop/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/package_develop/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/parameter_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/parameter_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/parameter_config/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/protocol_description/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/protocol_description/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/protocol_description/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/teleoperation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/teleoperation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/teleoperation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/manual/webviz/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/manual/webviz/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/manual/webviz/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/material/common_software/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/common_software/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/common_software/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/material/hardware_interface/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/hardware_interface/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/hardware_interface/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/material/material_list/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/material_list/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/material_list/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/material/open_source_link/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/material/open_source_link/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/material/open_source_link/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/reference/changelog/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/changelog/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/reference/contributing/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/contributing/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/reference/faq/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/faq/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/en/reference/reference/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/en/reference/reference/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/en/reference/reference/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/easy_start/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/easy_start/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/easy_start/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/firmware_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/firmware_install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/firmware_install/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/hardware_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/hardware_setup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/hardware_setup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/image_install/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/image_install/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/image_install/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/pc_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/pc_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/pc_config/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/guide/quick_guide/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/guide/quick_guide/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/guide/quick_guide/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/camera_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/camera_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/camera_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/ekf/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/ekf/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/ekf/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/hmi/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/hmi/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/hmi/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/ide_setup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/ide_setup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/ide_setup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/imu_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/imu_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/imu_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/lidar_visualization/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/lidar_visualization/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/lidar_visualization/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/odom_calibration/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/odom_calibration/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/odom_calibration/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/originbot_bringup/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_bringup/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_bringup/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/originbot_charging/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_charging/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_charging/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/originbot_freertos/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/originbot_freertos/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/originbot_freertos/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/package_develop/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/package_develop/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/package_develop/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/parameter_config/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/parameter_config/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/parameter_config/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/protocol_description/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/protocol_description/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/protocol_description/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/teleoperation/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/teleoperation/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/teleoperation/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/manual/webviz/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/manual/webviz/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/manual/webviz/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/material/common_software/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/common_software/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/common_software/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/material/hardware_interface/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/hardware_interface/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/hardware_interface/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/material/material_list/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/material_list/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/material_list/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/material/open_source_link/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/material/open_source_link/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/material/open_source_link/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/reference/changelog/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/changelog/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/changelog/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/reference/contributing/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/contributing/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/reference/faq/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/faq/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/faq/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/reference/reference/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/reference/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/reference/"/>
+    </url>
+    <url>
+        <loc>https://www.guyuehome.com/en/reference/third_party_kits/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.guyuehome.com/en/reference/third_party_kits/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://www.guyuehome.com/reference/third_party_kits/"/>
     </url>
 </urlset>
