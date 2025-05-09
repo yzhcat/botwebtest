@@ -5,6 +5,9 @@ repo_url: https://gitee.com/guyuehome/originbot
 site_description: 'OriginBot智能机器人开源套件·古月居'
 copyright: © 2021 古月居 鄂ICP备18024451号-2
 
+use_directory_urls: false  # 禁用目录式URL
+strict: true  # 启用严格模式检查链接
+
 plugins:
   - search:
       lang:
@@ -229,3 +232,12 @@ extra:
 #     - name: 简体中文
 #       link: /botwebtest/
 #       lang: zh
+
+extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 简体中文
+      link: /
+      lang: zh
