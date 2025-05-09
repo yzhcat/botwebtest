@@ -6,64 +6,64 @@ site_description: 'OriginBot智能机器人开源套件·古月居'
 copyright: © 2021 古月居 鄂ICP备18024451号-2
 
 nav:
-    - 项目主页: index.md
-    - 使用指引: guide/quick_guide.md
+    - 项目主页: zh/index.md
+    - 使用指引: zh/guide/quick_guide.md
     - 套件资料: 
-        - 套件清单: material/material_list.md
-        - 资料链接: material/open_source_link.md
-        - 接口说明: material/hardware_interface.md
-        - 常用软件: material/common_software.md
-    - 硬件组装: guide/hardware_setup.md
+        - 套件清单: zh/material/material_list.md
+        - 资料链接: zh/material/open_source_link.md
+        - 接口说明: zh/material/hardware_interface.md
+        - 常用软件: zh/material/common_software.md
+    - 硬件组装: zh/guide/hardware_setup.md
     - 软件配置:
-        - 镜像安装与备份: guide/image_install.md
-        - 控制器固件安装: guide/firmware_install.md
-        - 电脑端环境配置: guide/pc_config.md
-    - 快速上手: guide/easy_start.md
+        - 镜像安装与备份: zh/guide/image_install.md
+        - 控制器固件安装: zh/guide/firmware_install.md
+        - 电脑端环境配置: zh/guide/pc_config.md
+    - 快速上手: zh/guide/easy_start.md
     - 基础使用:
-        - 搭建开发环境: manual/ide_setup.md
-        - 代码开发方法: manual/package_develop.md
-        - 机器人启动与参数配置: manual/originbot_bringup.md
-        - 机器人遥控与可视化: manual/teleoperation.md
-        - 相机驱动与可视化: manual/camera_visualization.md
-        - 雷达驱动与可视化: manual/lidar_visualization.md
-        - IMU驱动与可视化: manual/imu_visualization.md
-        - 机器人参数动态监控: manual/parameter_config.md
-        - 机器人里程计校准: manual/odom_calibration.md
-        - 机器人充电方法: manual/originbot_charging.md
-        - 通信协议说明: manual/protocol_description.md
-        - 上位机控制说明: manual/hmi.md
-        - 实时操作系统RTOS配置: manual/originbot_freertos.md
-        - EKF多传感器融合定位: manual/ekf.md
-        - WebViz可视化: manual/webviz.md
+        - 搭建开发环境: zh/manual/ide_setup.md
+        - 代码开发方法: zh/manual/package_develop.md
+        - 机器人启动与参数配置: zh/manual/originbot_bringup.md
+        - 机器人遥控与可视化: zh/manual/teleoperation.md
+        - 相机驱动与可视化: zh/manual/camera_visualization.md
+        - 雷达驱动与可视化: zh/manual/lidar_visualization.md
+        - IMU驱动与可视化: zh/manual/imu_visualization.md
+        - 机器人参数动态监控: zh/manual/parameter_config.md
+        - 机器人里程计校准: zh/manual/odom_calibration.md
+        - 机器人充电方法: zh/manual/originbot_charging.md
+        - 通信协议说明: zh/manual/protocol_description.md
+        - 上位机控制说明: zh/manual/hmi.md
+        - 实时操作系统RTOS配置: zh/manual/originbot_freertos.md
+        - EKF多传感器融合定位: zh/manual/ekf.md
+        - WebViz可视化: zh/manual/webviz.md
     - 应用功能:
-        - 基础功能编程: application/basic_program.md
-        - Gazebo虚拟仿真: application/gazebo_simulation.md
-        - SLAM地图构建(Gazebo): application/gazebo_slam.md
-        - SLAM地图构建: application/slam.md
-        - 自主导航(Gazebo): application/gazebo_navigation.md
-        - 自主导航: application/navigation.md
-        - 人体跟踪: application/body_detection.md        
-        - 手势控制: application/gesture_control.md
-        - 视觉巡线(OpenCV): application/cv_line_follower.md
-        - 视觉巡线(AI深度学习): application/deeplearning_line_follower.md
-        - 视觉巡线(Gazebo): application/gazebo_line_follower.md
-        - 车位寻找(AI深度学习): application/parking_search.md
-        - 踢球射门: application/play_football.md
-        - 轨迹跟踪 : application/tracking.md
-        # - 语音控制 : application/audio_control.md
-        - 图像获取 : application/take_pictures.md
-        - 二维码识别与跟踪 : application/qrcode_detection.md
-        - 车牌识别 : application/vlpr.md
-        - 分割一切 : application/mobilesam.md
-    - 常见问题: reference/faq.md
-    - 教学课程: course/courses.md
-    - 参考资料: reference/reference.md
-    - 更多套件: reference/third_party_kits.md
+        - 基础功能编程: zh/application/basic_program.md
+        - Gazebo虚拟仿真: zh/application/gazebo_simulation.md
+        - SLAM地图构建(Gazebo): zh/application/gazebo_slam.md
+        - SLAM地图构建: zh/application/slam.md
+        - 自主导航(Gazebo): zh/application/gazebo_navigation.md
+        - 自主导航: zh/application/navigation.md
+        - 人体跟踪: zh/application/body_detection.md        
+        - 手势控制: zh/application/gesture_control.md
+        - 视觉巡线(OpenCV): zh/application/cv_line_follower.md
+        - 视觉巡线(AI深度学习): zh/application/deeplearning_line_follower.md
+        - 视觉巡线(Gazebo): zh/application/gazebo_line_follower.md
+        - 车位寻找(AI深度学习): zh/application/parking_search.md
+        - 踢球射门: zh/application/play_football.md
+        - 轨迹跟踪 : zh/application/tracking.md
+        # - 语音控制 : zh/application/audio_control.md
+        - 图像获取 : zh/application/take_pictures.md
+        - 二维码识别与跟踪 : zh/application/qrcode_detection.md
+        - 车牌识别 : zh/application/vlpr.md
+        - 分割一切 : zh/application/mobilesam.md
+    - 常见问题: zh/reference/faq.md
+    - 教学课程: zh/course/courses.md
+    - 参考资料: zh/reference/reference.md
+    - 更多套件: zh/reference/third_party_kits.md
     - 更多内容:
-        - 参与贡献: reference/contributing.md
-        - 更新日志: reference/changelog.md
+        - 参与贡献: zh/reference/contributing.md
+        - 更新日志: zh/reference/changelog.md
     - 社区交流: https://www.guyuehome.com/interlocution?id=1826932316801544194
-    - 关于我们: about.md
+    - 关于我们: zh/about.md
 
     - Project Home: en/index.md
     - User Guide: en/guide/quick_guide.md
@@ -156,8 +156,18 @@ plugins:
   - search:
       lang:
         - en
-        - ja
+        - zh
       separator: '[\s\-\.]+'
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+        - locale: en
+          name: English
+          build: true
             
 markdown_extensions:
     - markdown.extensions.attr_list
@@ -208,11 +218,11 @@ extra:
         - icon: fontawesome/solid/code
           link: https://developer.d-robotics.cc/          
 
-extra:
-  alternate:
-    - name: English
-      link: /en/
-      lang: en
-    - name: 简体中文
-      link: /
-      lang: zh
+# extra:
+#   alternate:
+#     - name: English
+#       link: /botwebtest/en/
+#       lang: en
+#     - name: 简体中文
+#       link: /botwebtest/
+#       lang: zh
