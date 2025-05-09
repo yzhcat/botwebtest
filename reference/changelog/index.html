@@ -1,0 +1,4421 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="OriginBot智能机器人开源套件·古月居">
+      
+      
+      
+        <link rel="canonical" href="https://www.guyuehome.com/reference/changelog/">
+      
+      
+        <link rel="prev" href="../contributing/">
+      
+      
+        <link rel="next" href="../../about/">
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>更新日志 - OriginBot智能机器人开源套件</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/css/extensions.css">
+    
+      <link rel="stylesheet" href="../../assets/css/simpleLightbox.min.css">
+    
+      <link rel="stylesheet" href="../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#originbot" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../../assets/img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OriginBot智能机器人开源套件
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              更新日志
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="ch" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../../assets/img/favicon.png" alt="logo">
+
+    </a>
+    OriginBot智能机器人开源套件
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/quick_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用指引
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    套件资料
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            套件资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/material_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    套件清单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/open_source_link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料链接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/hardware_interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    接口说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/common_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常用软件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/hardware_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    硬件组装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    软件配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            软件配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/image_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    镜像安装与备份
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/firmware_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    控制器固件安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/pc_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电脑端环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/easy_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速上手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    基础使用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            基础使用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/ide_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    搭建开发环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/package_develop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    代码开发方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_bringup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人启动与参数配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/teleoperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人遥控与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/camera_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相机驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/lidar_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    雷达驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/imu_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMU驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/parameter_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人参数动态监控
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/odom_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人里程计校准
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_charging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人充电方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/protocol_description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    通信协议说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/hmi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上位机控制说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_freertos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    实时操作系统RTOS配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/ekf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EKF多传感器融合定位
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/webviz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebViz可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    应用功能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            应用功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/basic_program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基础功能编程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/gazebo_simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gazebo虚拟仿真
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/gazebo_slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/gazebo_navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/body_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    人体跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/gesture_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    手势控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/cv_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(OpenCV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/deeplearning_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/gazebo_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/parking_search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车位寻找(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/play_football/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    踢球射门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    轨迹跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/take_pictures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图像获取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/qrcode_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    二维码识别与跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/vlpr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车牌识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../application/mobilesam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    分割一切
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course/courses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教学课程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参考资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../third_party_kits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更多套件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    更多内容
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            更多内容
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参与贡献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v300-2024-09-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v3.0.0] - 2024-09-18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v3.0.0] - 2024-09-18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-2024-03-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.1.0] - 2024-03-01
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.1.0] - 2024-03-01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v202-2023-11-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.2] - 2023-11-24
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.2] - 2023-11-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v201-2023-10-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.1] - 2023-10-24
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.1] - 2023-10-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200-2023-09-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.0] - 2023-09-18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.0] - 2023-09-18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v104-2023-04-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.4] - 2023-04-17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.4] - 2023-04-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v103-2023-02-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.3] - 2023-02-23
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.3] - 2023-02-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v102-2023-1-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.2] - 2023-1-17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.2] - 2023-1-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v101-2022-12-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.1] - 2022-12-08
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.1] - 2022-12-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100-2022-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.0] - 2022-10-09
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.0] - 2022-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v06v10-rc1-2022-9-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.6/v1.0-rc1] - 2022-9-23
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.6/v1.0-rc1] - 2022-9-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v05-2022-9-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.5] - 2022-9-20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.5] - 2022-9-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v04-2022-9-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.4] - 2022-9-3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.4] - 2022-9-3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v03-2022-8-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.3] - 2022-8-31
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.3] - 2022-8-31">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v02-2022-8-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.2] - 2022-8-25
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.2] - 2022-8-25">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v01-2022-8-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.1] - 2022-8-19
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.1] - 2022-8-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    社区交流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于我们
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/quick_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Kit Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            Kit Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/material/material_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kit List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/material/open_source_link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/material/common_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Common Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/hardware_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware Assembly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            Software Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/image_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Installation and Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/firmware_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Controller Firmware Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/pc_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PC Environment Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/guide/easy_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Basic Usage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_22">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/originbot_charging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Charging Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/ide_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting Up Development Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/package_develop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Development Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/originbot_bringup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Startup and Parameter Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/teleoperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Teleoperation and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/camera_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Camera Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/lidar_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lidar Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/imu_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMU Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/parameter_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dynamic Monitoring of Robot Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/odom_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Odometer Calibration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/protocol_description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication Protocol Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/hmi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HMI Control Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/originbot_freertos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Real-Time Operating System RTOS Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/ekf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EKF Multi-Sensor Fusion Positioning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/manual/webviz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebViz Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_23" id="__nav_23_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Application Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_23">
+            <span class="md-nav__icon md-icon"></span>
+            Application Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/basic_program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basic Function Programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/gazebo_simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gazebo Virtual Simulation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/gazebo_slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM Map Building (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM Map Building
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/gazebo_navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autonomous Navigation (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autonomous Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/body_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Human Body Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/gesture_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gesture Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/cv_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (OpenCV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/deeplearning_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (AI Deep Learning)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/gazebo_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/parking_search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Parking Spot Finding (AI Deep Learning)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/play_football/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Playing Football
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trajectory Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/take_pictures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Acquisition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/qrcode_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QR Code Detection and Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/vlpr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License Plate Recognition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/application/mobilesam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Segment Everything
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_24" id="__nav_24_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    More Content
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_24">
+            <span class="md-nav__icon md-icon"></span>
+            More Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/reference/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/reference/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community Exchange
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About Us
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v300-2024-09-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v3.0.0] - 2024-09-18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v3.0.0] - 2024-09-18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v210-2024-03-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.1.0] - 2024-03-01
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.1.0] - 2024-03-01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v202-2023-11-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.2] - 2023-11-24
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.2] - 2023-11-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v201-2023-10-24" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.1] - 2023-10-24
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.1] - 2023-10-24">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v200-2023-09-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v2.0.0] - 2023-09-18
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v2.0.0] - 2023-09-18">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v104-2023-04-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.4] - 2023-04-17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.4] - 2023-04-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v103-2023-02-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.3] - 2023-02-23
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.3] - 2023-02-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v102-2023-1-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.2] - 2023-1-17
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.2] - 2023-1-17">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v101-2022-12-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.1] - 2022-12-08
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.1] - 2022-12-08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v100-2022-10-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v1.0.0] - 2022-10-09
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v1.0.0] - 2022-10-09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v06v10-rc1-2022-9-23" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.6/v1.0-rc1] - 2022-9-23
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.6/v1.0-rc1] - 2022-9-23">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v05-2022-9-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.5] - 2022-9-20
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.5] - 2022-9-20">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v04-2022-9-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.4] - 2022-9-3
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.4] - 2022-9-3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v03-2022-8-31" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.3] - 2022-8-31
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.3] - 2022-8-31">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v02-2022-8-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.2] - 2022-8-25
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.2] - 2022-8-25">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      优化
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#v01-2022-8-19" class="md-nav__link">
+    <span class="md-ellipsis">
+      [v0.1] - 2022-8-19
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="[v0.1] - 2022-8-19">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      新增
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="originbot"><strong>OriginBot套件更新日志</strong></h1>
+<h2 id="v300-2024-09-18"><strong>[v3.0.0] - 2024-09-18</strong></h2>
+<h3 id="_1">新增</h3>
+<ul>
+<li>
+<p>OriginBot 全系升级，增加Pro版本</p>
+</li>
+<li>
+<p>新增<a href="../../application/mobilesam/" target="_blank">分割一切</a></p>
+</li>
+</ul>
+<h3 id="_2">优化</h3>
+<ul>
+<li>
+<p>主控RDK X3升级为RDK X5；</p>
+</li>
+<li>
+<p>三角测距雷达更换为TOF雷达；</p>
+</li>
+<li>
+<p>雷达驱动板重新设计，支架驱动集成，电路增加开关按键；</p>
+</li>
+<li>
+<p>MIPI相机更换为USB相机，更兼顾兼容性；</p>
+</li>
+<li>
+<p>电机升级为更高扭矩电机；</p>
+</li>
+<li>
+<p>IMU（惯性测量单元）集成至驱动器，数据融合优化；</p>
+</li>
+<li>
+<p>驱动控制器升级电路，支持边冲边用；</p>
+</li>
+<li>
+<p>电池容量升级至3000mA，续航增加至3-4小时；</p>
+</li>
+<li>
+<p>亚克力万向轮升级为钣金万向轮；</p>
+</li>
+</ul>
+<h2 id="v210-2024-03-01"><strong>[v2.1.0] - 2024-03-01</strong></h2>
+<h3 id="_3">新增</h3>
+<ul>
+<li>
+<p>新增<a href="../../application/vlpr/" target="_blank">车牌识别</a></p>
+</li>
+<li>
+<p>新增一键配置 Shell 脚本，以便携安装编译所需依赖</p>
+</li>
+<li>
+<p>新增 rtab、Fortess等仿真插件/环境配置</p>
+</li>
+</ul>
+<h3 id="_4">优化</h3>
+<ul>
+<li>
+<p>优化 OriginBot 仓库代码结构，清除文件及代码层级冗余内容，清除编译冗余信息</p>
+</li>
+<li>
+<p>优化 OriginBot Controller 中存在的 PID 单位换算问题</p>
+</li>
+<li>
+<p>优化 originbot_teleop 功能包，支持调速功能 </p>
+</li>
+<li>
+<p>升级 TROS 版本至 v2.1.2</p>
+</li>
+</ul>
+<h2 id="v202-2023-11-24"><strong>[v2.0.2] - 2023-11-24</strong></h2>
+<h3 id="_5">新增</h3>
+<ul>
+<li>新增<a href="../../manual/webviz/" target="_blank">WebViz可视化</a></li>
+</ul>
+<h3 id="_6">优化</h3>
+<ul>
+<li>修复mipi_cam显示bgr数据不出来的BUG</li>
+<li>升级tros为2.1.1版本</li>
+<li>将版本号明确至镜像文件中</li>
+</ul>
+<h2 id="v201-2023-10-24"><strong>[v2.0.1] - 2023-10-24</strong></h2>
+<h3 id="_7">新增</h3>
+<ul>
+<li>新增<a href="../../application/qrcode_detection/" target="_blank">二维码识别与跟踪</a></li>
+</ul>
+<h3 id="_8">优化</h3>
+<ul>
+<li>修复SLAM仿真建图使用DEB下载功能包名不一致造成启动失败的BUG</li>
+<li>修复v2.0.0镜像键盘控制tros环境无法使用的BUG</li>
+</ul>
+<h2 id="v200-2023-09-18"><strong>[v2.0.0] - 2023-09-18</strong></h2>
+<h3 id="_9">新增</h3>
+<ul>
+<li>支持<a href="https://developer.horizon.cc/nodehub" target="_blank">NodeHub</a></li>
+<li>新增originbot_example，用于存放ROS中常用到的示例，包括轨迹跟踪、获取指定帧nv12或bgr格式图像、键盘控制</li>
+<li>新增gazebo环境下建图和导航案例</li>
+</ul>
+<h3 id="_10">优化</h3>
+<ul>
+<li>处理器升级为<a href="https://developer.horizon.cc/rdkx3" target="_blank">RDK X3</a>，兼容旭日X3派，增强网络性能</li>
+<li>更新TogetheROS版本至v2.0.2，升级系统版本至ubuntu-preinstalled-server-arm64_v2.0版本   </li>
+<li>优化低电压报警方式，可支持手机充电器（电压大于4.85v）给stm32供电继续使用小车</li>
+<li>修复SLAM和导航无法多次运行的BUG</li>
+<li>增强导航精度，优化控制器端电机初始化指向同一定时器问题</li>
+<li>优化底盘驱动、巡线等程序，增加程序运行效率</li>
+<li>优化人体跟踪、手势识别等程序，适配RDK X3</li>
+</ul>
+<h2 id="v104-2023-04-17"><strong>[v1.0.4] - 2023-04-17</strong></h2>
+<h3 id="_11">新增</h3>
+<ul>
+<li><a href="../../manual/originbot_freertos/" target="_blank">FreeRTOS 微控制器实时操作系统</a></li>
+<li><a href="../../manual/camera_visualization/" target="_blank">图像压缩</a></li>
+</ul>
+<h3 id="_12">优化</h3>
+<ul>
+<li>
+<p>修复部分因系统更新造成的文档与功能不匹配问题</p>
+</li>
+<li>
+<p>更新TogetheROS版本至 1.1.6 以及升级系统版本为 x3_ubuntu_v1.1.6</p>
+</li>
+</ul>
+<h2 id="v103-2023-02-23"><strong>[v1.0.3] - 2023-02-23</strong></h2>
+<h3 id="_13">新增</h3>
+<ul>
+<li><a href="../../application/audio_control/" target="_blank">语音控制</a></li>
+</ul>
+<h3 id="_14">优化</h3>
+<ul>
+<li>
+<p>优化 OriginBot_app 编译问题</p>
+</li>
+<li>
+<p>更新TogetheROS版本至1.1.5</p>
+</li>
+</ul>
+<h2 id="v102-2023-1-17"><strong>[v1.0.2] - 2023-1-17</strong></h2>
+<h3 id="_15">新增</h3>
+<ul>
+<li>
+<p><a href="../../application/tracking/" target="_blank">轨迹跟踪</a></p>
+</li>
+<li>
+<p><a href="../../manual/parameter_config/" target="_blank">双PID调节</a></p>
+</li>
+<li>
+<p><a href="../../manual/teleoperation/" target="_blank">按键控制</a></p>
+</li>
+</ul>
+<h3 id="_16">优化</h3>
+<ul>
+<li>
+<p>修复导航时偶尔地图不出现的BUG</p>
+</li>
+<li>
+<p>优化 OriginBot_app 编译问题</p>
+</li>
+<li>
+<p>更新TogetheROS版本至1.1.3</p>
+</li>
+</ul>
+<h2 id="v101-2022-12-08"><strong>[v1.0.1] - 2022-12-08</strong></h2>
+<h3 id="_17">新增</h3>
+<ul>
+<li>
+<p><a href="../../application/parking_search/" target="_blank">车位寻找</a></p>
+</li>
+<li>
+<p><a href="../../application/play_football/" target="_blank">踢球射门</a></p>
+</li>
+<li>
+<p><a href="../../manual/ekf/" target="_blank">EKF多传感器融合定位功能</a></p>
+</li>
+<li>
+<p><a href="../../manual/hmi/" target="_blank">可视化上位机</a></p>
+</li>
+<li>
+<p><a href="../../application/navigation/#7" target="_blank">定点导航示例</a></p>
+</li>
+</ul>
+<h3 id="_18">优化</h3>
+<ul>
+<li>
+<p>优化视觉巡线（AI深度学习）应用</p>
+</li>
+<li>
+<p>优化imu、odom 、pid底层功能</p>
+</li>
+<li>
+<p>更新TogetheROS版本至1.1.2</p>
+</li>
+</ul>
+<h2 id="v100-2022-10-09"><strong>[v1.0.0] - 2022-10-09</strong></h2>
+<h3 id="_19">优化</h3>
+<ul>
+<li>优化网站内容，完成首发套件各项功能测试</li>
+</ul>
+<h2 id="v06v10-rc1-2022-9-23"><strong>[v0.6/v1.0-rc1] - 2022-9-23</strong></h2>
+<h3 id="_20">新增</h3>
+<ul>
+<li>新增originbot_demo文件夹，放置基础功能的编程示例</li>
+</ul>
+<h2 id="v05-2022-9-20"><strong>[v0.5] - 2022-9-20</strong></h2>
+<h3 id="_21">新增</h3>
+<ul>
+<li>新增<a href="https://gitee.com/guyuehome/originbot_desktop" target="_blank">originbot_desktop</a>仓库，放置电脑端运行的功能包，避免机器人端的代码编译错误</li>
+</ul>
+<h3 id="_22">优化</h3>
+<ul>
+<li>优化坐标系结构，新增base_footprint坐标系，保持与URDF模型一致</li>
+<li>优化手柄遥控运动机器人功能</li>
+<li>优化AI视觉跟踪应用的效果</li>
+<li>优化AI视觉巡线功能，增加训练使用的数据集和训练好的模型</li>
+<li>优化Ctrl+C关闭小车ROS驱动时，机器人自动停止运动</li>
+<li><a href="https://gitee.com/guyuehome/originbot_desktop" target="_blank">originbot_desktop</a>：优化上位机可视化显示过程，添加常用功能的rviz2配置脚本 </li>
+</ul>
+<h2 id="v04-2022-9-3"><strong>[v0.4] - 2022-9-3</strong></h2>
+<h3 id="_23">优化</h3>
+<ul>
+<li>
+<p>修复机器人底盘use_imu参数没有调用的问题</p>
+</li>
+<li>
+<p>调整人体跟踪与收拾识别的旋转速度</p>
+</li>
+<li>
+<p>自动停车功能默认关闭</p>
+</li>
+<li>
+<p>优化文件夹结构</p>
+</li>
+<li>
+<p>删除电脑端运行使用的功能包，避免在机器人端编译出错</p>
+</li>
+</ul>
+<h2 id="v03-2022-8-31"><strong>[v0.3] - 2022-8-31</strong></h2>
+<h3 id="_24">新增</h3>
+<ul>
+<li>OriginBot的URDF可视化模型</li>
+<li>OriginBot仿真模型（模型简化，提高gazebo运行效率）</li>
+<li>OriginBot仿真环境、相机仿真、雷达仿真</li>
+</ul>
+<h3 id="_25">优化</h3>
+<ul>
+<li>
+<p>机器人各坐标系通过URDF进行描述：base_link、laser_link、imu_link、camera_link</p>
+</li>
+<li>
+<p>删除暂时用不到的二位码识别包</p>
+</li>
+</ul>
+<h2 id="v02-2022-8-25"><strong>[v0.2] - 2022-8-25</strong></h2>
+<h3 id="_26">新增</h3>
+<ul>
+<li>基于深度学习的视觉巡线功能</li>
+</ul>
+<h3 id="_27">优化</h3>
+<ul>
+<li>
+<p>不同传感器的启动脚本都集成在originbot.launch.py中，通过参数来设置</p>
+</li>
+<li>
+<p>调试视觉巡线功能，基于HSV模型识别制定区域内的某种颜色中心，从而转化成控制指令</p>
+</li>
+<li>
+<p>旭日派中ROS启动成功时，蜂鸣器响0.5s</p>
+</li>
+</ul>
+<h2 id="v01-2022-8-19"><strong>[v0.1] - 2022-8-19</strong></h2>
+<h3 id="_28">新增</h3>
+<ul>
+<li>提供OriginBot核心功能的驱动节点<ul>
+<li>支持旭日派与控制器之间的串口驱动</li>
+<li>支持里程计话题的发布与TF坐标系维护</li>
+<li>支持IMU话题的发布</li>
+<li>支持速度控制指令的订阅与运动控制，可选是否启动自动停车功能</li>
+</ul>
+</li>
+<li>提供OriginBot常用应用功能包<ul>
+<li>支持Cartographer SLAM地图构建功能</li>
+<li>支持Navigation2定位与导航功能</li>
+<li>支持手势控制功能</li>
+<li>支持人体跟踪功能</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer.png" /></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2021 古月居 鄂ICP备18024451号-2
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../assets/js/baidu-tongji.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      
+        <script src="../../assets/js/simpleLightbox.min.js"></script>
+      
+        <script src="../../assets/js/extensions.js"></script>
+      
+        <script src="../../assets/js/custom.js"></script>
+      
+    
+  </body>
+</html>

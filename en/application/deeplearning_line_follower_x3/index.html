@@ -1,0 +1,3641 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="OriginBot智能机器人开源套件·古月居">
+      
+      
+      
+        <link rel="canonical" href="https://www.guyuehome.com/en/application/deeplearning_line_follower_x3/">
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>Visual Line Following (AI Deep Learning) X3 - OriginBot智能机器人开源套件</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/css/extensions.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/simpleLightbox.min.css">
+    
+      <link rel="stylesheet" href="../../../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visual-line-following-ai-deep-learning-x3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../../../assets/img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OriginBot智能机器人开源套件
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visual Line Following (AI Deep Learning) X3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="ch" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../../../assets/img/favicon.png" alt="logo">
+
+    </a>
+    OriginBot智能机器人开源套件
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/quick_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用指引
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    套件资料
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            套件资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../material/material_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    套件清单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../material/open_source_link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料链接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../material/hardware_interface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    接口说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../material/common_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常用软件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/hardware_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    硬件组装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    软件配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            软件配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/image_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    镜像安装与备份
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/firmware_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    控制器固件安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/pc_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电脑端环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../guide/easy_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速上手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    基础使用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            基础使用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/ide_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    搭建开发环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/package_develop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    代码开发方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/originbot_bringup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人启动与参数配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/teleoperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人遥控与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/camera_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相机驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/lidar_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    雷达驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/imu_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMU驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/parameter_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人参数动态监控
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/odom_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人里程计校准
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/originbot_charging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人充电方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/protocol_description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    通信协议说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/hmi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上位机控制说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/originbot_freertos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    实时操作系统RTOS配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/ekf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EKF多传感器融合定位
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../manual/webviz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebViz可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    应用功能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            应用功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/basic_program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基础功能编程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/gazebo_simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gazebo虚拟仿真
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/gazebo_slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/gazebo_navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/body_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    人体跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/gesture_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    手势控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/cv_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(OpenCV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/deeplearning_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/gazebo_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/parking_search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车位寻找(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/play_football/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    踢球射门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    轨迹跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/take_pictures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图像获取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/qrcode_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    二维码识别与跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/vlpr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车牌识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../application/mobilesam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    分割一切
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../course/courses/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教学课程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参考资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/third_party_kits/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更多套件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    更多内容
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            更多内容
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参与贡献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    社区交流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于我们
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/quick_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    User Guide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_18" >
+        
+          
+          <label class="md-nav__link" for="__nav_18" id="__nav_18_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Kit Information
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_18">
+            <span class="md-nav__icon md-icon"></span>
+            Kit Information
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/material_list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kit List
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/open_source_link/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources Link
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material/common_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Common Software
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/hardware_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hardware Assembly
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_20" >
+        
+          
+          <label class="md-nav__link" for="__nav_20" id="__nav_20_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Software Configuration
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_20">
+            <span class="md-nav__icon md-icon"></span>
+            Software Configuration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/image_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Installation and Backup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/firmware_install/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Controller Firmware Installation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/pc_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PC Environment Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/easy_start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Quick Start
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_22" >
+        
+          
+          <label class="md-nav__link" for="__nav_22" id="__nav_22_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Basic Usage
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_22_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_22">
+            <span class="md-nav__icon md-icon"></span>
+            Basic Usage
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_charging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Charging Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/ide_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting Up Development Environment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/package_develop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Development Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_bringup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Startup and Parameter Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/teleoperation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Teleoperation and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/camera_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Camera Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/lidar_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lidar Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/imu_visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMU Driver and Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/parameter_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dynamic Monitoring of Robot Parameters
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/odom_calibration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot Odometer Calibration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/protocol_description/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Communication Protocol Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/hmi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HMI Control Description
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/originbot_freertos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Real-Time Operating System RTOS Configuration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/ekf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EKF Multi-Sensor Fusion Positioning
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../manual/webviz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebViz Visualization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_23" >
+        
+          
+          <label class="md-nav__link" for="__nav_23" id="__nav_23_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Application Features
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_23_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_23">
+            <span class="md-nav__icon md-icon"></span>
+            Application Features
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic_program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Basic Function Programming
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gazebo_simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gazebo Virtual Simulation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gazebo_slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM Map Building (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM Map Building
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gazebo_navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autonomous Navigation (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Autonomous Navigation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../body_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Human Body Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gesture_control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gesture Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cv_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (OpenCV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../deeplearning_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (AI Deep Learning)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gazebo_line_follower/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visual Line Following (Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parking_search/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Parking Spot Finding (AI Deep Learning)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../play_football/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Playing Football
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trajectory Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../take_pictures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Acquisition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qrcode_detection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QR Code Detection and Tracking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vlpr/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    License Plate Recognition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mobilesam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Segment Everything
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_24" >
+        
+          
+          <label class="md-nav__link" for="__nav_24" id="__nav_24_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    More Content
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_24_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_24">
+            <span class="md-nav__icon md-icon"></span>
+            More Content
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/contributing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Contributing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Changelog
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Community Exchange
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    About Us
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apply-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply goals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-the-principle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to the principle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction to the principle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-learning-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deep learning process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visual-line-inspection-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visual line inspection process
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Run method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scenario-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scenario description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-visual-line-patrol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the visual line patrol
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-robot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the robot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI deep learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI deep learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pc-environment-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      PC environment configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PC environment configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install pytorch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#introduction-to-related-feature-packs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction to related feature packs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-collection-and-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data collection and annotation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data collection and annotation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-the-originbot-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the OriginBot camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-data-collection-and-annotation-program" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the data collection and annotation program
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-collection-and-annotation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data collection and annotation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model training
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model training">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-training_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model training
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model conversion
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model conversion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-an-onnx-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate an onnx model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-ai-toolchain-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the AI toolchain docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-data-is-generated" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration data is generated
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-model-is-compiled-to-generate-a-fixed-point-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      The model is compiled to generate a fixed-point model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model deployment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Model deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#model-deployment_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the camera
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start-the-bot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start the bot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="visual-line-following-ai-deep-learning-x3"><strong>Visual Line Following (AI Deep Learning) X3</strong></h1>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>The operating environment and software and hardware configurations are as follows:</p>
+<ul>
+<li>OriginBot Pro</li>
+<li>PC：Ubuntu (≥22.04) + ROS2 (≥humble) + pytorch + docker</li>
+<li>Line patrol scene: black path line, the background has obvious contrast</li>
+</ul>
+</details>
+<h2 id="apply-goals"><strong>Apply goals</strong></h2>
+<p>In the <a href="../cv_line_follower/" target="_blank">visual line patrol（OpenCV）</a>, we can already let the car follow the black path line movement, to achieve the most basic visual line patrol task, but you may have found that the image recognition based on OpenCV is greatly affected by the light, after changing the site, the threshold needs to be readjusted, is it possible to let the robot autonomously adapt to the changes in the environment? That is, let the robot learn on its own.</p>
+<p><img alt="deeplearning_follow_line" src="../../../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p>No problem, everyone must have heard of deep learning, using this method, we can achieve a data-driven visual line patrol effect, what kind of site needs to be adapted, just need to collect some picture data, and then we will try it.</p>
+<h2 id="introduction-to-the-principle"><strong>Introduction to the principle</strong></h2>
+<h3 id="deep-learning-process"><strong>Deep learning process</strong></h3>
+<p>Compared with traditional image processing, deep learning can enable machine vision to adapt to more changes, thereby improving the accuracy of complex environments. Before we begin, let's briefly introduce the basic process of deep learning.</p>
+<p><img alt="image-20220915112906511" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/image-20220915112906511.png" tag="1" /></p>
+<p>The core purpose of machine learning is to help us solve problems, which can be broken down into six main steps:</p>
+<ul>
+<li><strong>Problem definition</strong>：What is the problem we are trying to solve? For example, in the case of visual line patrol here, it is necessary to identify the position of the line in the image.</li>
+<li><strong>Data preparation</strong>：Start preparing your data for the problem you want to solve. For example, you need to prepare photos of various line patrol scenes for machine learning.</li>
+<li><strong>Model selection/development</strong>：A model is a set of processes for processing data, which is often referred to as CNN convolutional neural networks, GAN generative adversarial networks, RNN recurrent neural networks, and so on.</li>
+<li><strong>Model training and tuning</strong>：Putting data into the model and training the optimal parameters can be understood as the process of machine learning.</li>
+<li><strong>Model evaluation test</strong>：Just like a quiz, we take some data and give it to the trained model to see how it works.</li>
+<li><strong>Deployment</strong>：After everything is ready, you can put the trained model on the robot, that is, officially transfer the knowledge to a certain robot, and it can solve the problem raised earlier.</li>
+</ul>
+<h3 id="visual-line-inspection-process"><strong>Visual line inspection process</strong></h3>
+<p><img alt="deeplearning_struct" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg" tag="1" /></p>
+<p>The OriginBot has two drive wheels, a driven wheel, which is rotated and controlled by the differential speed of the two drive wheels. Among them, the MCU module is mainly used for motor motion control of the OriginBot, and communicates with the main control RDK X3 through the serial port. The main controller is Horizon RDK X3, which has 5T computing power and can easily handle complex CNN inference work.</p>
+<p>The whole system is shown in the figure above, RDK X3 obtains the environmental data in front of the OriginBot through the camera, and the image data is inferred through the trained CNN model to obtain the coordinate value of the guide line, and then calculates the movement mode of the OriginBot according to a certain control strategy, and issues motion control instructions to the OriginBot through UART to realize the closed-loop control of the whole system.</p>
+<p>The PC is used for data annotation and training, and in order to improve efficiency, RDK X3 is used to send the image to the PC via Ethernet for annotation.</p>
+<h2 id="run-method"><strong>Run method</strong></h2>
+<h3 id="scenario-description"><strong>Scenario description</strong></h3>
+<p>In the application code of OriginBot, we have trained a set of line patrol models for you, using the following scenarios:</p>
+<p><img alt="0d09ef8f7eaeb842f4a4b6d67c2d07f" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/0d09ef8f7eaeb842f4a4b6d67c2d07f.jpg" tag="1" /></p>
+<p>If you have a similar environment around you, you can skip the machine learning steps mentioned above for the time being and go directly to the deployment process, let's first try how effective the visual line patrol is using deep learning.</p>
+<h3 id="start-the-visual-line-patrol"><strong>Start the visual line patrol</strong></h3>
+<p>First, place the OriginBot in the scene where you are patrolling the line, and adjust the camera angle down as much as possible to avoid external interference.</p>
+<p><img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/e15c780e42a2fc9bb4895f6425a9275.jpg" tag="1" /></p>
+<p>Next, start the line patrol function, and note the parameters that need to be followed by the model path and name after the command:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/userdata/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_perception<span class="w"> </span>line_follower_perception<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>model_path:<span class="o">=</span>model/resnet18_224x224_nv12.bin<span class="w"> </span>-p<span class="w"> </span>model_name:<span class="o">=</span>resnet18_224x224_nv12
+</code></pre></div>
+<img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-28.png" tag="1" /></p>
+<h3 id="start-the-robot"><strong>Start the robot</strong></h3>
+<p>After SSH is connected to OriginBot, enter the following command in the terminal to start the robot chassis and camera:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera_internal.launch.py
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>originbot.launch.py
+</code></pre></div>
+<p>After the camera is successfully started, you can see the dynamically recognized path line position in the line patrol terminal:</p>
+<p><img alt="image-20220822151357113" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-30.png" tag="1" /></p>
+<p>After running for a while, you can see that the robot has started to patrol the line.</p>
+<p><img alt="deeplearning_follow_line" src="../../../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p>Deep learning is based on data, the robot can only learn from the scene that it has seen in the data. If it has not seen the scene, the recognition effect is not very good. So if we use the patrol color and the surrounding environment are different, we still need to collect as much data as possible so that the robot can learn. The complete deep learning process can refer to the following.</p>
+<h2 id="ai-deep-learning"><strong>AI deep learning</strong></h2>
+<p><img alt="deeplearning_flow" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/deeplearning_flow.jpg" tag="1" /></p>
+<p>The next deep learning operation is mainly divided into the above steps, before the operation, you also need to complete the configuration of the PC environment, let's experience deep learning together.</p>
+<h3 id="pc-environment-configuration"><strong>PC environment configuration</strong></h3>
+<p>The basic environment on the PC side is Ubuntu+ROS+pytorch+docker, please complete the configuration of Ubuntu, ROS, and OriginBot function packages according to  <a href="../../guide/pc_config/" target="_blank">Desktop environment configuration</a>.</p>
+<h4 id="install-pytorch"><strong>Install pytorch</strong></h4>
+<p>The training framework is pytorch, and you can directly use the following command to install it on the Ubuntu system on the PC side:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+</code></pre></div>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>In order to ensure universality, the CPU version of pytorch is installed here, and if you have a GPU on the hardware, you can also choose the GPU version of pytorch, which is faster for training.</p>
+</details>
+<h4 id="install-docker"><strong>Install Docker</strong></h4>
+<p>Docker is required for subsequent model conversion to save time for environment configuration, and you need to install it first and download the image used for model conversion.</p>
+<p>The installation of Docker in the Ubuntu environment can be completed by referring to the following website or online information:</p>
+<p><a href="https://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank">Ubuntu Docker installation</a></p>
+<p>After the installation is complete, you can use the following command to download the toolchain and docker image for subsequent model conversions:</p>
+<ul>
+<li>Download AI Toolchain OE Package（6.1GB）</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>wget<span class="w"> </span>-c<span class="w"> </span>ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.3.3/horizon_xj3_open_explorer_v2.3.3_20220727.tar.gz
+</code></pre></div>
+<ul>
+<li>Download AI toolchain docker（14.8GB）</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>wget<span class="w"> </span>-c<span class="w"> </span>ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.3.3/x3pi_toolchain/ai_toolchain_2.3.3.tar.gz
+</code></pre></div>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>The above docker images are large in size, please ensure that the network is smooth and wait patiently.</p>
+</details>
+<h4 id="introduction-to-related-feature-packs"><strong>Introduction to related feature packs</strong></h4>
+<p>Throughout the deep learning process, we will use three directly related feature packages/folders:</p>
+<ul>
+<li>
+<p><strong>10_model_convert</strong>：Used to store floating-point model to fixed-point model related code and configuration, and all the contents of this folder need to be run in the AI toolchain docker;</p>
+</li>
+<li>
+<p><strong>line_follower_model</strong>：Used to store model training-related content, such as data labeling, model training, and generating onnx models, all the contents of this folder are run on the PC;</p>
+</li>
+<li>
+<p><strong>line_follower_perception</strong>：Used to store the code running on RDK X3, which can be compiled on the board or generated by cross-compiling the package running on RDK X3.</p>
+</li>
+</ul>
+<p>Among them, the two packages 10_model_convert and line_follower_model are placed in the <a href="https://github.com/yzhcat/originbot_desktop" target="_blank">originbot_desktop code repository</a>，and line_follower_perception are placed in the <a href="https://github.com/yzhcat/originbot" target="_blank">originbot code repository</a>.</p>
+<p>Once the environment is ready, we can get started.</p>
+<h3 id="data-collection-and-annotation"><strong>Data collection and annotation</strong></h3>
+<p>Data is the foundation of deep learning, we first need to complete the collection and annotation of data, this process is mainly completed on the PC side, you need to subscribe to the real-time images of the OriginBot robot side, the main process is as follows:</p>
+<p><img alt="data_flow" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/data_flow.jpg" tag="1" /></p>
+<p>（1）Start the OriginBot camera, collect images of the patrol scene, and publish the image topic image_raw;</p>
+<p>（2）The PC side subscribes to the image topics published by OriginBot and obtains image data;</p>
+<p>（3）The PC side crops the image, and manually completes the annotation of the path line in each image;</p>
+<p>（4）Save the annotation result and the corresponding image.</p>
+<h4 id="start-the-originbot-camera"><strong>Start the OriginBot camera</strong></h4>
+<p>After connecting to OriginBot via SSH, enter the following command in the terminal to start the camera of OriginBot:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera.launch.py
+</code></pre></div>
+<p><img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-42.png" tag="1" /></p>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>During the data acquisition process, the posture of the robot can be artificially placed. The camera can be started separately without starting the robot chassis.</p>
+</details>
+<h4 id="start-the-data-collection-and-annotation-program"><strong>Start the data collection and annotation program</strong></h4>
+<p>On the PC side, use the following command to start the data acquisition and annotation program in the line_follower_model package:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>annotation
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-42_1.png" tag="1" /></p>
+<p>In order to ensure the smooth communication, the above use cyclonedds, after configuration, cyclonedds will automatically bind a network card, if the communication network card is wrong, you can use the following command to replace:​
+​    </p>
+<div class="highlight"><pre><span></span><code> export CYCLONEDDS_URI=&#39;&lt;CycloneDDS&gt;&lt;Domain&gt;&lt;General&gt;&lt;NetworkInterfaceAddress&gt;wlan0&lt;/NetworkInterfaceAddress&gt;&lt;/General&gt;&lt;/Domain&gt;&lt;/CycloneDDS&gt;&#39;
+</code></pre></div>
+<h4 id="data-collection-and-annotation_1"><strong>Data collection and annotation</strong></h4>
+<p>After successful startup, press the enter key on the keyboard, the program will subscribe to the latest image topic, crop and display it through a visual window, and the data collection is successful:</p>
+<p><img alt="8057f0fb-9925-4b20-b12c-64574956e92a" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-47.png" tag="1" /></p>
+<p>Click the center of the path line in the vertical direction of the picture with the left mouse button to complete the annotation of the image data of the frame:</p>
+<p><img alt="87b8418b-cbc0-48c9-ba0f-3187e364bc64" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-47_1.png" tag="1" /></p>
+<p>Press the Enter key to automatically save the image to the image_dataset folder under the current path, and save the markup result. The image is named as follows:</p>
+<blockquote>
+<p>xy_[x coordinates]<em>[y coordinates]</em>[uuid].jpg</p>
+</blockquote>
+<p>The uuid is the unique identifier of the image to avoid the same file name.</p>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>If the click is inaccurate, you can click the left mouse button several times until you are satisfied. If you do not click the annotation, the image will be skipped after press enter and will not be put into the dataset.</p>
+</details>
+<p><img alt="20220915183911" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/20220915183911.jpg" tag="1" /></p>
+<p>Continuously adjust the position of the robot in the scene, consider various possible image effects, complete the above data collection and annotation process in cycles, and collect a sufficient amount of data, at least 100 pieces are recommended for subsequent model training. When the environment or site changes, the corresponding images can also be collected and trained together to improve the adaptability of the model.</p>
+<p><img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_22-19.png" tag="1" /></p>
+<h3 id="model-training"><strong>Model training</strong></h3>
+<h4 id="model-selection"><strong>Model selection</strong></h4>
+<p>Convolutional Neural Network（Convolutional Neural Network, CNN） is a deep neural network model that is widely used in the fields of image and natural language processing. In 1998, Lecun et al. proposed a gradient-based backpropagation algorithm for document recognition. In this neural network, the convolutional layer plays a crucial role.With the continuous enhancement of computing power, some large CNN networks began to show great advantages in the image field. In 2012, Krizhevsky et al. proposed the AlexNet network structure, and won the championship in the ImageNet image classification competition by 11%. Subsequently, different scholars proposed a series of network structures and continuously refreshed the results of ImageNet, among which the more classic networks include: VGG(Visual Geometry Group), GoogLeNet and ResNet. The convolutional neural network consists of an input layer, a convolutional layer, a pooling layer, a fully connected layer, and an output layer, and its structure is as follows:</p>
+<p><img alt="fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5.png" tag="1" /></p>
+<p>Considering the maturity of the model and the hardware requirements of the CPU/GPU for training the model, the ResNet network is selected as the backbone. The Residual Neural Network (ResNet) was proposed by Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun and others from Microsoft Research, and won the championship in the 2015 ILSVRC (ImageNet Large Scale Visual Recognition Challenge). ResNet cleverly uses shortcut connections to solve the problem of model degradation in deep networks, and is one of the most widely used CNN feature extraction networks. The structure of ResNet18 is as follows:</p>
+<p><img alt="8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf.png" tag="1" /></p>
+<p>The ResNet18 inference performance is up to 232 FPS on the RDK X3 and the ResNet50 inference performance is also over 100 FPS.The high frame rate ensures real-time data processing and is a necessary condition for subsequent speed increases and more complex applications. Here, the ResNet18 network structure is used first, and the deeper ResNet50 network structure is considered when the bottleneck is encountered later. In order to satisfy the output guide line coordinate value x,y, you need to modify the ResNet18 network FC output to 2, that is, directly output the x,y coordinate value of the guide line. The ResNet18 input resolution is 224x224.</p>
+<h4 id="model-training_1"><strong>Model training</strong></h4>
+<p>The above-mentioned models can be directly reused from the definitions in PyTorch, and the sharding of the dataset and the training of the model are all encapsulated in the code of the line_follower_model feature package.</p>
+<p><img alt="model_traning" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/model_traning.jpg" tag="1" /></p>
+<p>Directly on the PC, run the following command to start training:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>training
+</code></pre></div>
+<p><img alt="model_traning" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-33.png" tag="1" /></p>
+<p>The model training process will take a while, which is expected to take about 30 minutes, so please be patient.</p>
+<p>After the training is complete, a model file is generated.
+<img alt="model_traning" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-49.png" tag="1" /></p>
+<h3 id="model-conversion"><strong>Model conversion</strong></h3>
+<p>The floating-point model trained by pytorch would be inefficient if run directly on RDK X3. In order to improve the operation efficiency and give full play to the 5T computing power of the BPU, the floating-point model conversion operation needs to be performed here.</p>
+<p><img alt="model_transform" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/model_transform.jpg" tag="1" /></p>
+<h4 id="generate-an-onnx-model"><strong>Generate an onnx model</strong></h4>
+<p>On the PC side, use generate_onnx to convert the previously trained model into an onnx model by using the following command:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>generate_onnx
+</code></pre></div>
+<img alt="model_transform" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-16_15-33.png" tag="1" /></p>
+<p>After running, the generated best_line_follower_model_xy.onnx model will be obtained in the current directory.
+<img alt="model_transform" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-51.png" tag="1" /></p>
+<h4 id="start-the-ai-toolchain-docker"><strong>Start the AI toolchain docker</strong></h4>
+<p>Decompress the docker image and OE package of the AI toolchain that you downloaded before, and copy the data files from the decompressed docker image to the data folder in the OE package.
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-17.png" tag="1" />
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-17_1.png" tag="1" /></p>
+<p>Copy the 10_model_convert package from the originbot_desktop repository to the ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/ directory of the OE development package.
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-23.png" tag="1" /></p>
+<p>Then copy the annotated dataset folder and the generated onnx model under the line_follower_model function package to the above 10_model_convert package:
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-16_17-20.png" tag="1" /></p>
+<p>Then go back to the root directory of the OE package and load the docker image of the AI toolchain:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sh<span class="w"> </span>run_docker.sh<span class="w"> </span>/data/
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_17-20.png" tag="1" /></p>
+<h4 id="calibration-data-is-generated"><strong>Calibration data is generated</strong></h4>
+<p>The calibration data generated in this step is mainly used for the next step of model compilation and calibration, and part of the data of the training model can be used, there are no special requirements, as long as the standard is correct, the number is about 100, and we have copied the dataset in the previous step.</p>
+<p>In the Docker image that is started, perform the following operations:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/10_model_convert/mapper
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sh<span class="w"> </span>02_preprocess.sh
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-16_17-24.png" tag="1" /></p>
+<h4 id="the-model-is-compiled-to-generate-a-fixed-point-model"><strong>The model is compiled to generate a fixed-point model</strong></h4>
+<p>This step generates a fixed-point model file for subsequent deployment on the robot:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/10_model_convert/mapper
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sh<span class="w"> </span>03_build.sh
+</code></pre></div>
+<p><img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-16_17-25.png" tag="1" /></p>
+<p>After the compilation is successful, the final model file will be generated in the 10_model_output path.
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-16_17-27.png" tag="1" /></p>
+<p>We can right-click to copy the model file and put it in the line_follower_model feature pack for later deployment.
+<img alt="image" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_18-15.png" tag="1" /></p>
+<h3 id="model-deployment"><strong>Model deployment</strong></h3>
+<p>The fixed-point model that can run on the RDK X3BPU has been obtained through the previous model transformation. How to deploy it on the RDK X3 to achieve the complete set of functions of image acquisition, model inference, and motion control? This is based on the Hobot DNN in TogetheROS. Hobot DNN is a board-end algorithm inference framework in the TogetheROS software stack, which uses BPU processors to implement AI inference functions on Horizon RDK X3, providing a simpler and easy-to-use model integrated development interface for robot application development, including model management, input processing and result analysis based on model description, and model output memory allocation management.</p>
+<h4 id="model-deployment_1"><strong>Model deployment</strong></h4>
+<p>Copy the generated fixed-point model resnet18_224x224_nv12.bin to the model folder in the line_follower_perception feature package of OriginBot, replace the original model, and recompile the workspace.</p>
+<p>After the compilation is complete, you can run the following command to deploy the model, where the parameters model_path and model_name specify the path and name of the model:</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd</span><span class="w"> </span>/userdata/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_perception<span class="w"> </span>line_follower_perception<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>model_path:<span class="o">=</span>model/resnet18_224x224_nv12.bin<span class="w"> </span>-p<span class="w"> </span>model_name:<span class="o">=</span>resnet18_224x224_nv12
+</code></pre></div>
+<img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-28.png" tag="1" /></p>
+<h4 id="start-the-camera"><strong>Start the camera</strong></h4>
+<p>First, place the OriginBot in the scene where the line is patrolling.</p>
+<p>Use the following command to start the camera driver in zero-copy mode to accelerate the internal image processing efficiency:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera_internal.launch.py
+</code></pre></div>
+<p>After the camera is successfully started, you can see the dynamically recognized path line position in the line patrol terminal:</p>
+<p><img alt="image-20220822151357113" class="img-fluid" src="../../../assets/img/deeplearning_line_follower/2022-09-15_21-30.png" tag="1" /></p>
+<h4 id="start-the-bot"><strong>Start the bot</strong></h4>
+<p>Finally, start the OriginBot chassis again, and the robot can autonomously find the line!</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>originbot.launch.py
+</code></pre></div>
+<p><img alt="deeplearning_follow_line" src="../../../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../../assets/img/footer.png" /></a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2021 古月居 鄂ICP备18024451号-2
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../../../assets/js/baidu-tongji.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      
+        <script src="../../../assets/js/simpleLightbox.min.js"></script>
+      
+        <script src="../../../assets/js/extensions.js"></script>
+      
+        <script src="../../../assets/js/custom.js"></script>
+      
+    
+  </body>
+</html>
