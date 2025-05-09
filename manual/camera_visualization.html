@@ -10,26 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://www.guyuehome.com/index.html">
+        <link rel="canonical" href="https://www.guyuehome.com/manual/camera_visualization.html">
       
       
+        <link rel="prev" href="teleoperation.html">
       
-        <link rel="next" href="guide/quick_guide.html">
+      
+        <link rel="next" href="lidar_visualization.html">
       
       
-      <link rel="icon" href="assets/img/favicon.png">
+      <link rel="icon" href="../assets/img/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>OriginBot智能机器人开源套件</title>
+        <title>相机驱动与可视化 - OriginBot智能机器人开源套件</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,13 +50,13 @@
       
     
     
-      <link rel="stylesheet" href="assets/css/extensions.css">
+      <link rel="stylesheet" href="../assets/css/extensions.css">
     
-      <link rel="stylesheet" href="assets/css/simpleLightbox.min.css">
+      <link rel="stylesheet" href="../assets/css/simpleLightbox.min.css">
     
-      <link rel="stylesheet" href="assets/css/custom.css">
+      <link rel="stylesheet" href="../assets/css/custom.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#originbot" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -96,9 +98,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="index.html" title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
       
-  <img src="assets/img/favicon.png" alt="logo">
+  <img src="../assets/img/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              项目主页
+              相机驱动与可视化
             
           </span>
         </div>
@@ -162,13 +164,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="en/index.html" hreflang="en" class="md-select__link">
+            <a href="../en/manual/camera_visualization.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="index.html" hreflang="zh" class="md-select__link">
+            <a href="camera_visualization.html" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
@@ -257,9 +259,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
       
-  <img src="assets/img/favicon.png" alt="logo">
+  <img src="../assets/img/favicon.png" alt="logo">
 
     </a>
     OriginBot智能机器人开源套件
@@ -283,32 +285,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    项目主页
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -319,137 +299,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#originbot_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      OriginBot
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OriginBot">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      开源共建
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      全栈开发
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      智能应用
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      源于热爱
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置参数
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      参与贡献
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="参与贡献">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      提供反馈
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      贡献代码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      开源传递
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    <span class="md-ellipsis">
-      链接汇总
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -461,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/quick_guide.html" class="md-nav__link">
+      <a href="../guide/quick_guide.html" class="md-nav__link">
         
   
   
@@ -521,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/material_list.html" class="md-nav__link">
+      <a href="../material/material_list.html" class="md-nav__link">
         
   
   
@@ -544,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/open_source_link.html" class="md-nav__link">
+      <a href="../material/open_source_link.html" class="md-nav__link">
         
   
   
@@ -567,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/hardware_interface.html" class="md-nav__link">
+      <a href="../material/hardware_interface.html" class="md-nav__link">
         
   
   
@@ -590,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/common_software.html" class="md-nav__link">
+      <a href="../material/common_software.html" class="md-nav__link">
         
   
   
@@ -620,7 +469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/hardware_setup.html" class="md-nav__link">
+      <a href="../guide/hardware_setup.html" class="md-nav__link">
         
   
   
@@ -680,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/image_install.html" class="md-nav__link">
+      <a href="../guide/image_install.html" class="md-nav__link">
         
   
   
@@ -703,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/firmware_install.html" class="md-nav__link">
+      <a href="../guide/firmware_install.html" class="md-nav__link">
         
   
   
@@ -726,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/pc_config.html" class="md-nav__link">
+      <a href="../guide/pc_config.html" class="md-nav__link">
         
   
   
@@ -756,7 +605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/easy_start.html" class="md-nav__link">
+      <a href="../guide/easy_start.html" class="md-nav__link">
         
   
   
@@ -775,18 +624,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -802,7 +653,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             基础使用
@@ -816,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/ide_setup.html" class="md-nav__link">
+      <a href="ide_setup.html" class="md-nav__link">
         
   
   
@@ -839,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/package_develop.html" class="md-nav__link">
+      <a href="package_develop.html" class="md-nav__link">
         
   
   
@@ -862,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_bringup.html" class="md-nav__link">
+      <a href="originbot_bringup.html" class="md-nav__link">
         
   
   
@@ -885,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/teleoperation.html" class="md-nav__link">
+      <a href="teleoperation.html" class="md-nav__link">
         
   
   
@@ -905,10 +756,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="manual/camera_visualization.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    相机驱动与可视化
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="camera_visualization.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -919,6 +792,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      相机驱动例程
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="相机驱动例程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动相机例程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      上位机查看例程效果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      关闭例程
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ros" class="md-nav__link">
+    <span class="md-ellipsis">
+      ROS图像传输
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS图像传输">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动ROS相机驱动
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看相机话题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看可视化图像
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dds" class="md-nav__link">
+    <span class="md-ellipsis">
+      附：DDS的配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="附：DDS的配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dds_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDS的安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dds_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDS的切换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -931,7 +941,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/lidar_visualization.html" class="md-nav__link">
+      <a href="lidar_visualization.html" class="md-nav__link">
         
   
   
@@ -954,7 +964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/imu_visualization.html" class="md-nav__link">
+      <a href="imu_visualization.html" class="md-nav__link">
         
   
   
@@ -977,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/parameter_config.html" class="md-nav__link">
+      <a href="parameter_config.html" class="md-nav__link">
         
   
   
@@ -1000,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/odom_calibration.html" class="md-nav__link">
+      <a href="odom_calibration.html" class="md-nav__link">
         
   
   
@@ -1023,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_charging.html" class="md-nav__link">
+      <a href="originbot_charging.html" class="md-nav__link">
         
   
   
@@ -1046,7 +1056,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/protocol_description.html" class="md-nav__link">
+      <a href="protocol_description.html" class="md-nav__link">
         
   
   
@@ -1069,7 +1079,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/hmi.html" class="md-nav__link">
+      <a href="hmi.html" class="md-nav__link">
         
   
   
@@ -1092,7 +1102,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_freertos.html" class="md-nav__link">
+      <a href="originbot_freertos.html" class="md-nav__link">
         
   
   
@@ -1115,7 +1125,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/ekf.html" class="md-nav__link">
+      <a href="ekf.html" class="md-nav__link">
         
   
   
@@ -1138,7 +1148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/webviz.html" class="md-nav__link">
+      <a href="webviz.html" class="md-nav__link">
         
   
   
@@ -1206,7 +1216,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/basic_program.html" class="md-nav__link">
+      <a href="../application/basic_program.html" class="md-nav__link">
         
   
   
@@ -1229,7 +1239,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_simulation.html" class="md-nav__link">
+      <a href="../application/gazebo_simulation.html" class="md-nav__link">
         
   
   
@@ -1252,7 +1262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_slam.html" class="md-nav__link">
+      <a href="../application/gazebo_slam.html" class="md-nav__link">
         
   
   
@@ -1275,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/slam.html" class="md-nav__link">
+      <a href="../application/slam.html" class="md-nav__link">
         
   
   
@@ -1298,7 +1308,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_navigation.html" class="md-nav__link">
+      <a href="../application/gazebo_navigation.html" class="md-nav__link">
         
   
   
@@ -1321,7 +1331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/navigation.html" class="md-nav__link">
+      <a href="../application/navigation.html" class="md-nav__link">
         
   
   
@@ -1344,7 +1354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/body_detection.html" class="md-nav__link">
+      <a href="../application/body_detection.html" class="md-nav__link">
         
   
   
@@ -1367,7 +1377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gesture_control.html" class="md-nav__link">
+      <a href="../application/gesture_control.html" class="md-nav__link">
         
   
   
@@ -1390,7 +1400,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/cv_line_follower.html" class="md-nav__link">
+      <a href="../application/cv_line_follower.html" class="md-nav__link">
         
   
   
@@ -1413,7 +1423,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/deeplearning_line_follower.html" class="md-nav__link">
+      <a href="../application/deeplearning_line_follower.html" class="md-nav__link">
         
   
   
@@ -1436,7 +1446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_line_follower.html" class="md-nav__link">
+      <a href="../application/gazebo_line_follower.html" class="md-nav__link">
         
   
   
@@ -1459,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/parking_search.html" class="md-nav__link">
+      <a href="../application/parking_search.html" class="md-nav__link">
         
   
   
@@ -1482,7 +1492,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/play_football.html" class="md-nav__link">
+      <a href="../application/play_football.html" class="md-nav__link">
         
   
   
@@ -1505,7 +1515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/tracking.html" class="md-nav__link">
+      <a href="../application/tracking.html" class="md-nav__link">
         
   
   
@@ -1528,7 +1538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/take_pictures.html" class="md-nav__link">
+      <a href="../application/take_pictures.html" class="md-nav__link">
         
   
   
@@ -1551,7 +1561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/qrcode_detection.html" class="md-nav__link">
+      <a href="../application/qrcode_detection.html" class="md-nav__link">
         
   
   
@@ -1574,7 +1584,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/vlpr.html" class="md-nav__link">
+      <a href="../application/vlpr.html" class="md-nav__link">
         
   
   
@@ -1597,7 +1607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/mobilesam.html" class="md-nav__link">
+      <a href="../application/mobilesam.html" class="md-nav__link">
         
   
   
@@ -1627,7 +1637,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/faq.html" class="md-nav__link">
+      <a href="../reference/faq.html" class="md-nav__link">
         
   
   
@@ -1649,7 +1659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="course/courses.html" class="md-nav__link">
+      <a href="../course/courses.html" class="md-nav__link">
         
   
   
@@ -1671,7 +1681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/reference.html" class="md-nav__link">
+      <a href="../reference/reference.html" class="md-nav__link">
         
   
   
@@ -1693,7 +1703,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/third_party_kits.html" class="md-nav__link">
+      <a href="../reference/third_party_kits.html" class="md-nav__link">
         
   
   
@@ -1753,7 +1763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/contributing.html" class="md-nav__link">
+      <a href="../reference/contributing.html" class="md-nav__link">
         
   
   
@@ -1776,7 +1786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/changelog.html" class="md-nav__link">
+      <a href="../reference/changelog.html" class="md-nav__link">
         
   
   
@@ -1828,7 +1838,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about.html" class="md-nav__link">
+      <a href="../about.html" class="md-nav__link">
         
   
   
@@ -1870,37 +1880,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#originbot_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      OriginBot
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OriginBot">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      开源共建
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      全栈开发
+      相机驱动例程
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="相机驱动例程">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      智能应用
+      启动相机例程
     </span>
   </a>
   
@@ -1909,7 +1901,16 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      源于热爱
+      上位机查看例程效果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      关闭例程
     </span>
   </a>
   
@@ -1921,46 +1922,37 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#ros" class="md-nav__link">
     <span class="md-ellipsis">
-      配置参数
+      ROS图像传输
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ROS图像传输">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ros_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动ROS相机驱动
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      参与贡献
+      查看相机话题
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="参与贡献">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      提供反馈
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      贡献代码
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    <span class="md-ellipsis">
-      开源传递
+      查看可视化图像
     </span>
   </a>
   
@@ -1972,11 +1964,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#dds" class="md-nav__link">
     <span class="md-ellipsis">
-      链接汇总
+      附：DDS的配置
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="附：DDS的配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dds_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDS的安装
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dds_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      DDS的切换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1996,250 +2012,128 @@
 
 
 
-<h1 id="originbot"><strong>OriginBot智能机器人开源套件</strong></h1>
-<blockquote>
-<p><strong>最新消息</strong>：OriginBot V3.0.0版本正式发布，OriginBot全系升级，同时推出OriginBot Pro版，九大升级，<a href="reference/changelog.html" target="_blank">点击查看</a></p>
-</blockquote>
-<p><img alt="originbot" src="assets/img/originbot_lastest.jpg" /></p>
-<div style="text-align: right;">
-    <a href="#originbot_1" class="md-button">了解OriginBot</a>
-    <a href="/guide/quick_guide/" class="md-button md-button--primary">马上开始</a>
-</div>
-
-<h2 id="originbot_1"><strong>OriginBot</strong></h2>
-<p>OriginBot是一款智能机器人开源套件，更是一个社区共建的开源项目，旨在让每一位参与者享受机器人开发的乐趣。</p>
-<h3 id="_1"><font color='green'><strong>开源共建</strong></font></h3>
-<p>“开源就是力量”——这是OriginBot的核心精神，欢迎每一位开发者参与其中。</p>
-<p><strong>▶  开源生态</strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/originbot_explode.jpg" style="max-width:256px;" align="left">
-所得超所见，所见即开源，从结构到电气，从驱动到应用，OriginBot小巧的身躯中，是一个庞大的开源世界，欢迎每一位开发者从这里汲取营养，更欢迎每一位开发者贡献力量。
-</div>
-
-<p><strong><p align="right" >持续迭代  ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/agile.jpg" style="max-width:256px;" align="right">
-怕什么真理无穷，进一寸有一寸的欢喜。依托强大的社区支持，OriginBot和它的开发者，都不止于每一步的前行，软硬件持续迭代，版本周期更新，让我们一起成长壮大。
-</div>
-
-<h3 id="_2"><font color='green'><strong>全栈开发</strong></font></h3>
-<p>智能机器人开发之路漫漫修远，OriginBot将陪伴每一位开发者上下求索。</p>
-<p><strong>▶  全技术栈</strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/capabilities.png" style="max-width:256px;" align="left">
-OriginBot项目技术栈横跨结构、电气、嵌入式、ROS、人工智能等诸多领域，无论你想从事哪些方面的研究，都可以在这里找到归宿，快速了解机器人设计的完整路径，掌握技术开发的核心方法。
-</div>
-
-<p><strong><p align="right" >内容齐全  ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/guyueclass.jpg" style="max-width:256px;" align="right">
-OriginBot套件就是一把钥匙，可以打开智能机器人学习的大门，硬件、软件、图文、视频、论坛一应俱全，都会从这里链接覆盖，多样化的软硬件内容助力每一位开发者的的成长。
-</div>
-
-<h3 id="_3"><font color='green'><strong>智能应用</strong></font></h3>
-<p>OriginBot结构简约，应用却不简单，可以拓展无限可能。</p>
-<p><strong>▶  算力强劲</strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/rdkx3.jpg" style="max-width:256px;" align="left">
-OriginBot原生搭载地瓜机器人开发板——RDK X3/RDK X5，高算力强劲支撑，CV加速、人体跟踪、手势识别、视觉巡线等案例丰富，享受AI乐趣，真正开发“智能”机器人。
-</div>
-
-<p><strong><p align="right" >应用丰富  ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/image-20220922173203208.png" style="max-width:256px;" align="right">
-OriginBot以ROS2及TogetheROS™.Bot（地瓜深入优化的ROS开源机器人操作系统）作为机器人软件系统，兼容ROS生态中的众多应用功能，即装即用；原装应用丰富，快速开始SLAM、定位导航、视觉处理、机器学习等应用开发。
-</div>
-
-<h3 id="_4"><font color='green'><strong>源于热爱</strong></font></h3>
-<p>每位机器人开发者都曾有“从零开发一款机器人”的梦想，OriginBot源于这一份最初的热爱。</p>
-<p><strong>▶  独一无二</strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/20220906134853.jpg" style="max-width:256px;" align="left">
-每一台OriginBot都是独一无二的，套件中包含唯一序号的车牌，从“0000”开始顺序编码，为你的爱车挂上车牌，你就是它的主人，更多可能性等待大家一起探索。
-</div>
-
-<p><strong><p align="right" >起航开发  ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="./assets/img/hello_robot.jpg" style="max-width:256px;" align="right">
-OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的开发之路，未来路长，请多多关照，我们这就一同起航！
-</br>
-</br>
-</br>
-<a href="guide/quick_guide/" class="md-button">起航机器人开发</a>
-</div>
-
-<h2 id="_5"><strong>配置参数</strong></h2>
-<table>
-<thead>
-<tr>
-<th>主要配置项</th>
-<th style="text-align: left;">Pro版</th>
-<th>标准版</th>
-<th>Lite版</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>效果图</td>
-<td style="text-align: left;"><img alt="originbot_nav" class="img-fluid" src="assets/img/quick_guide/originbot_x5_nav.jpg" tag="1" title="OriginBot Pro" /></td>
-<td><img alt="originbot_nav" class="img-fluid" src="assets/img/quick_guide/originbot_x3_nav.jpg" tag="1" title="OriginBot 标准版" /></td>
-<td><img alt="originbot_x3_cv" class="img-fluid" src="assets/img/quick_guide/originbot_x3_cv.jpg" tag="1" title="OriginBotLite版" /></td>
-</tr>
-<tr>
-<td>应用处理器</td>
-<td style="text-align: left;">RDK X5<br />CPU：八核ARM Cortex-A55@1.5GHz<br />GPU：32Gflops，等效算力<font color='green'>10TOPS</font><br />内存：8GB LPDDR4 RAM<br />存储：32GB（TF卡）</td>
-<td>RDK X3<br />CPU：四核ARM Cortex-A53@1.5GHz<br />BPU：双核@1GHz，等效算力<font color='green'>5TOPS</font><br />内存：4GB LPDDR4 RAM<br />存储：32GB（TF卡）</td>
-<td>RDK X3<br />CPU：四核ARM Cortex-A53@1.5GHz<br />BPU：双核@1GHz，等效算力<font color='green'>5TOPS</font><br />内存：4GB LPDDR4 RAM<br />存储：32GB（TF卡）</td>
-</tr>
-<tr>
-<td>运动控制器</td>
-<td style="text-align: left;">MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /></td>
-<td>MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /></td>
-<td>MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /></td>
-</tr>
-<tr>
-<td>差速底盘</td>
-<td style="text-align: left;">带编码器TT电机 2<br />摄像头支架<br />万向轮及支架</td>
-<td>带编码器TT电机 2<br />摄像头支架<br />万向轮及支架</td>
-<td>带编码器TT电机 2<br />摄像头支架<br />万向轮及支架</td>
-</tr>
-<tr>
-<td>摄像头</td>
-<td style="text-align: left;">720P USB相机</td>
-<td>720P USB相机</td>
-<td>720P USB相机</td>
-</tr>
-<tr>
-<td>激光雷达(TOF)</td>
-<td style="text-align: left;"><font color='green'>6Hz扫描频率，<br />360°扫描角度<br /> 3000HZ 测距频率</font></td>
-<td><font color='green'>6Hz扫描频率，<br />360°扫描角度<br />3000HZ 测距频率</font></td>
-<td>-</td>
-</tr>
-<tr>
-<td>姿态传感器</td>
-<td style="text-align: left;"><font color='green'>加速度、陀螺仪、角度输出<br />自带卡尔曼滤波</font></td>
-<td><font color='green'>加速度、陀螺仪、角度输出<br />自带卡尔曼滤波</font></td>
-<td><font color='green'>加速度、陀螺仪、角度输出<br />自带卡尔曼滤波</font></td>
-</tr>
-<tr>
-<td>视频课程</td>
-<td style="text-align: left;">古月居定制课程</td>
-<td>古月居定制课程</td>
-<td>古月居定制课程</td>
-</tr>
-<tr>
-<td>电池续航 <br /> (支持边冲边用)</td>
-<td style="text-align: left;">3~5小时<br />3000 mAh（典型值）<br />12.6V 800mA充电器</td>
-<td>3~5小时<br />3000 mAh（典型值）<br />12.6V 800mA充电器</td>
-<td>3~5小时<br />3000 mAh（典型值）<br />12.6V 800mA充电器</td>
-</tr>
-<tr>
-<td>尺寸</td>
-<td style="text-align: left;">长：180 mm<br />宽：132 mm<br /><font color='green'>高：147 mm</font>（±2）</td>
-<td>长：180 mm<br />宽：132 mm<br /><font color='green'>高：147 mm</font>（±2）</td>
-<td>长：180 mm<br />宽：132 mm<br />高：109 mm（±2）</td>
-</tr>
-<tr>
-<td>重量</td>
-<td style="text-align: left;"><font color='green'>0.80 kg</font>（±0.05）</td>
-<td><font color='green'>0.78 kg</font>（±0.05）</td>
-<td>0.62 kg（±0.05）</td>
-</tr>
-<tr>
-<td>最大速度</td>
-<td style="text-align: left;"><font color='green'>1.2 m/s</font>（±0.05）</td>
-<td>0.8 m/s（±0.05）</td>
-<td><font color='green'>1.0 m/s</font>（±0.05）</td>
-</tr>
-<tr>
-<td>操作软件</td>
-<td style="text-align: left;">ubuntu 22.04（Server）<br />ROS2 Humble<br />TogetheROS 3.0.0</td>
-<td>ubuntu 20.04（Server）<br />ROS2 Foxy<br />TogetheROS 2.1.0</td>
-<td>ubuntu 20.04（Server）<br />ROS2 Foxy<br />TogetheROS 2.1.0</td>
-</tr>
-<tr>
-<td>其他配件</td>
-<td style="text-align: left;">唯一编号车牌贴纸<br />螺丝、铜柱、线缆、读卡器安装工具等</td>
-<td>唯一编号车牌贴纸<br />螺丝、铜柱、线缆、读卡器安装工具等</td>
-<td>唯一编号车牌贴纸<br />螺丝、铜柱、线缆、读卡器安装工具等</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_6"><strong>参与贡献</strong></h2>
-<p>诚挚邀请各位开发者可以参与到OriginBot项目当中来，参与的方式和形式有很多种：</p>
-<h3 id="_7"><strong>提供反馈</strong></h3>
+<h1 id="_1"><strong>相机驱动与图像可视化</strong></h1>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>操作环境及软硬件配置如下：</p>
 <ul>
-<li>
-<p>在使用OriginBot套件的过程中，如有任何问题或者建议，欢迎在<a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">古月居社区版块</a>提问讨论；</p>
-</li>
-<li>
-<p>在使用OriginBot软件的过程中，如有发现任何bug，欢迎在<a href="https://gitee.com/guyuehome/originbot" target="_blank">代码仓库</a>中提交Issue；</p>
-</li>
+<li>OriginBot机器人（Lite版/标准版/Pro版）</li>
+<li>PC：Ubuntu (≥22.04) + ROS2 (≥humble)</li>
 </ul>
-<h3 id="_8"><strong>贡献代码</strong></h3>
-<ul>
-<li>在使用OriginBot套件的过程中，如对原生代码有优化、增加等修改，欢迎在<a href="https://gitee.com/guyuehome/originbot" target="_blank">代码仓库</a>中提交Pull Request；</li>
-</ul>
-<h3 id="_9"><strong>开源传递</strong></h3>
-<ul>
-<li>
-<p>如果你对OriginBot有兴趣，欢迎点赞该项目的源码仓库，或者分享给身边有需要的开发者；</p>
-</li>
-<li>
-<p>如果基于OriginBot开源项目衍生出更多有意思的功能或者机器人，欢迎在<a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">社区板块</a>中与大家分享，优秀的项目我们也会在社区中宣传；</p>
-</li>
-</ul>
-<h2 id="_10"><strong>链接汇总</strong></h2>
-<ul>
-<li>
-<p>社区主站：<a href="https://www.originbot.org/" target="_blank">https://www.originbot.org</a></p>
-</li>
-<li>
-<p>开源仓库：</p>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>名称</th>
-<th>链接</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>originbot</td>
-<td><a href="https://gitee.com/guyuehome/originbot" target="_blank">https://gitee.com/guyuehome/originbot</a></td>
-<td>originbot机器人端功能包仓库</td>
-</tr>
-<tr>
-<td>originbot_desktop</td>
-<td><a href="https://gitee.com/guyuehome/originbot_desktop" target="_blank">https://gitee.com/guyuehome/originbot_desktop</a></td>
-<td>originbot电脑端功能包仓库</td>
-</tr>
-<tr>
-<td>originbot_controller</td>
-<td><a href="https://gitee.com/guyuehome/originbot_controller" target="_blank">https://gitee.com/guyuehome/originbot_controller</a></td>
-<td>originbot控制器源码仓库</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>
-<p>论坛交流：<a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">https://www.guyuehome.com/interlocution?id=1826932316801544194</a></p>
-</li>
-<li>
-<p>地瓜机器人开发者社区：<a href="https://developer.d-robotics.cc/" target="_blank">https://developer.d-robotics.cc/</a></p>
-</li>
-</ul>
-<p><img alt="交流群" src="assets/img/group.png" /></p>
-<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="assets/img/footer.png" /></a></p>
+</details>
+<p><iframe
+  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866105646&page=12&autoplay=0"
+  scrolling="no"
+  border="0"
+  width="800px"
+  height="460px"
+  frameborder="no"
+  framespacing="0"
+  allowfullscreen="true"
+>
+</iframe>
+</p>
+<h2 id="_2"><strong>相机驱动例程</strong></h2>
+<p>在OriginBot的系统镜像中，已经内置了相机的驱动程序，为了确定相机连接正确并且被系统识别，我们先来运行系统自带的相机例程。</p>
+<h3 id="_3"><strong>启动相机例程</strong></h3>
+<p>SSH连接OriginBot成功后，在终端中输入如下指令：</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M135.2 117.4 109.1 192h293.8l-26.1-74.6c-4.5-12.8-16.6-21.4-30.2-21.4H165.4c-13.6 0-25.7 8.6-30.2 21.4m-95.6 79.4L74.8 96.3C88.3 57.8 124.6 32 165.4 32h181.2c40.8 0 77.1 25.8 90.6 64.3l35.2 100.5c23.2 9.6 39.6 32.5 39.6 59.2v192c0 17.7-14.3 32-32 32h-32c-17.7 0-32-14.3-32-32v-48H96v48c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32V256c0-26.7 16.4-49.6 39.6-59.2M128 288a32 32 0 1 0-64 0 32 32 0 1 0 64 0m288 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64"/></svg></span> v2.x版本镜像</label><label for="__tabbed_1_2"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m5 11 1.5-4.5h11L19 11m-1.5 5a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5m-11 0A1.5 1.5 0 0 1 5 14.5 1.5 1.5 0 0 1 6.5 13 1.5 1.5 0 0 1 8 14.5 1.5 1.5 0 0 1 6.5 16M18.92 6c-.2-.58-.76-1-1.42-1h-11c-.66 0-1.22.42-1.42 1L3 12v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8z"/></svg></span> v1.x版本镜像</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/userdata/dev_ws
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera_websoket_display.launch.py
+</code></pre></div>
+<img alt="image-camera-websocket" class="img-fluid" src="../assets/img/camera_visualization/image-camera-websocket.png" tag="1" title="启动相机例程" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>在2.x版本中，已实现系统通过I2C自动识别相机型号，可自由在F37、GC4663等型号切换设备。</p>
+</details>
+</div>
+<div class="tabbed-block">
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>websocket<span class="w"> </span>hobot_websocket.launch.py
+</code></pre></div>
+<img alt="image-20220822150144760" class="img-fluid" src="../assets/img/teleoperation/image-20220822150144760.png" tag="1" title="启动相机例程" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>如果运行失败，请确认“/opt/tros/share/websocket/launch/hobot_websocket.launch.py”路径中的相机型号是“GC4663”，如果不是（可能由于系统更新被覆盖），请修改后重新运行。    <img alt="img" src="../assets/img/camera_visualization/20220812091950.png" /></p>
+</details>
+</div>
+</div>
+</div>
+<h3 id="_4"><strong>上位机查看例程效果</strong></h3>
+<p>运行成功后，在同一网络的PC端，打开浏览器，输入 http://IP:8000，选择“web展示端”，即可查看图像和算法效果，IP为OriginBot的IP地址。</p>
+<p><img alt="image-20220822150213359" src="../assets/img/camera_visualization/imgae-ip-address.jpg" /></p>
+<p>如相机被顺利驱动，我们不仅可以看到实时图像，还可以看到一个人体骨骼点识别的示例，说明相机运行正常。</p>
+<p><img alt="img" class="img-fluid" src="../assets/img/camera_visualization/camera_websocket_tros2x.png" tag="1" title="相机例程可视化效果" /></p>
+<h3 id="_5"><strong>关闭例程</strong></h3>
+<p>该例程运行完毕后，请使用Ctrl+C关闭终端中运行的launch文件，释放摄像头硬件资源，便于后续例程使用，否则可能会出现相机设备无法找到的问题：</p>
+<p><img alt="image-20221020105602357" class="img-fluid" src="../assets/img/camera_visualization/image-20221020105602357.png" tag="1" title="之前例程没有释放相机硬件资源" /></p>
+<h2 id="ros"><strong>ROS图像传输</strong></h2>
+<p>确认之前的相机例程已经关闭，接下来可以测试ROS2环境下的图像订阅与发布。</p>
+<h3 id="ros_1"><strong>启动ROS相机驱动</strong></h3>
+<p>SSH连接OriginBot成功后，在终端中输入如下指令：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CYCLONEDDS_URI</span><span class="o">=</span><span class="s1">&#39;&lt;CycloneDDS&gt;&lt;Domain&gt;&lt;General&gt;&lt;NetworkInterfaceAddress&gt;wlan0&lt;/NetworkInterfaceAddress&gt;&lt;/General&gt;&lt;/Domain&gt;&lt;/CycloneDDS&gt;&#39;</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera.launch.py
+</code></pre></div>
+<p><img alt="2022-09-26_12-45" class="img-fluid" src="../assets/img/camera_visualization/2022-09-26_12-45.png" tag="2" title="配置cyclonedds" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>为了保证图像的实时性，这里我们将使用的DDS切换为cyclonedds，避免因为DDS的切片，导致图像延迟。cyclonedds默认会绑定某一网卡进行数据传输，此处我们使用第二句命令指定无线网卡wlan0作为绑定官网卡，大家可以根据实际情况，进行切换。更多信息，也可以参考<a href="#DDS的配置">DDS的配置</a>。</p>
+</details>
+<h3 id="_6"><strong>查看相机话题</strong></h3>
+<p>运行成功后，可在机器人端或同网络下的PC端使用如下命令，确认图像话题已经正常发布。</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ros2<span class="w"> </span>topic<span class="w"> </span>list
+</code></pre></div>
+<img alt="image-20220922172506701" src="../assets/img/camera_visualization/image-20220922172506701.png" /></p>
+<h3 id="_7"><strong>查看可视化图像</strong></h3>
+<p>在同一网络中的PC端，同样配置好使用的DDS，再使用rqt_image_view工具，就可以看到机器人的实时相机图像了。
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CYCLONEDDS_URI</span><span class="o">=</span><span class="s1">&#39;&lt;CycloneDDS&gt;&lt;Domain&gt;&lt;General&gt;&lt;NetworkInterfaceAddress&gt;ens33&lt;/NetworkInterfaceAddress&gt;&lt;/General&gt;&lt;/Domain&gt;&lt;/CycloneDDS&gt;&#39;</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>ros2<span class="w"> </span>run<span class="w"> </span>rqt_image_view<span class="w"> </span>rqt_image_view
+</code></pre></div></p>
+<p><img alt="2022-09-26_12-48_1" class="img-fluid" src="../assets/img/camera_visualization/2022-09-26_12-48_1.png" tag="3" title="配置cyclonedds" /></p>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>此处我们使用第二句命令指定无线网卡ens33作为绑定官网卡，该名称和电脑系统相关，可以使用ifconfig查询，大家可以根据实际情况，进行切换。更多信息，也可以参考<a href="#DDS的配置">DDS的配置</a>。</p>
+</details>
+<p><img alt="2022-09-26_12-48" class="img-fluid" src="../assets/img/camera_visualization/Clip_2024-09-14_17-45-53.png" tag="3" title="可视化图像" /></p>
+<h2 id="dds"><span id="DDS的配置"><strong>附：DDS的配置</strong></span ></h2>
+<p>ROS2 Foxy默认使用的是fastdds，在图像传输的场景下，会受到限制，此时我们可以切换为cyclonedds。</p>
+<h3 id="dds_1"><strong>DDS的安装</strong></h3>
+<p>cyclonedds在OriginBot的镜像中已经配置好，如果想在电脑端配置的话，可以使用如下命令安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-<span class="si">${</span><span class="nv">ROS_DISTRO</span><span class="si">}</span>-rmw-cyclonedds-cpp
+</code></pre></div>
+<h3 id="dds_2"><strong>DDS的切换</strong></h3>
+<p>在运行指令的终端中，使用如下指令设置DDS的环境变量，即可切换当前终端所使用的DDS：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+</code></pre></div>
+<p>cyclonedds默认会绑定某一网卡进行数据传输，如果需要切换绑定的网卡，可以继续在该终端中输入：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CYCLONEDDS_URI</span><span class="o">=</span><span class="s1">&#39;&lt;CycloneDDS&gt;&lt;Domain&gt;&lt;General&gt;&lt;NetworkInterfaceAddress&gt;wlan0&lt;/NetworkInterfaceAddress&gt;&lt;/General&gt;&lt;/Domain&gt;&lt;/CycloneDDS&gt;&#39;</span>
+</code></pre></div>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>中间的参数就是绑定网卡的名字，按照实际需要，修改为eth0、wlan0，或者实际的网卡设备号。参考链接：http://www.robotandchisel.com/2020/08/12/cyclonedds/</p>
+</details>
+<p>使用如下指令，可以查看当前终端的所使用的DDS是否切换成功：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ros2<span class="w"> </span>doctor<span class="w"> </span>--report<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>middleware
+</code></pre></div>
+<p><img alt="image-20220822150437167" class="img-fluid" src="../assets/img/camera_visualization/image-20220822150437167.png" tag="4" title="查看dds" /></p>
+<p>确定切换成功后，即可在当前终端中运行发布数据的节点了，比如相机发布者节点：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera.launch.py
+</code></pre></div>
+<p>在运行的终端中，可以看到当前fastdds所绑定发布数据的网卡。</p>
+<p><img alt="image-20220922172647142" class="img-fluid" src="../assets/img/camera_visualization/image-20220922172647142.png" tag="4" title="运行数据通信节点" /></p>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../assets/img/footer.png" /></a></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -2286,20 +2180,20 @@ OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的�
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="assets/js/baidu-tongji.js"></script>
+        <script src="../assets/js/baidu-tongji.js"></script>
       
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       
-        <script src="assets/js/simpleLightbox.min.js"></script>
+        <script src="../assets/js/simpleLightbox.min.js"></script>
       
-        <script src="assets/js/extensions.js"></script>
+        <script src="../assets/js/extensions.js"></script>
       
-        <script src="assets/js/custom.js"></script>
+        <script src="../assets/js/custom.js"></script>
       
     
   </body>

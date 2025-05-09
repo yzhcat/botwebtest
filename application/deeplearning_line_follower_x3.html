@@ -1,0 +1,2341 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="OriginBot智能机器人开源套件·古月居">
+      
+      
+      
+        <link rel="canonical" href="https://www.guyuehome.com/application/deeplearning_line_follower_x3.html">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
+    
+    
+      
+        <title>视觉巡线（AI深度学习）X3 - OriginBot智能机器人开源套件</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/css/extensions.css">
+    
+      <link rel="stylesheet" href="../assets/css/simpleLightbox.min.css">
+    
+      <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#aix3" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../assets/img/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OriginBot智能机器人开源套件
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              视觉巡线（AI深度学习）X3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../en/application/deeplearning_line_follower_x3.html" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="deeplearning_line_follower_x3.html" hreflang="zh" class="md-select__link">
+              简体中文
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://gitee.com/guyuehome/originbot" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+      
+  <img src="../assets/img/favicon.png" alt="logo">
+
+    </a>
+    OriginBot智能机器人开源套件
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://gitee.com/guyuehome/originbot" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    originbot
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/quick_guide.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用指引
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    套件资料
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            套件资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material/material_list.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    套件清单
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material/open_source_link.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料链接
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material/hardware_interface.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    接口说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../material/common_software.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常用软件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/hardware_setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    硬件组装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    软件配置
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            软件配置
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/image_install.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    镜像安装与备份
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/firmware_install.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    控制器固件安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/pc_config.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电脑端环境配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guide/easy_start.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    快速上手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    基础使用
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            基础使用
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/ide_setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    搭建开发环境
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/package_develop.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    代码开发方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/originbot_bringup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人启动与参数配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/teleoperation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人遥控与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/camera_visualization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    相机驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/lidar_visualization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    雷达驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/imu_visualization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    IMU驱动与可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/parameter_config.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人参数动态监控
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/odom_calibration.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人里程计校准
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/originbot_charging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人充电方法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/protocol_description.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    通信协议说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/hmi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    上位机控制说明
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/originbot_freertos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    实时操作系统RTOS配置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/ekf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    EKF多传感器融合定位
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../manual/webviz.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WebViz可视化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    应用功能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            应用功能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="basic_program.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    基础功能编程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gazebo_simulation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gazebo虚拟仿真
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gazebo_slam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="slam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SLAM地图构建
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gazebo_navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="navigation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    自主导航
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="body_detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    人体跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gesture_control.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    手势控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="cv_line_follower.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(OpenCV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="deeplearning_line_follower.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="gazebo_line_follower.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视觉巡线(Gazebo)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="parking_search.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车位寻找(AI深度学习)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="play_football.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    踢球射门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tracking.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    轨迹跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="take_pictures.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    图像获取
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="qrcode_detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    二维码识别与跟踪
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="vlpr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    车牌识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mobilesam.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    分割一切
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course/courses.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教学课程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/reference.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参考资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/third_party_kits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更多套件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    更多内容
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            更多内容
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/contributing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参与贡献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../reference/changelog.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更新日志
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    社区交流
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    关于我们
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      应用目标
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      原理简介
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="原理简介">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      深度学习流程
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      视觉巡线流程
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      运行方法
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="运行方法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      场景说明
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动视觉巡线
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动机器人
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI深度学习
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AI深度学习">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pc" class="md-nav__link">
+    <span class="md-ellipsis">
+      PC端环境配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PC端环境配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pytorch" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装pytorch
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装Docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      相关功能包介绍
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据采集与标注
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数据采集与标注">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#originbot" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动OriginBot相机
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动数据采集与标注程序
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      数据采集与标注
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型训练
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型训练">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型选择
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型训练
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型转换
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型转换">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#onnx" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成onnx模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aidocker" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动AI工具链docker
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成校准数据
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型编译生成定点模型
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型部署
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="模型部署">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      模型部署
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动相机
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动机器人
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="aix3"><strong>视觉巡线（AI深度学习）X3</strong></h1>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>操作环境及软硬件配置如下：</p>
+<ul>
+<li>OriginBot机器人（Lite版/标准版）</li>
+<li>PC：Ubuntu (≥22.04) + ROS2 (≥humble) + pytorch + docker</li>
+<li>巡线场景：黑色路径线，背景有明显反差</li>
+</ul>
+</details>
+<h2 id="_1"><strong>应用目标</strong></h2>
+<p>在<a href="cv_line_follower.html" target="_blank">视觉巡线（OpenCV）</a>中，我们已经可以让小车跟随黑色的路径线运动，实现了最基础的视觉巡线任务，不过大家可能已经发现，基于OpenCV的图像识别受光线影响较大，更换场地后，就需要重新调整阈值，有没有可能让机器人自主适应环境的变化呢？也就是让机器人自己来学习。</p>
+<p><img alt="deeplearning_follow_line" src="../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p>没问题，深度学习大家一定都听说过，使用这种方法，我们就可以实现数据驱动化的视觉巡线效果，需要适应什么样的场地，只需要采集一些图片数据，就可以啦，接下来我们就来尝试一下。</p>
+<h2 id="_2"><strong>原理简介</strong></h2>
+<h3 id="_3"><strong>深度学习流程</strong></h3>
+<p>相比传统图像处理，深度学习能够让机器视觉适应更多的变化，从而提高复杂环境下的精确程度。在正式开始之前，我们先简单介绍下深度学习的基本流程。</p>
+<p><img alt="image-20220915112906511" class="img-fluid" src="../assets/img/deeplearning_line_follower/image-20220915112906511.png" tag="1" /></p>
+<p>机器学习的核心目的是要帮助我们解决问题，可以分为六个主要步骤：</p>
+<ul>
+<li><strong>问题定义</strong>：我们要解决的问题是什么？比如这里的视觉巡线，那就要识别线在图像中的位置。</li>
+<li><strong>数据准备</strong>：针对要解决的问题，着手准备数据。比如要准备各种巡线场景的照片，给机器学习使用。</li>
+<li><strong>模型选择/开发</strong>：模型就是处理数据的一套流程，也就是我们常听说的CNN卷积神经网络、GAN生成对抗网络、RNN循环神经网络等等。</li>
+<li><strong>模型训练与调优</strong>：把数据放入模型中，训练得到最优化的参数，可以理解为是机器在学习的过程。</li>
+<li><strong>模型评估测试</strong>：就像小测验一样，我们拿一些数据给训练好的模型，看下效果如何。</li>
+<li><strong>部署</strong>：一切准备就绪之后，就可以把训练好的模型放到机器人上了，也就是正式把知识传授给某一个机器人，它就可以解决之前提出的问题啦。</li>
+</ul>
+<h3 id="_4"><strong>视觉巡线流程</strong></h3>
+<p><img alt="deeplearning_struct" class="img-fluid" src="../assets/img/deeplearning_line_follower/deeplearning_struct.jpg" tag="1" /></p>
+<p>OriginBot具有两个主动轮，一个从动轮，通过两个主动轮差速进行旋转控制。其中MCU模块主要用于小车的电机运动控制通过串口与主控RDK X3进行通信。主控制器选用地瓜RDK X3，具备10T算力，能够轻松处理复杂的CNN推理工作。</p>
+<p>整套系统如上图所示，RDK X3通过摄像头获取小车前方环境数据，图像数据通过训练好的CNN模型进行推理得到引导线的坐标值，然后依据一定的控制策略计算小车的运动方式，通过UART向小车下发运动控制指令实现整个系统的闭环控制。</p>
+<p>PC用于进行数据标注以及训练,为了提高效率这里采用RDK X3将图片通过以太网发送至PC端进行标注的方式。</p>
+<h2 id="_5"><strong>运行方法</strong></h2>
+<h3 id="_6"><strong>场景说明</strong></h3>
+<p>在OriginBot的应用代码中，我们已经为大家训练好了一套巡线的模型，使用的场景如下：</p>
+<p><img alt="0d09ef8f7eaeb842f4a4b6d67c2d07f" class="img-fluid" src="../assets/img/deeplearning_line_follower/0d09ef8f7eaeb842f4a4b6d67c2d07f.jpg" tag="1" /></p>
+<p>如果大家身边也有类似的环境，可以暂时跳过以上提到的机器学习步骤，直接进入部署环节，我们先来试一试使用深度学习的视觉巡线效果如何吧。</p>
+<h3 id="_7"><strong>启动视觉巡线</strong></h3>
+<p>先将OriginBot放置到巡线的场景中，尽量向下调节相机角度，避免外界干扰。</p>
+<p><img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../assets/img/deeplearning_line_follower/e15c780e42a2fc9bb4895f6425a9275.jpg" tag="1" /></p>
+<p>接下来启动巡线功能，注意命令后需要跟模型路径和名称的参数：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>/userdata/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_perception<span class="w"> </span>line_follower_perception<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>model_path:<span class="o">=</span>model/resnet18_224x224_nv12.bin<span class="w"> </span>-p<span class="w"> </span>model_name:<span class="o">=</span>resnet18_224x224_nv12
+</code></pre></div>
+<img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-28.png" tag="1" /></p>
+<h3 id="_8"><strong>启动机器人</strong></h3>
+<p>SSH连接OriginBot成功后，在终端中输入如下指令，启动机器人底盘和相机：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera_internal.launch.py
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>originbot.launch.py
+</code></pre></div>
+<p>相机启动成功后，就可以在巡线终端中看到动态识别的路径线位置了：</p>
+<p><img alt="image-20220822151357113" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-30.png" tag="1" /></p>
+<p>运行后稍等片刻，就可以看到机器人开始巡线运动啦。</p>
+<p><img alt="deeplearning_follow_line" src="../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p>深度学习是基于数据的，机器人在数据中见过的场景，才能学会，如果没见过的，识别效果就不太好了，所以如果大家使用巡线颜色、周边环境差别较大，还是需要尽量多采集一些数据，让机器人都可以学会，完整的深度学习流程可以参考如下内容。</p>
+<h2 id="ai"><strong>AI深度学习</strong></h2>
+<p><img alt="deeplearning_flow" class="img-fluid" src="../assets/img/deeplearning_line_follower/deeplearning_flow.jpg" tag="1" /></p>
+<p>接下来的深度学习操作主要分为以上几个步骤，在操作之前，还需要完成PC端环境的配置，我们一起来体验下深度学习吧。</p>
+<h3 id="pc"><strong>PC端环境配置</strong></h3>
+<p>PC端的基础环境是Ubuntu+ROS+pytorch+docker，请大家先按照<a href="../guide/pc_config.html" target="_blank">电脑端环境配置</a>完成Ubuntu、ROS、OriginBot功能包的配置。</p>
+<h4 id="pytorch"><strong>安装pytorch</strong></h4>
+<p>训练框架选用pytorch，大家可以在PC端的Ubuntu系统中，直接使用如下命令进行安装：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+</code></pre></div>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>为了保证通用性，这里安装的是CPU版本的pytorch，若硬件上有GPU，也可选用GPU版本pytorch，训练速度更快。</p>
+</details>
+<h4 id="docker"><strong>安装Docker</strong></h4>
+<p>后续模型转换需要用到Docker，以节省环境配置的时间，需要大家先进行安装，并下载模型转换使用的镜像。</p>
+<p>ubuntu环境下docker的安装可以参考如下网站或网上资料完成：</p>
+<p><a href="https://www.runoob.com/docker/ubuntu-docker-install.html" target="_blank">Ubuntu Docker 安装</a></p>
+<p>安装完成后，就可以通过如下命令，下载后续模型转换的工具链和docker镜像啦。</p>
+<ul>
+<li>下载AI工具链OE包（6.1GB）</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>wget<span class="w"> </span>-c<span class="w"> </span>ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.3.3/horizon_xj3_open_explorer_v2.3.3_20220727.tar.gz
+</code></pre></div>
+<ul>
+<li>下载AI工具链docker（14.8GB）</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>wget<span class="w"> </span>-c<span class="w"> </span>ftp://vrftp.horizon.ai/Open_Explorer_gcc_9.3.0/2.3.3/x3pi_toolchain/ai_toolchain_2.3.3.tar.gz
+</code></pre></div>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>以上docker镜像的体积较大，请保证网络通畅，耐心等待。</p>
+</details>
+<h4 id="_9"><strong>相关功能包介绍</strong></h4>
+<p>在深度学习的整个流程中，我们将用到三个直接相关的功能包/文件夹：</p>
+<ul>
+<li>
+<p><strong>10_model_convert</strong>：用来存放浮点模型转定点模型相关代码和配置，该文件夹内容全部需要在AI工具链docker中运行；</p>
+</li>
+<li>
+<p><strong>line_follower_model</strong>：用来存放模型训练相关内容，如数据标注、模型训练、以及生成onnx模型，该文件夹内容全部在PC上运行；</p>
+</li>
+<li>
+<p><strong>line_follower_perception</strong>：用来存放RDK X3上运行的代码，可以在板端编译或者通过交叉编译方式生成RDK X3上运行的package。</p>
+</li>
+</ul>
+<p>其中，10_model_convert和line_follower_model两个包放置在<a href="https://gitee.com/guyuehome/originbot_desktop" target="_blank">originbot_desktop代码仓库</a>中，line_follower_perception放置在<a href="https://gitee.com/guyuehome/originbot" target="_blank">originbot代码仓库</a>中。</p>
+<p>环境准备好之后，我们就可以着手开始啦。</p>
+<h3 id="_10"><strong>数据采集与标注</strong></h3>
+<p>数据是深度学习的基础，我们先要完成数据的采集和标注，这个过程主要在PC端完成，需要订阅OriginBot机器人端的实时图像，主要流程如下：</p>
+<p><img alt="data_flow" class="img-fluid" src="../assets/img/deeplearning_line_follower/data_flow.jpg" tag="1" /></p>
+<p>（1）启动OriginBot相机，采集巡线场景的图像，发布图像话题image_raw；</p>
+<p>（2）PC端订阅OriginBot发布的图像话题，获取图像数据；</p>
+<p>（3）PC端对图像进行剪裁，并且人工完成每一幅图像中路径线的标注；</p>
+<p>（4）保存标注结果和对应的图像。</p>
+<h4 id="originbot"><strong>启动OriginBot相机</strong></h4>
+<p>SSH连接OriginBot成功后，在终端中输入如下指令，启动OriginBot的相机：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera.launch.py
+</code></pre></div>
+<p><img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-42.png" tag="1" /></p>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>数据采集过程可以人为摆放机器人的姿态，不启动机器人底盘，单独启动相机即可。</p>
+</details>
+<h4 id="_11"><strong>启动数据采集与标注程序</strong></h4>
+<p>在PC端，通过如下指令，启动line_follower_model包中的数据采集与标注程序，</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RMW_IMPLEMENTATION</span><span class="o">=</span>rmw_cyclonedds_cpp
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>annotation
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-42_1.png" tag="1" /></p>
+<p>为保证通信的流畅，以上使用cyclonedds，配置之后，cyclonedds会自动绑定某一网卡，如果通信网卡不对的话，可使用如下命令更换：
+​    </p>
+<div class="highlight"><pre><span></span><code> export CYCLONEDDS_URI=&#39;&lt;CycloneDDS&gt;&lt;Domain&gt;&lt;General&gt;&lt;NetworkInterfaceAddress&gt;wlan0&lt;/NetworkInterfaceAddress&gt;&lt;/General&gt;&lt;/Domain&gt;&lt;/CycloneDDS&gt;&#39;
+</code></pre></div>
+<h4 id="_12"><strong>数据采集与标注</strong></h4>
+<p>启动成功后，按下键盘上回车键，程序会订阅最新图像话题，剪裁后通过一个可视化窗口显示出来，数据采集成功：</p>
+<p><img alt="8057f0fb-9925-4b20-b12c-64574956e92a" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-47.png" tag="1" /></p>
+<p>用鼠标左键点击画面垂直方向上路径线的中心处，即完成该帧图像数据的标注：</p>
+<p><img alt="87b8418b-cbc0-48c9-ba0f-3187e364bc64" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-47_1.png" tag="1" /></p>
+<p>按下回车键，程序自动保存该图片至当前路径下的image_dataset文件夹中，并且保存标记结果。图片命名方式为：</p>
+<blockquote>
+<p>xy_[x坐标]<em>[y坐标]</em>[uuid].jpg</p>
+</blockquote>
+<p>其中uuid为图片唯一标志符，避免出现文件名称相同。</p>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>若点击不准确可以多次鼠标左键点击，直到满意为止。如果没有点击标注，回车后会跳过该帧图像，不会放入数据集。</p>
+</details>
+<p><img alt="20220915183911" class="img-fluid" src="../assets/img/deeplearning_line_follower/20220915183911.jpg" tag="1" /></p>
+<p>不断调整机器人的在场景中的位置，考虑各种可能出现的图像效果，循环完成以上数据采集和标注过程，采集足够数量的数据，建议至少100张，用于后续模型训练。当环境或者场地变化时也可采集对应的图片一起训练提高模型的适应性。</p>
+<p><img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_22-19.png" tag="1" /></p>
+<h3 id="_13"><strong>模型训练</strong></h3>
+<h4 id="_14"><strong>模型选择</strong></h4>
+<p>卷积神经网络（Convolutional Neural Network, CNN）是一种目前广泛用于图像，自然语言处理等领域的深度神经网络模型。1998 年，Lecun 等人提出了一种基于梯度的反向传播算法用于文档的识别。在这个神经网络中，卷积层 (Convolutional Layer) 扮演着至关重要的角色。随着运算能力的不断增强，一些大型的 CNN 网络开始在图像领域中展现出巨大的优势，2012 年Krizhevsky等人提出了AlexNet网络结构，并在ImageNet图像分类竞赛中以超过之前11%的优势取得了冠军。随后不同的学者提出了一系列的网络结构并不断刷新ImageNet的成绩，其中比较经典的网络包括：VGG(Visual Geometry Group) ，GoogLeNet和ResNet。卷积神经网络由输入层、卷积层、池化层、全连接层以及输出层组成，其结构如下：</p>
+<p><img alt="fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5" class="img-fluid" src="../assets/img/deeplearning_line_follower/fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5.png" tag="1" /></p>
+<p>综合考虑模型成熟度、训练模型对CPU/GPU的硬件要求，这里选择ResNet网络作为backbone。残差神经网络（ResNet）是由微软研究院的何恺明、张祥雨、任少卿、孙剑等人提出，在2015 年的ILSVRC（ImageNet Large Scale Visual Recognition Challenge）中取得了冠军。ResNet巧妙地利用了shortcut连接，解决了深度网络中模型退化的问题，是当前应用最为广泛的CNN特征提取网络之一。ResNet18结构如下：</p>
+<p><img alt="8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf" class="img-fluid" src="../assets/img/deeplearning_line_follower/8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf.png" tag="1" /></p>
+<p>在RDK X3上ResNet18推理性能高达232FPS，ResNet50推理性能也超过100FPS，高帧率保证了数据处理的实时性，是后续提高车速以及实现更复杂应用的必要条件。这里先使用ResNet18网络结构，后期遇到瓶颈考虑更深的ResNet50网络结构。为了满足输出引导线坐标值x，y这里需要修改ResNet18网络FC输出为2，即直接输出引导线的x，y坐标值。ResNet18输入分辨率为224x224。</p>
+<h4 id="_15"><strong>模型训练</strong></h4>
+<p>以上提到的模型可以直接复用pytorch中的定义，数据集的切分和模型的训练，都封装在line_follower_model功能包的代码中。</p>
+<p><img alt="model_traning" class="img-fluid" src="../assets/img/deeplearning_line_follower/model_traning.jpg" tag="1" /></p>
+<p>直接在PC端，运行如下指令，即可开始训练：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>training
+</code></pre></div>
+<p><img alt="model_traning" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-33.png" tag="1" /></p>
+<p>模型训练过程需要一段时间，预计在30分钟左右，请大家耐心等待。</p>
+<p>训练完成后，会产生模型文件。
+<img alt="model_traning" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-49.png" tag="1" /></p>
+<h3 id="_16"><strong>模型转换</strong></h3>
+<p>pytorch训练得到的浮点模型如果直接运行在RDK X3上效率会很低，为了提高运行效率，发挥BPU的5T算力，这里需要进行浮点模型转定点模型操作。</p>
+<p><img alt="model_transform" class="img-fluid" src="../assets/img/deeplearning_line_follower/model_transform.jpg" tag="1" /></p>
+<h4 id="onnx"><strong>生成onnx模型</strong></h4>
+<p>在PC端，通过如下命令，使用generate_onnx将之前训练好的模型，转换成onnx模型：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>~/dev_ws/src/originbot_desktop/originbot_deeplearning/line_follower_model
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_model<span class="w"> </span>generate_onnx
+</code></pre></div>
+<img alt="model_transform" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-16_15-33.png" tag="1" /></p>
+<p>运行后在当前目录下得到生成的best_line_follower_model_xy.onnx模型。
+<img alt="model_transform" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-51.png" tag="1" /></p>
+<h4 id="aidocker"><strong>启动AI工具链docker</strong></h4>
+<p>解压缩之前下载好的AI工具链的docker镜像和OE包，并将docker镜像解压出来的数据文件都拷贝到OE包中的data文件夹下。
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-17.png" tag="1" />
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-17_1.png" tag="1" /></p>
+<p>将originbot_desktop代码仓库中的10_model_convert包拷贝到至OE开发包ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/目录下。
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-23.png" tag="1" /></p>
+<p>再把line_follower_model功能包下标注好的数据集文件夹和生成的onnx模型拷贝到以上10_model_convert包中：
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-16_17-20.png" tag="1" /></p>
+<p>然后回到OE包的根目录下，加载AI工具链的docker镜像：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>sh<span class="w"> </span>run_docker.sh<span class="w"> </span>/data/
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_17-20.png" tag="1" /></p>
+<h4 id="_17"><strong>生成校准数据</strong></h4>
+<p>该步骤生成的校准数据主要供下一步模型编译进行校准用，可以使用训练模型的部分数据，没有特殊要求，只要确保标准正确即可，数量以100张左右为宜，上一步我们已经将数据集拷贝完成。</p>
+<p>在启动的Docker镜像中，完成如下操作：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/10_model_convert/mapper
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>sh<span class="w"> </span>02_preprocess.sh
+</code></pre></div>
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-16_17-24.png" tag="1" /></p>
+<h4 id="_18"><strong>模型编译生成定点模型</strong></h4>
+<p>该步骤将生成定点模型文件，用于后续在机器人上的部署：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">cd</span><span class="w"> </span>ddk/samples/ai_toolchain/horizon_model_convert_sample/03_classification/10_model_convert/mapper
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>sh<span class="w"> </span>03_build.sh
+</code></pre></div>
+<p><img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-16_17-25.png" tag="1" /></p>
+<p>编译成功后，会在10_model_output路径下生成最终的模型文件。
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-16_17-27.png" tag="1" /></p>
+<p>我们可以右键拷贝模型文件，放到line_follower_model功能包里，以备后续部署使用。
+<img alt="image" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_18-15.png" tag="1" /></p>
+<h3 id="_19"><strong>模型部署</strong></h3>
+<p>通过前面模型转换已经得到可以在RDK X3BPU上运行的定点模型，如何将其部署在RDK X3上，实现图像获取、模型推理、运动控制整套功能呢？这里基于TogetheROS中的Hobot DNN实现。Hobot DNN是TogetheROS软件栈中的板端算法推理框架，在地瓜RDK X3上利用BPU处理器实现AI推理功能，为机器人应用开发提供更简单易用的模型集成开发接口，包括模型管理、基于模型描述的输入处理及结果解析，以及模型输出内存分配管理等功能。</p>
+<h4 id="_20"><strong>模型部署</strong></h4>
+<p>将编译生成的定点模型resnet18_224x224_nv12.bin，拷贝到OriginBot端line_follower_perception功能包下的model文件夹中，替换原有的模型，并且重新编译工作空间。</p>
+<p>编译完成后，就可以通过如下命令部署模型，其中参数model_path和model_name指定模型的路径和名称：</p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nb">cd</span><span class="w"> </span>/userdata/dev_ws/src/originbot/originbot_deeplearning/line_follower_perception/
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>line_follower_perception<span class="w"> </span>line_follower_perception<span class="w"> </span>--ros-args<span class="w"> </span>-p<span class="w"> </span>model_path:<span class="o">=</span>model/resnet18_224x224_nv12.bin<span class="w"> </span>-p<span class="w"> </span>model_name:<span class="o">=</span>resnet18_224x224_nv12
+</code></pre></div>
+<img alt="e15c780e42a2fc9bb4895f6425a9275" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-28.png" tag="1" /></p>
+<h4 id="_21"><strong>启动相机</strong></h4>
+<p>先将OriginBot放置到巡线的场景中。</p>
+<p>通过如下命令，启动零拷贝模式下的摄像头驱动，加速内部的图像处理效率：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>camera_internal.launch.py
+</code></pre></div>
+<p>相机启动成功后，就可以在巡线终端中看到动态识别的路径线位置了：</p>
+<p><img alt="image-20220822151357113" class="img-fluid" src="../assets/img/deeplearning_line_follower/2022-09-15_21-30.png" tag="1" /></p>
+<h4 id="_22"><strong>启动机器人</strong></h4>
+<p>最后，再启动OriginBot底盘，机器人就可以自主寻线运动啦：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>originbot.launch.py
+</code></pre></div>
+<p><img alt="deeplearning_follow_line" src="../assets/img/deeplearning_line_follower/deeplearning_follow_line.gif" /></p>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../assets/img/footer.png" /></a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2021 古月居 鄂ICP备18024451号-2
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="../assets/js/baidu-tongji.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      
+        <script src="../assets/js/simpleLightbox.min.js"></script>
+      
+        <script src="../assets/js/extensions.js"></script>
+      
+        <script src="../assets/js/custom.js"></script>
+      
+    
+  </body>
+</html>

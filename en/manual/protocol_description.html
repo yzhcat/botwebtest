@@ -10,26 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://www.guyuehome.com/en/index.html">
+        <link rel="canonical" href="https://www.guyuehome.com/en/manual/protocol_description.html">
       
       
+        <link rel="prev" href="odom_calibration.html">
       
-        <link rel="next" href="guide/quick_guide.html">
+      
+        <link rel="next" href="hmi.html">
       
       
-      <link rel="icon" href="../assets/img/favicon.png">
+      <link rel="icon" href="../../assets/img/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.11">
     
     
       
-        <title>Project Home - OriginBot智能机器人开源套件</title>
+        <title>Communication Protocol Description - OriginBot智能机器人开源套件</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4af4bdda.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,13 +50,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/css/extensions.css">
+      <link rel="stylesheet" href="../../assets/css/extensions.css">
     
-      <link rel="stylesheet" href="../assets/css/simpleLightbox.min.css">
+      <link rel="stylesheet" href="../../assets/css/simpleLightbox.min.css">
     
-      <link rel="stylesheet" href="../assets/css/custom.css">
+      <link rel="stylesheet" href="../../assets/css/custom.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -80,7 +82,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#originbot-intelligent-robot-open-source-kit" class="md-skip">
+        <a href="#communication-protocol-description" class="md-skip">
           Skip to content
         </a>
       
@@ -96,9 +98,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-header__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
       
-  <img src="../assets/img/favicon.png" alt="logo">
+  <img src="../../assets/img/favicon.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project Home
+              Communication Protocol Description
             
           </span>
         </div>
@@ -162,13 +164,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="index.html" hreflang="en" class="md-select__link">
+            <a href="protocol_description.html" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="../index.html" hreflang="zh" class="md-select__link">
+            <a href="../../manual/protocol_description.html" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
@@ -257,9 +259,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
+    <a href="../index.html" title="OriginBot智能机器人开源套件" class="md-nav__button md-logo" aria-label="OriginBot智能机器人开源套件" data-md-component="logo">
       
-  <img src="../assets/img/favicon.png" alt="logo">
+  <img src="../../assets/img/favicon.png" alt="logo">
 
     </a>
     OriginBot智能机器人开源套件
@@ -283,32 +285,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Project Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -319,137 +299,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#originbot" class="md-nav__link">
-    <span class="md-ellipsis">
-      OriginBot
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="OriginBot">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#open-source-collaboration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open-Source Collaboration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#full-stack-development" class="md-nav__link">
-    <span class="md-ellipsis">
-      Full-Stack Development
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#smart-applications" class="md-nav__link">
-    <span class="md-ellipsis">
-      Smart Applications
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#born-from-passion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Born from Passion
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuration Parameters
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Contribute">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#provide-feedback" class="md-nav__link">
-    <span class="md-ellipsis">
-      Provide Feedback
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#contribute-code" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute Code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#open-source-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open-Source Sharing
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#link-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Link Summary
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -461,7 +310,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/quick_guide.html" class="md-nav__link">
+      <a href="../guide/quick_guide.html" class="md-nav__link">
         
   
   
@@ -521,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/material_list.html" class="md-nav__link">
+      <a href="../material/material_list.html" class="md-nav__link">
         
   
   
@@ -544,7 +393,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/open_source_link.html" class="md-nav__link">
+      <a href="../material/open_source_link.html" class="md-nav__link">
         
   
   
@@ -567,7 +416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material/common_software.html" class="md-nav__link">
+      <a href="../material/common_software.html" class="md-nav__link">
         
   
   
@@ -597,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/hardware_setup.html" class="md-nav__link">
+      <a href="../guide/hardware_setup.html" class="md-nav__link">
         
   
   
@@ -657,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/image_install.html" class="md-nav__link">
+      <a href="../guide/image_install.html" class="md-nav__link">
         
   
   
@@ -680,7 +529,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/firmware_install.html" class="md-nav__link">
+      <a href="../guide/firmware_install.html" class="md-nav__link">
         
   
   
@@ -703,7 +552,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/pc_config.html" class="md-nav__link">
+      <a href="../guide/pc_config.html" class="md-nav__link">
         
   
   
@@ -733,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guide/easy_start.html" class="md-nav__link">
+      <a href="../guide/easy_start.html" class="md-nav__link">
         
   
   
@@ -752,18 +601,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -779,7 +630,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Basic Usage
@@ -793,7 +644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_charging.html" class="md-nav__link">
+      <a href="originbot_charging.html" class="md-nav__link">
         
   
   
@@ -816,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/ide_setup.html" class="md-nav__link">
+      <a href="ide_setup.html" class="md-nav__link">
         
   
   
@@ -839,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/package_develop.html" class="md-nav__link">
+      <a href="package_develop.html" class="md-nav__link">
         
   
   
@@ -862,7 +713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_bringup.html" class="md-nav__link">
+      <a href="originbot_bringup.html" class="md-nav__link">
         
   
   
@@ -885,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/teleoperation.html" class="md-nav__link">
+      <a href="teleoperation.html" class="md-nav__link">
         
   
   
@@ -908,7 +759,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/camera_visualization.html" class="md-nav__link">
+      <a href="camera_visualization.html" class="md-nav__link">
         
   
   
@@ -931,7 +782,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/lidar_visualization.html" class="md-nav__link">
+      <a href="lidar_visualization.html" class="md-nav__link">
         
   
   
@@ -954,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/imu_visualization.html" class="md-nav__link">
+      <a href="imu_visualization.html" class="md-nav__link">
         
   
   
@@ -977,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/parameter_config.html" class="md-nav__link">
+      <a href="parameter_config.html" class="md-nav__link">
         
   
   
@@ -1000,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/odom_calibration.html" class="md-nav__link">
+      <a href="odom_calibration.html" class="md-nav__link">
         
   
   
@@ -1020,10 +871,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="manual/protocol_description.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Communication Protocol Description
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="protocol_description.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1034,6 +907,233 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#speed-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Speed control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#examples-of-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examples of communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#speed-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Speed feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gyroscope-data-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gyroscope data feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gyroscope data feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-data-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor data feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor data feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-resource-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller resource control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controller resource control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-parameter-adjustment" class="md-nav__link">
+    <span class="md-ellipsis">
+      PID parameter adjustment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PID parameter adjustment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1046,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/hmi.html" class="md-nav__link">
+      <a href="hmi.html" class="md-nav__link">
         
   
   
@@ -1069,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/originbot_freertos.html" class="md-nav__link">
+      <a href="originbot_freertos.html" class="md-nav__link">
         
   
   
@@ -1092,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/ekf.html" class="md-nav__link">
+      <a href="ekf.html" class="md-nav__link">
         
   
   
@@ -1115,7 +1215,7 @@
   
   
     <li class="md-nav__item">
-      <a href="manual/webviz.html" class="md-nav__link">
+      <a href="webviz.html" class="md-nav__link">
         
   
   
@@ -1183,7 +1283,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/basic_program.html" class="md-nav__link">
+      <a href="../application/basic_program.html" class="md-nav__link">
         
   
   
@@ -1206,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_simulation.html" class="md-nav__link">
+      <a href="../application/gazebo_simulation.html" class="md-nav__link">
         
   
   
@@ -1229,7 +1329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_slam.html" class="md-nav__link">
+      <a href="../application/gazebo_slam.html" class="md-nav__link">
         
   
   
@@ -1252,7 +1352,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/slam.html" class="md-nav__link">
+      <a href="../application/slam.html" class="md-nav__link">
         
   
   
@@ -1275,7 +1375,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_navigation.html" class="md-nav__link">
+      <a href="../application/gazebo_navigation.html" class="md-nav__link">
         
   
   
@@ -1298,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/navigation.html" class="md-nav__link">
+      <a href="../application/navigation.html" class="md-nav__link">
         
   
   
@@ -1321,7 +1421,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/body_detection.html" class="md-nav__link">
+      <a href="../application/body_detection.html" class="md-nav__link">
         
   
   
@@ -1344,7 +1444,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gesture_control.html" class="md-nav__link">
+      <a href="../application/gesture_control.html" class="md-nav__link">
         
   
   
@@ -1367,7 +1467,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/cv_line_follower.html" class="md-nav__link">
+      <a href="../application/cv_line_follower.html" class="md-nav__link">
         
   
   
@@ -1390,7 +1490,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/deeplearning_line_follower.html" class="md-nav__link">
+      <a href="../application/deeplearning_line_follower.html" class="md-nav__link">
         
   
   
@@ -1413,7 +1513,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/gazebo_line_follower.html" class="md-nav__link">
+      <a href="../application/gazebo_line_follower.html" class="md-nav__link">
         
   
   
@@ -1436,7 +1536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/parking_search.html" class="md-nav__link">
+      <a href="../application/parking_search.html" class="md-nav__link">
         
   
   
@@ -1459,7 +1559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/play_football.html" class="md-nav__link">
+      <a href="../application/play_football.html" class="md-nav__link">
         
   
   
@@ -1482,7 +1582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/tracking.html" class="md-nav__link">
+      <a href="../application/tracking.html" class="md-nav__link">
         
   
   
@@ -1505,7 +1605,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/take_pictures.html" class="md-nav__link">
+      <a href="../application/take_pictures.html" class="md-nav__link">
         
   
   
@@ -1528,7 +1628,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/qrcode_detection.html" class="md-nav__link">
+      <a href="../application/qrcode_detection.html" class="md-nav__link">
         
   
   
@@ -1551,7 +1651,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/vlpr.html" class="md-nav__link">
+      <a href="../application/vlpr.html" class="md-nav__link">
         
   
   
@@ -1574,7 +1674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="application/mobilesam.html" class="md-nav__link">
+      <a href="../application/mobilesam.html" class="md-nav__link">
         
   
   
@@ -1642,7 +1742,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/contributing.html" class="md-nav__link">
+      <a href="../reference/contributing.html" class="md-nav__link">
         
   
   
@@ -1665,7 +1765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference/changelog.html" class="md-nav__link">
+      <a href="../reference/changelog.html" class="md-nav__link">
         
   
   
@@ -1717,7 +1817,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about.html" class="md-nav__link">
+      <a href="../about.html" class="md-nav__link">
         
   
   
@@ -1759,46 +1859,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#originbot" class="md-nav__link">
+  <a href="#speed-control" class="md-nav__link">
     <span class="md-ellipsis">
-      OriginBot
+      Speed control
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="OriginBot">
+    <nav class="md-nav" aria-label="Speed control">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#open-source-collaboration" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
-      Open-Source Collaboration
+      Key features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#full-stack-development" class="md-nav__link">
+  <a href="#protocol-format" class="md-nav__link">
     <span class="md-ellipsis">
-      Full-Stack Development
+      Protocol format
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#smart-applications" class="md-nav__link">
+  <a href="#examples-of-communication" class="md-nav__link">
     <span class="md-ellipsis">
-      Smart Applications
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#born-from-passion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Born from Passion
+      Examples of communication
     </span>
   </a>
   
@@ -1810,46 +1901,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-parameters" class="md-nav__link">
+  <a href="#speed-feedback" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuration Parameters
+      Speed feedback
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contribute" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contribute
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Contribute">
+    <nav class="md-nav" aria-label="Speed feedback">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#provide-feedback" class="md-nav__link">
+  <a href="#key-features_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Provide Feedback
+      Key features
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#contribute-code" class="md-nav__link">
+  <a href="#protocol-format_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Contribute Code
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#open-source-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Open-Source Sharing
+      Protocol format
     </span>
   </a>
   
@@ -1861,11 +1934,134 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#link-summary" class="md-nav__link">
+  <a href="#gyroscope-data-feedback" class="md-nav__link">
     <span class="md-ellipsis">
-      Link Summary
+      Gyroscope data feedback
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Gyroscope data feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-data-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sensor data feedback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor data feedback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#controller-resource-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Controller resource control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Controller resource control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-parameter-adjustment" class="md-nav__link">
+    <span class="md-ellipsis">
+      PID parameter adjustment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PID parameter adjustment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#key-features_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protocol-format_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protocol format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1885,219 +2081,132 @@
 
 
 
-<h1 id="originbot-intelligent-robot-open-source-kit"><strong>OriginBot Intelligent Robot Open-Source Kit</strong></h1>
-<blockquote>
-<p><strong>Notice to Users</strong>: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. If you have any questions, please join the <a href="https://discord.gg/nd5aqYNp">Discord</a> community group (see the product QR code).</p>
-</blockquote>
-<p><img alt="OriginBot" src="../assets/img/originbot_pro.png" /></p>
-<div style="text-align: right;">
-  <a href="#originbot_1" class="md-button">Learn About OriginBot</a>
-  <a href="./guide/quick_guide/" class="md-button md-button--primary">Explore OriginBot Now!</a>
-</div>
-
-<h2 id="originbot"><strong>OriginBot</strong></h2>
-<p>OriginBot is an open-source kit for intelligent robots and a community-driven project designed to let every participant enjoy the process of robot development.</p>
-<h3 id="open-source-collaboration"><font color='green'><strong>Open-Source Collaboration</strong></font></h3>
-<p>"Open source is power"—this is the core spirit of OriginBot, and we welcome every developer to participate.</p>
-<p><strong>▶ Open-Source Ecosystem</strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/originbot_explode.jpg" style="max-width:256px;" align="left">
-What you gain is more than what you see, and what you see is open source. From structure to electronics, from drivers to applications, OriginBot's compact design houses a vast open-source ecosystem. Every developer is welcome to learn from it and contribute to its growth.
-</div>
-
-<p><strong><p align="right">Continuous Iteration ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/agile.jpg" style="max-width:256px;" align="right">
-Why stop? Progress is infinite. Each step forward brings joy. With strong community support, OriginBot and its developers continuously advance. Both software and hardware are iteratively improved, ensuring growth with every version update.
-</div>
-
-<h3 id="full-stack-development"><font color='green'><strong>Full-Stack Development</strong></font></h3>
-<p>The journey of intelligent robot development is challenging, and OriginBot is here to support every developer along the way.</p>
-<p><strong>▶ Comprehensive Tech Stack</strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/capabilities.png" style="max-width:256px;" align="left">
-The OriginBot project spans multiple fields, including structural design, electronics, embedded systems, ROS, and artificial intelligence. Whatever your research focus, you can find your niche here, quickly grasp the complete robot design process, and master core development techniques.
-</div>
-
-<h3 id="smart-applications"><font color='green'><strong>Smart Applications</strong></font></h3>
-<p>OriginBot features a simple structure but supports complex applications, enabling limitless possibilities.</p>
-<p><strong>▶ High-Performance Computing</strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/material_list/rdkx5.jpg" style="max-width:256px;" align="left">
-OriginBot comes equipped with the Sweet Potato Robot Development Board - RDK X5, offering robust computational power. It supports various use cases such as CV acceleration, human tracking, gesture recognition, and visual line following, allowing you to experience the fun of AI and create truly "intelligent" robots.
-</div>
-
-<p><strong><p align="right">Rich Applications ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/image-20220922173203208.png" style="max-width:256px;" align="right">
-OriginBot uses ROS2 and TogetheROS™.Bot (a deeply optimized ROS open-source robot operating system by Digua) as its software foundation. It is compatible with many ROS ecosystem applications and is ready to use out of the box. It supports original applications and enables quick development of features like SLAM, navigation, visual processing, and machine learning.
-</div>
-
-<h3 id="born-from-passion"><font color='green'><strong>Born from Passion</strong></font></h3>
-<p>Every robot developer dreams of "building a robot from scratch," and OriginBot was created to fulfill this passion.</p>
-<p><strong>▶ Unique Identity</strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/20220906134853.jpg" style="max-width:256px;" align="left">
-Each OriginBot is unique. The kit includes a license plate with a unique serial number, starting from "0000." When you attach the license plate to your robot, you become its owner. Endless possibilities await exploration.
-</div>
-
-<p><strong><p align="right">Start Development ◀</p></strong></p>
-<div style="display: inline-block">
-<img src="../assets/img/hello_robot.jpg" style="max-width:256px;" align="right">
-OriginBot aims to awaken every developer's original dream and help them find a development path that suits them. The journey ahead is long, but together, we will set sail now!
-</br>
-</br>
-</br>
-<a href="guide/quick_guide/" class="md-button">Start Developing with Qihang Robot</a>
-</div>
-
-<h2 id="configuration-parameters"><strong>Configuration Parameters</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Main Configuration Items</th>
-<th>OriginBot</th>
-<th style="text-align: left;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Renderings</td>
-<td><img alt="OriginBot" class="img-fluid" src="../assets/img/quick_guide/originbot_x5_nav.jpg" tag="1" title="OriginBot Navigation Version" /></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Application Processor</td>
-<td><strong>RDK X5</strong><br />CPU: Octa-core ARM Cortex-A55@1.5GHz<br />BPU: 32Gflops, equivalent computing power <font color='green'>10TOPS</font><br />Memory: 8GB LPDDR4 RAM<br />Storage: 32GB (TF Card)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Motion Controller</td>
-<td>MCU: STM32F103<br />Flash Capacity: 64K<br />RAM Capacity: 20KB<br /></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Differential Chassis</td>
-<td>TT motor with encoder 2 * 2<br />Camera bracket<br />Universal wheel and bracket</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Camera</td>
-<td>720P USB Camera</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>LiDAR (TOF)</td>
-<td><font color='green'>6Hz scanning frequency,<br />360° scanning angle<br />3000Hz ranging frequency</font></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Gesture Sensor</td>
-<td><font color='green'>Acceleration, gyroscope, and angular output<br />Built-in Kalman filter</font></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Size</td>
-<td>Length: 180 mm<br />Width: 132 mm<br /><font color='green'>Height: 154 mm</font> (±2)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Weight</td>
-<td><font color='green'>0.78 kg</font> (±0.05)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Max Speed</td>
-<td>0.8 m/s (±0.05)</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Operating Software</td>
-<td>Ubuntu 22.04 (Server)<br />ROS2 Humble<br />TogetheROS 3.0.0</td>
-<td style="text-align: left;"></td>
-</tr>
-<tr>
-<td>Other Accessories</td>
-<td>Uniquely numbered license plate stickers<br /><font color='green'>LiDAR stickers</font><br />Screws, copper pillars, cables, card reader installation tools, etc.</td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="contribute"><strong>Contribute</strong></h2>
-<p>We warmly invite all developers to participate in the OriginBot project. There are many ways to contribute:</p>
-<h3 id="provide-feedback"><strong>Provide Feedback</strong></h3>
+<h1 id="communication-protocol-description"><strong>Communication Protocol Description</strong></h1>
+<details class="hint" open="open">
+<summary>Hint</summary>
+<p>The operating environment and software and hardware configurations are as follows: </p>
 <ul>
 <li>
-<p>If you have any questions or suggestions while using the OriginBot kit, please ask and discuss in the <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">Guyueju Community Forum</a>.</p>
+<p>OriginBot Pro</p>
 </li>
 <li>
-<p>If you encounter any bugs while using OriginBot, please submit an issue in the <a href="https://github.com/yzhcat/originbot" target="_blank">code repository</a>.</p>
+<p>PC：Ubuntu (≥22.04) + ROS2 (≥humble)</p>
 </li>
 </ul>
-<h3 id="contribute-code"><strong>Contribute Code</strong></h3>
-<ul>
-<li>If you have any optimizations, additions, or other modifications to the native code while using the OriginBot kit, feel free to submit a pull request in the <a href="https://github.com/yzhcat/originbot" target="_blank">code repository</a>.</li>
-</ul>
-<h3 id="open-source-sharing"><strong>Open-Source Sharing</strong></h3>
-<ul>
-<li>
-<p>If you are interested in OriginBot, please star the project's source code repository or share it with developers who might benefit from it.</p>
-</li>
-<li>
-<p>If you develop interesting features or robots based on the OriginBot open-source project, please share them with us in the <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">Community Section</a>. We will promote outstanding projects within the community.</p>
-</li>
-</ul>
-<h2 id="link-summary"><strong>Link Summary</strong></h2>
+</details>
+<h2 id="speed-control"><strong>Speed control</strong></h2>
+<h3 id="key-features"><strong>Key features</strong></h3>
+<p>The drive function node of the host computer sends motor speed control data to the controller, and the controller drives the motor to execute.</p>
+<h3 id="protocol-format"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831170224421" class="img-fluid" src="../../assets/img/protocol_description/image-20220831170224421.png" tag="1" title="speed control" /></p>
 <ul>
 <li>
-<p>Community Main Site: <a href="https://www.originbot.org/" target="_blank">https://www.originbot.org</a></p>
+<p><strong>Frame header</strong>：0x55, as the identifier of the start of the data, custom 0x55.</p>
 </li>
 <li>
-<p>Open-Source Repositories:</p>
+<p><strong>Identification bit</strong>：Identifies what the current group data is, 0x01 represents the speed control command.</p>
+</li>
+<li>
+<p><strong>Length</strong>：0x06, the data bit has a total of 6 bytes of data, so it is 0x06.</p>
+</li>
+<li>
+<p><strong>Data bit</strong>：Responsible for left motor speed control and right motor speed control. There are two modes of direction: 0x00 and 0xFF, 0x00 the velocity value is negative, the 0xFF velocity value is positive, and when the velocity is 0.00, the direction value is 0xFF. The speed unit is mm/s (8 bits).</p>
+</li>
+<li>
+<p><strong>Check bit</strong>：Used to check whether there is a data error in the process of data transmission. The check digit data is calculated as follows:</p>
 </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Link</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>originbot</td>
-<td><a href="https://github.com/yzhcat/originbot" target="_blank">https://github.com/yzhcat/originbot</a></td>
-<td>Repository for OriginBot's functional package</td>
-</tr>
-<tr>
-<td>originbot_desktop</td>
-<td><a href="https://github.com/yzhcat/originbot_desktop" target="_blank">https://github.com/yzhcat/originbot_desktop</a></td>
-<td>Repository for OriginBot's desktop application</td>
-</tr>
-<tr>
-<td>originbot_controller</td>
-<td><a href="https://github.com/yzhcat/originbot_controller" target="_blank">https://github.com/yzhcat/originbot_controller</a></td>
-<td>Repository for OriginBot's controller source code</td>
-</tr>
-</tbody>
-</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Check bit value = Data bit Sum all data &amp; 0xFF
+</code></pre></div>
+<ul>
+<li><strong>Frame end</strong>：0xBB, the end of the frame is used as an identifier for data termination, and the 0xBB is customized.</li>
+</ul>
+<h3 id="examples-of-communication"><strong>Examples of communication</strong></h3>
+<p>For example, the upper computer sends speed commands, the speed of the left motor is 5mm/s, and the speed of the right motor is -3mm/s</p>
+<p>The content of the agreement is: <strong>0x55 0x01 0x06 0xFF 0x05 0x00 0x00 0x03 0x00 0x07 0xBB</strong></p>
+<p>Among them: 0xFF 0x05 0x00 corresponds to 5mm/s，0x00 0x03 0x00 corresponds to -3mm/s。</p>
+<p>The check digit is: <strong>（0xFF + 0x05 + 0x00 + 0x00 + 0x03 + 0x00） &amp; 0xFF = 0x07</strong></p>
+<h2 id="speed-feedback"><strong>Speed feedback</strong></h2>
+<h3 id="key-features_1"><strong>Key features</strong></h3>
+<p>The controller sends motor speed data to the upper computer cycle, and the upper computer can calculate the odometer data according to the speed.</p>
+<h3 id="protocol-format_1"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831171018549" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171018549.png" tag="1" title="Speed feedback" /></p>
+<ul>
+<li><strong>Identification bit</strong>：0x02 indicates the speed feedback command.</li>
+</ul>
+<h2 id="gyroscope-data-feedback"><strong>Gyroscope data feedback</strong></h2>
+<h3 id="key-features_2"><strong>Key features</strong></h3>
+<p>The controller periodically sends gyroscope data to the host computer, and the host computer can publish IMU topic messages according to the data.</p>
+<h3 id="protocol-format_2"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831171357555" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171357555.png" tag="1" title="Gyroscope data feedback" /></p>
+<p>There is a lot of gyroscope data, which is divided into three groups to transmit separately. Distinguish what the current data is by identifying bits. The check digits are still calculated using the data bits that add &amp; 0xFF of each data.</p>
+<p>For the conversion of raw data, please refer to the official agreement of Witt: <a href="https://wit-motion.yuque.com/books/share/29a9c291-ebf5-4f6f-83e3-4093832dce78/locehn" target="_blank">click to jump</a></p>
+<p><strong>Acceleration is calculated as follows:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ax=((AxH&lt;&lt;8)|AxL)/32768*16g (g is the acceleration of gravity, which can be 9.8m/s2) 
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>ay=((AyH&lt;&lt;8)|AyL)/32768*16g (g is the acceleration of gravity, which can be 9.8m/s2)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>az=((AzH&lt;&lt;8)|AzL)/32768*16g (g is the acceleration of gravity, which can be 9.8m/s2)
+</code></pre></div>
+<p><strong>Angular velocity is calculated as follows:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>wx=((wxH&lt;&lt;8)|wxL)/32768*2000(°/s) 
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>wy=((wyH&lt;&lt;8)|wyL)/32768*2000(°/s) 
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>wz=((wzH&lt;&lt;8)|wzL)/32768*2000(°/s) 
+</code></pre></div>
+<p><strong>The Euler angle is calculated as follows:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Roll Angle (X-axis) Roll=((RollH&lt;&lt;8)|RollL)/32768*180(°) 
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Pitch Angle (Y-axis) Pitch=((PitchH&lt;&lt;8)|PitchL)/32768*180(°) 
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>Yaw Angle (z-axis) Yaw=((YawH&lt;&lt;8)|YawL)/32768*180(°)
+</code></pre></div>
+<p>Note: The data is sent in 16 base format, not ASCII code. Each data is delivered sequentially in low and high bytes, which are combined into a signed short type of data. For example, the X-axis acceleration data Ax, where AxL is a low byte and AxH is a high byte.</p>
+<p>The conversion method is as follows: Assuming that Data is the actual data, DataH is its high-byte part, and DataL is its low-byte part, then: Data=((short)DataH&lt;&lt;8)|DataL. It is important to note here that DataH needs to be cast to a signed short type of data before being shifted, and the data type of Data is also a signed short type, so that negative numbers can be represented.</p>
+<p>Euler angles or quaternions can be provided, if not, the accuracy of acceleration and angular velocity must be ensured, and the Euler angles or quaternions will be solved in the ROS2 package.</p>
+<h2 id="sensor-data-feedback"><strong>Sensor data feedback</strong></h2>
+<h3 id="key-features_3"><strong>Key features</strong></h3>
+<p>The controller feeds back voltage and other data to the host computer periodically, and the host computer can perform the corresponding functions according to the information.</p>
+<h3 id="protocol-format_3"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831171837413" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171837413.png" tag="1" title="Sensor data feedback" /></p>
+<p>The voltage value is sent in two parts, integer and decimal, and the voltage value = integer part + decimal part / 100, the unit is V.</p>
+<p>Reserve two sensor data bits, and the data is 0x00 when not in use, and the verification calculation is the same as above.</p>
+<h2 id="controller-resource-control"><strong>Controller resource control</strong></h2>
+<h3 id="key-features_4"><strong>Key features</strong></h3>
+<p>The host computer sends instructions to the controller to control LED, buzzer, IMU calibration, etc.</p>
+<h3 id="protocol-format_4"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831172001592" class="img-fluid" src="../../assets/img/protocol_description/image-20220831172001592.png" tag="1" title="Controller resource control" /></p>
+<p>The enable control fields and status fields of LED, buzzer, and IMU calibration commands can be set to zero and non-zero values, and the verification calculation is the same as above.</p>
+<p>The status field takes effect only when the control field is enabled to be non-zero. The LED, buzzer, and IMU are calibrated with independent enable control and status field control.</p>
 <ul>
 <li>
-<p>Forum Exchange: <a href="https://www.guyuehome.com/interlocution?id=1826932316801544194" target="_blank">https://www.guyuehome.com/interlocution?id=1826932316801544194</a></p>
+<p>If the LED status field is zero, the LED is turned off. If it is not zero, the LED is turned on.</p>
 </li>
 <li>
-<p>Digua Robot Developer Community: <a href="https://developer.d-robotics.cc/en" target="_blank">https://developer.d-robotics.cc/en</a></p>
+<p>If the Buzzer Status field is zero, the buzzer is turned off, and if it is non-zero, the buzzer is turned on.</p>
+</li>
+<li>
+<p>If the IMU calibration status field is zero, there is no action, and if it is non-zero, an IMU calibration is performed.</p>
 </li>
 </ul>
-<p><img alt="Communication Group" src="../assets/img/group.png" /></p>
-<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="Footer" src="../assets/img/footer.png" /></a></p>
+<h2 id="pid-parameter-adjustment"><strong>PID parameter adjustment</strong></h2>
+<h3 id="key-features_5"><strong>Key features</strong></h3>
+<p>The host computer sends PID parameters to the controller, and the controller dynamically adjusts the motor control effect. Among them, the identification bits 0x08 and 0x09 correspond to the PID settings of the left and right motors respectively.</p>
+<h3 id="protocol-format_5"><strong>Protocol format</strong></h3>
+<p><img alt="image-20220831172131388" class="img-fluid" src="../../assets/img/protocol_description/image-20220831172131388.png" tag="1" title="PID parameter adjustment" /></p>
+<p>The PID parameters are reserved externally, and the driver board has a set of factory-calibrated PID parameters.</p>
+<p>Since the value of PID is small, the actual parameter = data field/1000, and the verification calculation is the same as above.</p>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer.png" /></a></p>
 
 
 
 
 
 
+
+  
+  
 
 
 
@@ -2144,20 +2253,20 @@ OriginBot aims to awaken every developer's original dream and help them find a d
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.c8b220af.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
-        <script src="../assets/js/baidu-tongji.js"></script>
+        <script src="../../assets/js/baidu-tongji.js"></script>
       
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       
-        <script src="../assets/js/simpleLightbox.min.js"></script>
+        <script src="../../assets/js/simpleLightbox.min.js"></script>
       
-        <script src="../assets/js/extensions.js"></script>
+        <script src="../../assets/js/extensions.js"></script>
       
-        <script src="../assets/js/custom.js"></script>
+        <script src="../../assets/js/custom.js"></script>
       
     
   </body>
