@@ -5,124 +5,143 @@ repo_url: https://gitee.com/guyuehome/originbot
 site_description: 'OriginBot智能机器人开源套件·古月居'
 copyright: © 2021 古月居 鄂ICP备18024451号-2
 
-nav:
-    - 项目主页: zh/index.md
-    - 使用指引: zh/guide/quick_guide.md
-    - 套件资料: 
-        - 套件清单: zh/material/material_list.md
-        - 资料链接: zh/material/open_source_link.md
-        - 接口说明: zh/material/hardware_interface.md
-        - 常用软件: zh/material/common_software.md
-    - 硬件组装: zh/guide/hardware_setup.md
-    - 软件配置:
-        - 镜像安装与备份: zh/guide/image_install.md
-        - 控制器固件安装: zh/guide/firmware_install.md
-        - 电脑端环境配置: zh/guide/pc_config.md
-    - 快速上手: zh/guide/easy_start.md
-    - 基础使用:
-        - 搭建开发环境: zh/manual/ide_setup.md
-        - 代码开发方法: zh/manual/package_develop.md
-        - 机器人启动与参数配置: zh/manual/originbot_bringup.md
-        - 机器人遥控与可视化: zh/manual/teleoperation.md
-        - 相机驱动与可视化: zh/manual/camera_visualization.md
-        - 雷达驱动与可视化: zh/manual/lidar_visualization.md
-        - IMU驱动与可视化: zh/manual/imu_visualization.md
-        - 机器人参数动态监控: zh/manual/parameter_config.md
-        - 机器人里程计校准: zh/manual/odom_calibration.md
-        - 机器人充电方法: zh/manual/originbot_charging.md
-        - 通信协议说明: zh/manual/protocol_description.md
-        - 上位机控制说明: zh/manual/hmi.md
-        - 实时操作系统RTOS配置: zh/manual/originbot_freertos.md
-        - EKF多传感器融合定位: zh/manual/ekf.md
-        - WebViz可视化: zh/manual/webviz.md
-    - 应用功能:
-        - 基础功能编程: zh/application/basic_program.md
-        - Gazebo虚拟仿真: zh/application/gazebo_simulation.md
-        - SLAM地图构建(Gazebo): zh/application/gazebo_slam.md
-        - SLAM地图构建: zh/application/slam.md
-        - 自主导航(Gazebo): zh/application/gazebo_navigation.md
-        - 自主导航: zh/application/navigation.md
-        - 人体跟踪: zh/application/body_detection.md        
-        - 手势控制: zh/application/gesture_control.md
-        - 视觉巡线(OpenCV): zh/application/cv_line_follower.md
-        - 视觉巡线(AI深度学习): zh/application/deeplearning_line_follower.md
-        - 视觉巡线(Gazebo): zh/application/gazebo_line_follower.md
-        - 车位寻找(AI深度学习): zh/application/parking_search.md
-        - 踢球射门: zh/application/play_football.md
-        - 轨迹跟踪 : zh/application/tracking.md
-        # - 语音控制 : zh/application/audio_control.md
-        - 图像获取 : zh/application/take_pictures.md
-        - 二维码识别与跟踪 : zh/application/qrcode_detection.md
-        - 车牌识别 : zh/application/vlpr.md
-        - 分割一切 : zh/application/mobilesam.md
-    - 常见问题: zh/reference/faq.md
-    - 教学课程: zh/course/courses.md
-    - 参考资料: zh/reference/reference.md
-    - 更多套件: zh/reference/third_party_kits.md
-    - 更多内容:
-        - 参与贡献: zh/reference/contributing.md
-        - 更新日志: zh/reference/changelog.md
-    - 社区交流: https://www.guyuehome.com/interlocution?id=1826932316801544194
-    - 关于我们: zh/about.md
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+      separator: '[\s\-\.]+'
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+          link: /
+          nav:
+            - 项目主页: zh/index.md
+            - 使用指引: zh/guide/quick_guide.md
+            - 套件资料: 
+                - 套件清单: zh/material/material_list.md
+                - 资料链接: zh/material/open_source_link.md
+                - 接口说明: zh/material/hardware_interface.md
+                - 常用软件: zh/material/common_software.md
+            - 硬件组装: zh/guide/hardware_setup.md
+            - 软件配置:
+                - 镜像安装与备份: zh/guide/image_install.md
+                - 控制器固件安装: zh/guide/firmware_install.md
+                - 电脑端环境配置: zh/guide/pc_config.md
+            - 快速上手: zh/guide/easy_start.md
+            - 基础使用:
+                - 搭建开发环境: zh/manual/ide_setup.md
+                - 代码开发方法: zh/manual/package_develop.md
+                - 机器人启动与参数配置: zh/manual/originbot_bringup.md
+                - 机器人遥控与可视化: zh/manual/teleoperation.md
+                - 相机驱动与可视化: zh/manual/camera_visualization.md
+                - 雷达驱动与可视化: zh/manual/lidar_visualization.md
+                - IMU驱动与可视化: zh/manual/imu_visualization.md
+                - 机器人参数动态监控: zh/manual/parameter_config.md
+                - 机器人里程计校准: zh/manual/odom_calibration.md
+                - 机器人充电方法: zh/manual/originbot_charging.md
+                - 通信协议说明: zh/manual/protocol_description.md
+                - 上位机控制说明: zh/manual/hmi.md
+                - 实时操作系统RTOS配置: zh/manual/originbot_freertos.md
+                - EKF多传感器融合定位: zh/manual/ekf.md
+                - WebViz可视化: zh/manual/webviz.md
+            - 应用功能:
+                - 基础功能编程: zh/application/basic_program.md
+                - Gazebo虚拟仿真: zh/application/gazebo_simulation.md
+                - SLAM地图构建(Gazebo): zh/application/gazebo_slam.md
+                - SLAM地图构建: zh/application/slam.md
+                - 自主导航(Gazebo): zh/application/gazebo_navigation.md
+                - 自主导航: zh/application/navigation.md
+                - 人体跟踪: zh/application/body_detection.md        
+                - 手势控制: zh/application/gesture_control.md
+                - 视觉巡线(OpenCV): zh/application/cv_line_follower.md
+                - 视觉巡线(AI深度学习): zh/application/deeplearning_line_follower.md
+                - 视觉巡线(Gazebo): zh/application/gazebo_line_follower.md
+                - 车位寻找(AI深度学习): zh/application/parking_search.md
+                - 踢球射门: zh/application/play_football.md
+                - 轨迹跟踪 : zh/application/tracking.md
+                # - 语音控制 : zh/application/audio_control.md
+                - 图像获取 : zh/application/take_pictures.md
+                - 二维码识别与跟踪 : zh/application/qrcode_detection.md
+                - 车牌识别 : zh/application/vlpr.md
+                - 分割一切 : zh/application/mobilesam.md
+            - 常见问题: zh/reference/faq.md
+            - 教学课程: zh/course/courses.md
+            - 参考资料: zh/reference/reference.md
+            - 更多套件: zh/reference/third_party_kits.md
+            - 更多内容:
+                - 参与贡献: zh/reference/contributing.md
+                - 更新日志: zh/reference/changelog.md
+            - 社区交流: https://www.guyuehome.com/interlocution?id=1826932316801544194
+            - 关于我们: zh/about.md
+        - locale: en
+          name: English
+          build: true
+          link: /en/
+          nav:
+            - Project Home: en/index.md
+            - User Guide: en/guide/quick_guide.md
+            - Kit Information: 
+                - Kit List: en/material/material_list.md
+                - Resources Link: en/material/open_source_link.md
+                # - Interface Description: en/material/hardware_interface.md
+                - Common Software: en/material/common_software.md
+            - Hardware Assembly: en/guide/hardware_setup.md
+            - Software Configuration:
+                - Image Installation and Backup: en/guide/image_install.md
+                - Controller Firmware Installation: en/guide/firmware_install.md
+                - PC Environment Configuration: en/guide/pc_config.md
+            - Quick Start: en/guide/easy_start.md
+            - Basic Usage:
+                - Robot Charging Method: en/manual/originbot_charging.md
+                - Setting Up Development Environment: en/manual/ide_setup.md
+                - Code Development Method: en/manual/package_develop.md
+                - Robot Startup and Parameter Configuration: en/manual/originbot_bringup.md
+                - Robot Teleoperation and Visualization: en/manual/teleoperation.md
+                - Camera Driver and Visualization: en/manual/camera_visualization.md
+                - Lidar Driver and Visualization: en/manual/lidar_visualization.md
+                - IMU Driver and Visualization: en/manual/imu_visualization.md
+                - Dynamic Monitoring of Robot Parameters: en/manual/parameter_config.md
+                - Robot Odometer Calibration: en/manual/odom_calibration.md
+                - Communication Protocol Description: en/manual/protocol_description.md
+                - HMI Control Description: en/manual/hmi.md
+                - Real-Time Operating System RTOS Configuration: en/manual/originbot_freertos.md
+                - EKF Multi-Sensor Fusion Positioning: en/manual/ekf.md
+                - WebViz Visualization: en/manual/webviz.md
+            - Application Features:
+                - Basic Function Programming: en/application/basic_program.md
+                - Gazebo Virtual Simulation: en/application/gazebo_simulation.md
+                - SLAM Map Building (Gazebo): en/application/gazebo_slam.md
+                - SLAM Map Building: en/application/slam.md
+                - Autonomous Navigation (Gazebo): en/application/gazebo_navigation.md
+                - Autonomous Navigation: en/application/navigation.md
+                - Human Body Tracking: en/application/body_detection.md        
+                - Gesture Control: en/application/gesture_control.md
+                - Visual Line Following (OpenCV): en/application/cv_line_follower.md
+                - Visual Line Following (AI Deep Learning): en/application/deeplearning_line_follower.md
+                - Visual Line Following (Gazebo): en/application/gazebo_line_follower.md
+                - Parking Spot Finding (AI Deep Learning): en/application/parking_search.md
+                - Playing Football: en/application/play_football.md
+                - Trajectory Tracking: en/application/tracking.md
+                # - Voice Control: en/application/audio_control.md
+                - Image Acquisition: en/application/take_pictures.md
+                - QR Code Detection and Tracking: en/application/qrcode_detection.md
+                - License Plate Recognition: en/application/vlpr.md
+                - Segment Everything : en/application/mobilesam.md
+            # - FAQ: en/reference/faq.md
+            # - Teaching Courses: en/course/courses.md
+            # - Reference Materials: en/reference/reference.md
+            # - More Kits: en/reference/third_party_kits.md
+            - More Content:
+                - Contributing: en/reference/contributing.md
+                - Changelog: en/reference/changelog.md
+            - Community Exchange: https://www.guyuehome.com/interlocution?id=1826932316801544194
+            - About Us: en/about.md
 
-    - Project Home: en/index.md
-    - User Guide: en/guide/quick_guide.md
-    - Kit Information: 
-        - Kit List: en/material/material_list.md
-        - Resources Link: en/material/open_source_link.md
-        # - Interface Description: en/material/hardware_interface.md
-        - Common Software: en/material/common_software.md
-    - Hardware Assembly: en/guide/hardware_setup.md
-    - Software Configuration:
-        - Image Installation and Backup: en/guide/image_install.md
-        - Controller Firmware Installation: en/guide/firmware_install.md
-        - PC Environment Configuration: en/guide/pc_config.md
-    - Quick Start: en/guide/easy_start.md
-    - Basic Usage:
-        - Robot Charging Method: en/manual/originbot_charging.md
-        - Setting Up Development Environment: en/manual/ide_setup.md
-        - Code Development Method: en/manual/package_develop.md
-        - Robot Startup and Parameter Configuration: en/manual/originbot_bringup.md
-        - Robot Teleoperation and Visualization: en/manual/teleoperation.md
-        - Camera Driver and Visualization: en/manual/camera_visualization.md
-        - Lidar Driver and Visualization: en/manual/lidar_visualization.md
-        - IMU Driver and Visualization: en/manual/imu_visualization.md
-        - Dynamic Monitoring of Robot Parameters: en/manual/parameter_config.md
-        - Robot Odometer Calibration: en/manual/odom_calibration.md
-        - Communication Protocol Description: en/manual/protocol_description.md
-        - HMI Control Description: en/manual/hmi.md
-        - Real-Time Operating System RTOS Configuration: en/manual/originbot_freertos.md
-        - EKF Multi-Sensor Fusion Positioning: en/manual/ekf.md
-        - WebViz Visualization: en/manual/webviz.md
-    - Application Features:
-        - Basic Function Programming: en/application/basic_program.md
-        - Gazebo Virtual Simulation: en/application/gazebo_simulation.md
-        - SLAM Map Building (Gazebo): en/application/gazebo_slam.md
-        - SLAM Map Building: en/application/slam.md
-        - Autonomous Navigation (Gazebo): en/application/gazebo_navigation.md
-        - Autonomous Navigation: en/application/navigation.md
-        - Human Body Tracking: en/application/body_detection.md        
-        - Gesture Control: en/application/gesture_control.md
-        - Visual Line Following (OpenCV): en/application/cv_line_follower.md
-        - Visual Line Following (AI Deep Learning): en/application/deeplearning_line_follower.md
-        - Visual Line Following (Gazebo): en/application/gazebo_line_follower.md
-        - Parking Spot Finding (AI Deep Learning): en/application/parking_search.md
-        - Playing Football: en/application/play_football.md
-        - Trajectory Tracking: en/application/tracking.md
-        # - Voice Control: en/application/audio_control.md
-        - Image Acquisition: en/application/take_pictures.md
-        - QR Code Detection and Tracking: en/application/qrcode_detection.md
-        - License Plate Recognition: en/application/vlpr.md
-        - Segment Everything : en/application/mobilesam.md
-    # - FAQ: en/reference/faq.md
-    # - Teaching Courses: en/course/courses.md
-    # - Reference Materials: en/reference/reference.md
-    # - More Kits: en/reference/third_party_kits.md
-    - More Content:
-        - Contributing: en/reference/contributing.md
-        - Changelog: en/reference/changelog.md
-    - Community Exchange: https://www.guyuehome.com/interlocution?id=1826932316801544194
-    - About Us: en/about.md
 
     
 theme: 
@@ -152,22 +171,6 @@ theme:
         text: Roboto
         code: Roboto Mono
 
-plugins:
-  - search:
-      lang:
-        - en
-        - zh
-      separator: '[\s\-\.]+'
-  - i18n:
-      docs_structure: folder
-      languages:
-        - locale: zh
-          default: true
-          name: 简体中文
-          build: true
-        - locale: en
-          name: English
-          build: true
             
 markdown_extensions:
     - markdown.extensions.attr_list
