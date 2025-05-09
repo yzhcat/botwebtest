@@ -211,8 +211,8 @@ extra:
 extra:
   alternate:
     - name: English
-      link: /en/ 
+      link: /botwebtest/en/
       lang: en
     - name: 简体中文
-      link: /
+      link: /botwebtest/
       lang: ch
