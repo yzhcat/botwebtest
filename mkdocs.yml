@@ -158,16 +158,6 @@ plugins:
         - en
         - ja
       separator: '[\s\-\.]+'
-  - i18n:
-      default_language: zh
-      languages:
-        - locale: zh
-          name: 中文
-          default: true
-          build: true
-        - locale: en
-          name: English
-          build: true
             
 markdown_extensions:
     - markdown.extensions.attr_list
