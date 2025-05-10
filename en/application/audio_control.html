@@ -1731,9 +1731,9 @@
 <p><img alt="前后" src="../../assets/img/audio_control/%E5%89%8D%E5%90%8E.gif" /></p>
 <p><img alt="左右" src="../../assets/img/audio_control/%E5%B7%A6%E5%8F%B3.gif" /></p>
 <h2 id="description-of-the-intelligent-voice-module"><strong>Description of the intelligent voice module</strong></h2>
-<p>The intelligent voice module is an audio module designed based on RDK X3, using ES7210 high-performance four-channel coding chip and ES8156 high-performance stereo audio decoding chip, which is controlled through the I2C interface and transmitted audio through the I2S interface. The standard 3.5mm headphone jack is installed on board to play music through external headphones. There is a high-quality MEMS silicon microphone in each of the left and right corners of the board for stereo recording.</p>
+<p>The intelligent voice module is an audio module designed based on RDK, using ES7210 high-performance four-channel coding chip and ES8156 high-performance stereo audio decoding chip, which is controlled through the I2C interface and transmitted audio through the I2S interface. The standard 3.5mm headphone jack is installed on board to play music through external headphones. There is a high-quality MEMS silicon microphone in each of the left and right corners of the board for stereo recording.</p>
 <p><strong>Where to buy</strong></p>
-<p>You can check the RDK User Manual <a href="https://developer.horizon.cc/documents_rdk/hardware_development/rdk_x3/audio_board">Audio Adapter Board | RDK X3 User Manual (horizon.cc)</a>
+<p>You can check the RDK User Manual <a href="https://developer.horizon.cc/documents_rdk/hardware_development/rdk_x3/audio_board">Audio Adapter Board | RDK User Manual (horizon.cc)</a>
 has how to use and a link to purchase</p>
 <p><strong>Product Features</strong></p>
 <ul>
@@ -1756,7 +1756,7 @@ has how to use and a link to purchase</p>
 </code></pre></div>
 <p><img alt="硬件环境" src="../../assets/img/audio_control/%E7%A1%AC%E4%BB%B6%E7%8E%AF%E5%A2%83.png" /></p>
 <p>Among them,<code>08</code> is the device address of <code>ES8156</code>，<code>40</code>and<code>42</code> are the device address of  <code>ES7210</code>.</p>
-<p><strong>Load the driver audio codec and the X3 audio framework driver</strong></p>
+<p><strong>Load the driver audio codec and the rdk audio framework driver</strong></p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo modprobe es7210
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo modprobe es8156
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>sudo modprobe hobot-i2s-dma

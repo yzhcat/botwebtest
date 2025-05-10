@@ -2658,7 +2658,7 @@ sudo apt install ros-$ROS_DISTRO-cv-bridge</li>
 <p><img alt="fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5" class="img-fluid" src="../assets/img/deeplearning_line_follower/fc0d7f6e-2c26-42df-bbbf-9a1ac02c47b5.png" tag="1" /></p>
 <p>综合考虑模型成熟度、训练模型对CPU/GPU的硬件要求，这里选择ResNet网络作为backbone。残差神经网络（ResNet）是由微软研究院的何恺明、张祥雨、任少卿、孙剑等人提出，在2015 年的ILSVRC（ImageNet Large Scale Visual Recognition Challenge）中取得了冠军。ResNet巧妙地利用了shortcut连接，解决了深度网络中模型退化的问题，是当前应用最为广泛的CNN特征提取网络之一。ResNet18结构如下：</p>
 <p><img alt="8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf" class="img-fluid" src="../assets/img/deeplearning_line_follower/8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf.png" tag="1" /></p>
-<p>在RDK X3上ResNet18推理性能高达232FPS，ResNet50推理性能也超过100FPS，高帧率保证了数据处理的实时性，是后续提高车速以及实现更复杂应用的必要条件。这里先使用ResNet18网络结构，后期遇到瓶颈考虑更深的ResNet50网络结构。为了满足输出引导线坐标值x，y这里需要修改ResNet18网络FC输出为2，即直接输出引导线的x，y坐标值。ResNet18输入分辨率为224x224。</p>
+<p>在RDK上ResNet18推理性能高达232FPS，ResNet50推理性能也超过100FPS，高帧率保证了数据处理的实时性，是后续提高车速以及实现更复杂应用的必要条件。这里先使用ResNet18网络结构，后期遇到瓶颈考虑更深的ResNet50网络结构。为了满足输出引导线坐标值x，y这里需要修改ResNet18网络FC输出为2，即直接输出引导线的x，y坐标值。ResNet18输入分辨率为224x224。</p>
 <h4 id="_17"><strong>模型训练</strong></h4>
 <p>以上提到的模型可以直接复用pytorch中的定义，数据集的切分和模型的训练，都封装在line_follower_model功能包的代码中。</p>
 <p><img alt="model_traning" class="img-fluid" src="../assets/img/deeplearning_line_follower/model_traning.jpg" tag="1" /></p>
