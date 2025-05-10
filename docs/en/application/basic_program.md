@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/basic_program
----
-
 # **Basic functional programming**
 
 ???+ hint

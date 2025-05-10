@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image\easy_start
----
-
 # **Get started quickly**
 
 After completing the kit assembly and system flashing, you can prepare to start OriginBot.

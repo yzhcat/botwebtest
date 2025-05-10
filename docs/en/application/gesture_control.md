@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/gesture_control
----
-
 # **Gesture control**
 
 ???+ hint

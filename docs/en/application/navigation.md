@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/navigation
----
-
 # **Autonomous navigation**
 
 ???+ hint

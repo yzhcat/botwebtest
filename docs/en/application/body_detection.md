@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/body_detection
----
-
 # **Human Body Tracking**
 
 ???+ hint

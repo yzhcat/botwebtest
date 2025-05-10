@@ -97,7 +97,8 @@ OriginBot aims to awaken every developer's original dream and help them find a d
 | Weight                   | <font color='green'>0.78 kg</font> (±0.05)                                                                                                 | 
 | Max Speed                | 0.8 m/s (±0.05)                                                                                                                            | 
 | Operating Software       | Ubuntu 22.04 (Server)<br />ROS2 Humble<br />TogetheROS 3.0.0                                                                                | 
-| Other Accessories        | Uniquely numbered license plate stickers<br /><font color='green'>LiDAR stickers</font><br />Screws, copper pillars, cables, card reader installation tools, etc.                                                                    | 
+| Other Accessories        | Uniquely numbered license plate stickers<br /><font color='green'>LiDAR stickers</font><br />Screws, copper pillars, cables, card reader installation tools, etc.                                                                    |
+| Power Supply              | 5V/3A USB Type-A <br/>[**power bank**](../material/open_source_link.md#power-bank)                                                                                                                            |
 
 ## **Contribute**
 
@@ -135,6 +136,6 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 - Digua Robot Developer Community: [https://developer.d-robotics.cc/en](https://developer.d-robotics.cc/en){:target="_blank"}
 
-![Communication Group](../assets/img/group.png)
+![Communication Group](../assets/img/group_discord.png)
 
 [![Footer](../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}

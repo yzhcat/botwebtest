@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/hardware_setup
----
-
 # **Hardware Assembly**
 
 ![exploded ](../../assets/img/hardware_setup/exploded.jpg){.img-fluid tag=0 title="=OriginBot Exploded View"}

@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image\gazebo_navigation
----
-
 # **Autonomous navigation**
 
 ???+ hint

@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/slam
----
-
 # **SLAM Map building**
 
 ???+ hint

@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/cv_line_follower
----
-
 # **Visual Line Following（OpenCV）**
 
 ???+ hint

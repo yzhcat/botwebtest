@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image/deeplearning_line_follower
----
-
 # **Visual Line Following (AI Deep Learning) X3**
 
 ???+ hint

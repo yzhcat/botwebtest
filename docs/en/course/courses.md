@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image\courses
----
-
 # **Courses**
 
 Every robot developer has a dream of "developing a robot from scratch", the only difference is whether you take action or not.

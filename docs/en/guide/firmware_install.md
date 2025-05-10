@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image\firmware_install
----
-
 # **Controller firmware installation**
 
 The OriginBot controller does not have firmware burned in the factory. You can install the firmware in one of the following two ways.

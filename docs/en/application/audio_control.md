@@ -1,7 +1,3 @@
----
-typora-copy-images-to: image\audio_control
----
-
 # **Voice Control**
 
 ???+ hint
