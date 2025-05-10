@@ -41,7 +41,7 @@ The function packages of the OriginBot robot are placed in the src folder in the
 - originbot_base： Robot chassis drive
 - originbot_driver：Robot equipment driven
     - serial_ros2：Serial port driver package
-    - ydlidar_ros2_driver：EAI X3 lidar Driver Package
+    - ydlidar_ros2_driver：EAI RDK lidar Driver Package
     - kruisee_lidar：Krypton KRJ10 lidar Driver Package
 - originbot_msgs： OriginBot custom communication interface
 - originbot_bringup：Scripts and files related to the bot launch

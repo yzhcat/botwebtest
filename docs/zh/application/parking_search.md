@@ -59,15 +59,15 @@ ros2 launch originbot_bringup originbot.launch.py
 
 ## **检查实现效果**
 
-小车在行车区域搜寻前进时X3板端运行终端输出log信息，其中控制小车以0.1m/s的速度前进运动
+小车在行车区域搜寻前进时板端运行终端输出log信息，其中控制小车以0.1m/s的速度前进运动
 
 ![cap1](../../assets/img/parking_search/cap1.gif)
 
-小车发现车位后转向时在X3板端运行终端输出log信息
+小车发现车位后转向时在板端运行终端输出log信息
 
 ![cap2](../../assets/img/parking_search/cap2.gif)
 
-小车确定车位后前进并最终停止时在X3板端运行
+小车确定车位后前进并最终停止时在板端运行
 
 ![cap3](../../assets/img/parking_search/cap3.gif)
 

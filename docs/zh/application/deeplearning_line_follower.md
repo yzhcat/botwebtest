@@ -354,7 +354,7 @@ ros2 launch hobot_usb_cam hobot_usb_cam_websocket.launch.py
 
 ![8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf](../../assets/img/deeplearning_line_follower/8f27f7d6-97a3-4b9d-bff7-bf2d7652d2bf.png){.img-fluid tag=1}
 
-在RDK X3上ResNet18推理性能高达232FPS，ResNet50推理性能也超过100FPS，高帧率保证了数据处理的实时性，是后续提高车速以及实现更复杂应用的必要条件。这里先使用ResNet18网络结构，后期遇到瓶颈考虑更深的ResNet50网络结构。为了满足输出引导线坐标值x，y这里需要修改ResNet18网络FC输出为2，即直接输出引导线的x，y坐标值。ResNet18输入分辨率为224x224。
+在RDK上ResNet18推理性能高达232FPS，ResNet50推理性能也超过100FPS，高帧率保证了数据处理的实时性，是后续提高车速以及实现更复杂应用的必要条件。这里先使用ResNet18网络结构，后期遇到瓶颈考虑更深的ResNet50网络结构。为了满足输出引导线坐标值x，y这里需要修改ResNet18网络FC输出为2，即直接输出引导线的x，y坐标值。ResNet18输入分辨率为224x224。
 
 
 

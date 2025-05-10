@@ -57,7 +57,7 @@ OriginBot comes equipped with the Sweet Potato Robot Development Board - RDK X5,
 
 <div style="display: inline-block">
 <img src="../assets/img/image-20220922173203208.png" style="max-width:256px;" align="right">
-OriginBot uses ROS2 and TogetheROS™.Bot (a deeply optimized ROS open-source robot operating system by Digua) as its software foundation. It is compatible with many ROS ecosystem applications and is ready to use out of the box. It supports original applications and enables quick development of features like SLAM, navigation, visual processing, and machine learning.
+OriginBot uses ROS2 and TogetheROS™.Bot (a deeply optimized ROS open-source robot operating system by D-Robotics) as its software foundation. It is compatible with many ROS ecosystem applications and is ready to use out of the box. It supports original applications and enables quick development of features like SLAM, navigation, visual processing, and machine learning.
 </div>
 
 ### <font color='green'>**Born from Passion**</font>
@@ -106,7 +106,7 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 ### **Provide Feedback**
 
-- If you have any questions or suggestions while using the OriginBot kit, please ask and discuss in the [Guyueju Community Forum](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}.
+- If you have any questions or suggestions while using the OriginBot kit, please ask and discuss in the [Guyuehome Community Forum](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}.
 
 - If you encounter any bugs while using OriginBot, please submit an issue in the [code repository](https://github.com/yzhcat/originbot){:target="_blank"}.
 
@@ -134,7 +134,7 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 - Forum Exchange: [https://www.guyuehome.com/interlocution?id=1826932316801544194](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}
 
-- Digua Robot Developer Community: [https://developer.d-robotics.cc/en](https://developer.d-robotics.cc/en){:target="_blank"}
+- D-Robotics Developer Community: [https://developer.d-robotics.cc/en](https://developer.d-robotics.cc/en){:target="_blank"}
 
 ![Communication Group](../assets/img/group_discord.png)
 

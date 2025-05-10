@@ -17,13 +17,13 @@ typora-copy-images-to: image\reference
 - [Getting Started with ROS2 21 Lectures](https://class.guyuehome.com/detail/p_628f4288e4b01c509ab5bc7a/6){:target="_blank"}
 - [ROS2 Getting Started Tutorial](https://book.guyuehome.com/){:target="_blank"}
 - [Configure the ROS2 development environment](https://www.bilibili.com/video/BV16B4y1Q7jQ?p=5&vd_source=c67aa749a53261eb7bdd22ba5b916d5f){:target="_blank"}
-- [Guyueju Robot Community](https://www.guyuehome.com/){:target="_blank"}
+- [Guyuehome Robot Community](https://www.guyuehome.com/){:target="_blank"}
 
 
 
-## **TogetheROS/Sunrise X3 Pi**
+## **TogetheROS/RDK**
 
-- [RDK X3 User Manual](https://developer.horizon.cc/documents_rdk/){:target="_blank"}
+- [RDK User Manual](https://developer.horizon.cc/documents_rdk/){:target="_blank"}
 
 - [Horizon Robotics Development Platform User Manual](https://developer.horizon.cc/documents_tros/){:target="_blank"}
 

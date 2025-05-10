@@ -71,7 +71,7 @@ originbot.launch.py会根据以上参数启动对应的传感器，还会调用r
 
 | 参数名                                            | 描述                                                         | 参数值                    | 默认值 |
 | ------------------------------------------------- | ------------------------------------------------------------ | ------------------------- | ------ |
-| <font color='green'>**port_name**</font>          | RDK X3与控制器连接的串口号                                 | string                    | ttyS3  |
+| <font color='green'>**port_name**</font>          | RDK与控制器连接的串口号                                 | string                    | ttyS3  |
 | <font color='green'>**correct_factor_vx**</font>  | 线速度的线性校正参数                                         | float                     | 0.898  |
 | <font color='green'>**correct_factor_vth**</font> | 角速度的线性校正参数                                         | float                     | 0.874  |
 | <font color='green'>**auto_stop_on**</font>       | 自动停车功能开关，启动后若0.5秒没收到Twist速度指令，机器人自动停车 | true：使用，false：不使用 | false  |

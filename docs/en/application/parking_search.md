@@ -43,15 +43,15 @@ ros2 launch parking_search parking_search.launch.py
 
 ## **Check the implementation effect**
 
-When the OriginBot searches for progress in the driving area, the X3 board terminal outputs log information, in which the OriginBot is controlled to move forward at a speed of 0.1m/s
+When the OriginBot searches for progress in the driving area, the RDK board terminal outputs log information, in which the OriginBot is controlled to move forward at a speed of 0.1m/s
 
 ![cap1](../../assets/img/parking_search/cap1.gif)
 
-When the OriginBot turns after discovering the parking space, it runs on the X3 board and outputs log information
+When the OriginBot turns after discovering the parking space, it runs on the RDK board and outputs log information
 
 ![cap2](../../assets/img/parking_search/cap2.gif)
 
-After determining the parking space, the OriginBot moves forward and finally stops when it runs at the end of the X3 board
+After determining the parking space, the OriginBot moves forward and finally stops when it runs at the end of the RDK board
 
 ![cap3](../../assets/img/parking_search/cap3.gif)
 

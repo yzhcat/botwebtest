@@ -97,7 +97,7 @@ ros2 launch originbot_gazebo originbot_follow_line_gazebo.launch.py
 
 
 
-After successful startup, you can see a more complex map. You can try it yourself. You are welcome to share the successful results to the [Guyueju community](https://www.guyuehome.com/)！
+After successful startup, you can see a more complex map. You can try it yourself. You are welcome to share the successful results to the [Guyuehome community](https://www.guyuehome.com/)！
 
 ![image-20230624014120181](../../assets/img/gazebo_line_follower/image-20230624014120181.png){.img-fluid tag=1}
 

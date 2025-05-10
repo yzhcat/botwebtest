@@ -55,11 +55,11 @@ ros2 launch audio_control audio_control.launch.py
 
 ## **Description of the intelligent voice module**
 
-The intelligent voice module is an audio module designed based on RDK X3, using ES7210 high-performance four-channel coding chip and ES8156 high-performance stereo audio decoding chip, which is controlled through the I2C interface and transmitted audio through the I2S interface. The standard 3.5mm headphone jack is installed on board to play music through external headphones. There is a high-quality MEMS silicon microphone in each of the left and right corners of the board for stereo recording.
+The intelligent voice module is an audio module designed based on RDK, using ES7210 high-performance four-channel coding chip and ES8156 high-performance stereo audio decoding chip, which is controlled through the I2C interface and transmitted audio through the I2S interface. The standard 3.5mm headphone jack is installed on board to play music through external headphones. There is a high-quality MEMS silicon microphone in each of the left and right corners of the board for stereo recording.
 
 **Where to buy**
 
-You can check the RDK User Manual [Audio Adapter Board | RDK X3 User Manual (horizon.cc)](https://developer.horizon.cc/documents_rdk/hardware_development/rdk_x3/audio_board)
+You can check the RDK User Manual [Audio Adapter Board | RDK User Manual (horizon.cc)](https://developer.horizon.cc/documents_rdk/hardware_development/rdk_x3/audio_board)
 has how to use and a link to purchase
 
 **Product Features**
@@ -94,7 +94,7 @@ i2cdetect -r -y 0
 
 Among them,`08` is the device address of `ES8156`，`40`and`42` are the device address of  `ES7210`.
 
-**Load the driver audio codec and the X3 audio framework driver**
+**Load the driver audio codec and the rdk audio framework driver**
 
 ```
 sudo modprobe es7210

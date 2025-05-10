@@ -176,7 +176,7 @@ Next, you can follow the normal process of training Yolov5.
 !pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
 
-（2）Regardless of whether you use the cloud or the PC side, in terms of network architecture, in order to match the use of RDK X3, you need to change the network architecture (yolo.py) to the following:
+（2）Regardless of whether you use the cloud or the PC side, in terms of network architecture, in order to match the use of RDK, you need to change the network architecture (yolo.py) to the following:
 
 ```
   def forward(self, x):

@@ -46,7 +46,7 @@ OriginBot机器人端的功能包都放置在/userdata/dev_ws工作空间下的s
 - originbot_base：机器人底盘驱动
 - originbot_driver：机器人设备驱动
     - serial_ros2：串口驱动包
-    - ydlidar_ros2_driver：EAI X3雷达驱动包
+    - ydlidar_ros2_driver：EAI 雷达驱动包
     - kruisee_lidar：氪见KRJ10雷达驱动包
 - originbot_msgs： OriginBot自定义通信接口
 - originbot_bringup：机器人启动相关的脚本和文件

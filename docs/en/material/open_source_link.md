@@ -83,7 +83,7 @@ The source code repositories corresponding to the above firmware are as follows:
 | name             | Download link                                                     | illustrate                                                         |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | RDK X5 Data Pack   | [Click here to view](https://developer.d-robotics.cc/rdk_doc/en/Quick_start/hardware_introduction/rdk_x5){:target="_blank"} | The RDK X5 package contains hardware interface manuals, schematics, user manuals, and more |
-| Lidar data manual | [Click Download](https://github.com/yzhcat/originbot_controller/blob/master/material/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/VP100L%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%20.pdf){:target="_blank"} | YDLIDAR X3 data manual                                          |
+| Lidar data manual | [Click Download](https://github.com/yzhcat/originbot_controller/blob/master/material/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/VP100L%E6%BF%80%E5%85%89%E9%9B%B7%E8%BE%BE%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C%20.pdf){:target="_blank"} | YDLIDAR data manual                                          |
 | Motor data manual     | [Click Download](https://github.com/yzhcat/originbot_controller/blob/master/material/%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C/%E7%A0%81%E7%9B%98TT%E7%94%B5%E6%9C%BA%E6%95%B0%E6%8D%AE%E6%89%8B%E5%86%8C.pdf){:target="_blank"} | Code disc TT motor                                                   |
 
 ## **Power bank**
