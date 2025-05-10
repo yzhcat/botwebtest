@@ -230,12 +230,3 @@ extra:
         - name: 简体中文
           link: /
           lang: zh
-
-# extra:
-#   alternate:
-#     - name: English
-#       link: /botwebtest/en/
-#       lang: en
-#     - name: 简体中文
-#       link: /botwebtest/
-#       lang: zh
