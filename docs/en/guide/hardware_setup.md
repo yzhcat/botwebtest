@@ -14,7 +14,7 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rRoLNXG-gnA?si=cN5GdL8x6VykAJ-y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </center>
 
-> This video is based on the RDK X3 version, which may have some differences from the current X5 version.
+> This video is based on the RDK X3 version, which may have some differences from the current X5 version.   
 > [@mikelikesrobots](https://www.youtube.com/@mikelikesrobots)
 > thanks for sharing the video with us.
 

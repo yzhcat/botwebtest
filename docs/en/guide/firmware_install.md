@@ -10,7 +10,7 @@ The OriginBot controller does not have firmware burned in the factory. You can i
 ## **<span id="download_controller_firmware">Burn the controller firmware</span >**
 
 <iframe
-  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865911983&page=7"
+  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865911983&page=7&autoplay=0"
   scrolling="no"
   border="0"
   width="800px"

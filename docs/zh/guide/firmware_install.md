@@ -14,7 +14,7 @@ OriginBot的控制器出厂未烧写固件，大家可以通过以下两种方�
 ## **<span id="download_controller_firmware">烧写控制器固件</span >**
 
 <iframe
-  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865911983&page=7"
+  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865911983&page=7&autoplay=0"
   scrolling="no"
   border="0"
   width="800px"

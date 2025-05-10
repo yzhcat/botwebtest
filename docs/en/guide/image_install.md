@@ -40,7 +40,7 @@ Please download the SD card image of the robot from the table below and extract 
 ### **Burn the SD card image**
 
 <iframe
-  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865880997&page=2"
+  src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865880997&page=2&autoplay=0"
   scrolling="no"
   border="0"
   width="800px"
