@@ -47,3 +47,13 @@ mkdocs serve
 mkdocs build
 ```
 
+
+# 使用 uv
+```bash
+# 创建虚拟环境
+uv venv
+# 安装依赖
+uv pip install -r requirements.txt
+# 运行文档服务
+uv run mkdocs serve
+```
