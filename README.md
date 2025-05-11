@@ -23,10 +23,10 @@ pip install --upgrade pip
 pip install mkdocs
 ```
 
-- 安装
+- 安装依赖
 
 ```bash
-pip install mkdocs-material
+pip install mkdocs-material mkdocs-static-i18n
 ```
 
 
@@ -49,11 +49,12 @@ mkdocs build
 
 
 # 使用 uv
+[uv install](https://docs.astral.sh/uv/getting-started/installation/)
 ```bash
-# 创建虚拟环境
-uv venv
-# 安装依赖
-uv pip install -r requirements.txt
+# 安装
+curl -LsSf https://astral.sh/uv/install.sh | sh
+# 获取环境和依赖
+uv sync
 # 运行文档服务
 uv run mkdocs serve
 ```
