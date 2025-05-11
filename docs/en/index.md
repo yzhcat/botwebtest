@@ -1,6 +1,6 @@
 # **OriginBot Intelligent Robot Open-Source Kit**
 
-> **Notice to Users**: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. If you have any questions, please join the [Discord](https://discord.gg/nd5aqYNp) community group (see the product QR code).
+> **Notice to Users**: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. If you have any questions, please join the [Discord](https://discord.gg/AajhFJgPAs) community group (see the product QR code).
 
 ![OriginBot](../assets/img/originbot_pro.png)
 
@@ -136,6 +136,6 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 - D-Robotics Developer Community: [https://developer.d-robotics.cc/en](https://developer.d-robotics.cc/en){:target="_blank"}
 
-![Communication Group](../assets/img/group_discord.png)
+[![Communication Group](../assets/img/group_discord.png)](https://discord.gg/AajhFJgPAs)
 
 [![Footer](../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
