@@ -6,7 +6,7 @@
      - OriginBot Pro
      - PC：Ubuntu (≥22.04) + ROS2 (≥humble) + pytorch + docker
 
->  This function is reprinted from the "Horizon Robotics Platform User Manual",[click to view the original content](https://developer.horizon.cc/college/detail/id=98129467158916314){:target="_blank"}
+>  This function is reprinted from the "Robotics Application Development",[click to view](https://developer.d-robotics.cc/rdk_doc/en/Robot_development/apps/parking_search){:target="_blank"}
 >
 
 
