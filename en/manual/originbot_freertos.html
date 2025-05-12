@@ -223,7 +223,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -268,7 +268,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://gitee.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/guyuehome/originbot" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
@@ -1912,6 +1912,9 @@
                   
 
 
+  
+  
+
 
 <h1 id="real-time-operating-system-rtos-configuration"><strong>Real-Time Operating System RTOS Configuration</strong></h1>
 <details class="hint" open="open">
@@ -1940,7 +1943,7 @@
 <p>Configuring FreeRTOS requires refactoring the original code, refactoring part of the code according to the FreeRTOS code template to make it follow the rules of FreeRTOS, and then introducing the most basic FreeRTOS configuration and some APIs.</p>
 <h3 id="basic-configuration">Basic configuration</h3>
 <p>The first thing you need to do is choose a distribution, each version of the API will have some slight differences, in this project you choose V10.2.1, all of which is hosted on the <a href="https://sourceforge.net/projects/freertos/files/FreeRTOS/">code hosting platform</a> </p>
-<p>After the code is downloaded, some files need to be configured into the originbot_controller, mainly including the kernel and hardware interface layers that match the MCU, refer to <a href="https://github.com/yzhcat/originbot_controller/tree/support_Freertos/source/originbot_controller_project/FreeRTOS">code repository</a></p>
+<p>After the code is downloaded, some files need to be configured into the originbot_controller, mainly including the kernel and hardware interface layers that match the MCU, refer to <a href="https://github.com/guyuehome/originbot_controller/tree/support_Freertos/source/originbot_controller_project/FreeRTOS">code repository</a></p>
 <p><img alt="IMG20230403_freertos_frame" src="../../assets/img/originbot_freertos/IMG20230403_freertos_frame.png" /></p>
 <p>During the configuration process, we need to modify some file contents, such as FreeRTOSConfig.h, in which FreeRTOS task priority and stack size are defined, and we need to add the definition of interrupt mechanism on this basis.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>#define vPortSVCHandler SVC_Handler
@@ -2004,7 +2007,7 @@ vTaskStartScheduler();   /* Start a task and enable scheduling */
 <p>vTaskDelay() is used a lot in our tasks, and each task must be in an endless loop, and there must be a block, otherwise the lower priority tasks will not be able to run. To use the vTaskDelay() function in FreeRTOS, you must define INCLUDE_vTaskDelay as 1 in FreeRTOSConfig.h to enable it.</p>
 <h5 id="vtaskdelayuntil">vTaskDelayUntil()</h5>
 <p>This absolute delay is often used to run tasks at a more precise cycle, for example, I have a task and want it to be executed at a fixed frequency at regular intervals, regardless of external influences, and the time interval between the start of the last run and the start of the next run is absolute, not relative.</p>
-<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer.png" /></a></p>
+<p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer_en.png" /></a></p>
 
 
 
