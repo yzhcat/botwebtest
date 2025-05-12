@@ -87,5 +87,5 @@ echo " source /userdata/dev_ws/install/local_setup.bash" >> ~/.bashrc # All term
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

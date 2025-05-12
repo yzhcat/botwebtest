@@ -59,4 +59,4 @@ typora-copy-images-to: image/material_list
 | 8   | USB to T power line                                              | 1 pc  | ![image-20220902221002673](../../assets/img/material_list/USB2T.png){.img-fluid tag=5 title="USB2T"} |                                                         |
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

@@ -190,4 +190,4 @@ Affix the unique numbered stickers included in the kit to the front and rear sid
 
 At this point, the OriginBot installation is complete.
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

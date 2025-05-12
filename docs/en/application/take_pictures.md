@@ -127,4 +127,4 @@ void TakePicturesNode::saveHbmImage(
 }
 ```
 
-[![Footer Image](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![Footer Image](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

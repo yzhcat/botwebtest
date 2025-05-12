@@ -286,5 +286,5 @@ def main(args=None):                      # ROS2 node main entry main function
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

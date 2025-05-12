@@ -553,4 +553,4 @@ ros2 launch originbot_bringup originbot.launch.py
     - [D-robotics X5 OpenExplorer](https://developer.d-robotics.cc/forumDetail/251934919646096384)
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

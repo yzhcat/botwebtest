@@ -125,5 +125,5 @@ For more specific logic, please refer to [this link](https://blog.csdn.net/u0139
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

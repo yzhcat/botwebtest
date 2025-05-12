@@ -138,4 +138,4 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 [![Communication Group](../assets/img/group_discord.png)](https://discord.gg/AajhFJgPAs)
 
-[![Footer](../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![Footer](../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

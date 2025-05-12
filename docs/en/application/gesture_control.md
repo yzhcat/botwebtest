@@ -68,5 +68,5 @@ For a detailed explanation of the principle, please see:
 
 [https://developer.d-robotics.cc/rdk_doc/Robot_development/apps/car_gesture_control](https://developer.d-robotics.cc/rdk_doc/Robot_development/apps/car_gesture_control){:target="_blank"}
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

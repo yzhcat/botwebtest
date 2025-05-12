@@ -42,5 +42,5 @@ More text content, please see [guyuehome](https://www.guyuehome.com/){:target="_
 
 
 
-[![footer](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![footer](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

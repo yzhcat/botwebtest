@@ -117,5 +117,5 @@ If you want to compile and generate the HEX binary file and download it via USB,
 
 ![image-20220928231314555](../../assets/img/firmware_install/image-20220928231314555.png){.img-fluid tag=2 title="Configuration output options"}
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

@@ -120,5 +120,5 @@ In this way, we can remotely access the code on OriginBot, and we can modify it 
 
 ![2022-08-22_15-46](../../assets/img/ide_setup/2022-08-22_15-46.png){.img-fluid tag=4 title="Connect to a remote server"}
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

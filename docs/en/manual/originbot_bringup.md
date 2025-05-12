@@ -130,5 +130,5 @@ ros2 launch originbot_bringup originbot.launch.py use_camera:=true use_lidar:=tr
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

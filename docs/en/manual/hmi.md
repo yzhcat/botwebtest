@@ -69,4 +69,4 @@ Click Set up single navigation.
 
 The machine also plans the path and moves.
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

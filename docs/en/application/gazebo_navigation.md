@@ -71,4 +71,4 @@ Click the target location and select the "2D Goal Pose" button, and then select 
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

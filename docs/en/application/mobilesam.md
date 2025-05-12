@@ -32,4 +32,4 @@ After running successfully, open a browser on a PC in the same network, enter `h
 
 ![Image Segmentation Results](../../assets/img/mobilesam/Clip_2024-09-15_11-44-04.png)
 
-[![Footer Image](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![Footer Image](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

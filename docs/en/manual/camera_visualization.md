@@ -178,4 +178,4 @@ In the running terminal, you can see the network card that fastdds is currently 
 
 
 
-[![picture 1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![picture 1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

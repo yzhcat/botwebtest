@@ -113,4 +113,4 @@ If you create new features or improvements based on the OriginBot open-source pr
 
 We wish you an exciting journey in robot development! ☻
 
-[![Footer Image](../../assets/img/footer.png)](https://www.guyuehome.com){:target="_blank"}
+[![Footer Image](../../assets/img/footer_en.png)](https://www.guyuehome.com){:target="_blank"}

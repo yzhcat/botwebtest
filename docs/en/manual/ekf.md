@@ -118,4 +118,4 @@ ros2 launch originbot_viz display_robot_tf.launch.py
 ![img](../../assets/img/teleoperation/2022-08-10_23-30.png){.img-fluid title="Robot coordinate visualization"}
 If you need to adjust the parameters of the ekf, you can modify it directly "originbot_navigation/config/ekf.yaml".
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

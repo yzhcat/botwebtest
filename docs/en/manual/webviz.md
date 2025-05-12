@@ -81,5 +81,5 @@ Official website API documentation: [https://docs.foxglove.dev/docs/introduction
 
 foxglove open source repository: [https://github.com/foxglove/ros-foxglove-bridge](https://github.com/foxglove/ros-foxglove-bridge){:target="_blank"}
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

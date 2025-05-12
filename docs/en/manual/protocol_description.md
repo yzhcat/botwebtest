@@ -195,4 +195,4 @@ Since the value of PID is small, the actual parameter = data field/1000, and the
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

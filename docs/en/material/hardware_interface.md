@@ -63,4 +63,4 @@ D-Robotics RDKTM X5 is equipped with Sunrise 5 intelligent computing chip, which
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

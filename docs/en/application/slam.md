@@ -105,4 +105,4 @@ ros2 run nav2_map_server map_saver_cli -f my_map --ros-args -p save_map_timeout:
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

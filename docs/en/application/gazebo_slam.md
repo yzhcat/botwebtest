@@ -70,5 +70,5 @@ ros2 run nav2_map_server map_saver_cli -t map -f cloister
 
 
 
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

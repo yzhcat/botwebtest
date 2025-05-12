@@ -98,4 +98,4 @@ You need a 5V constant voltage power supply
 
 ???+ warning
     If your power supply is not a constant voltage power supply, such as a battery pack, it is recommended to use a 12V/6A battery pack, and the minimum voltage should be kept above 8V.
-[![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
