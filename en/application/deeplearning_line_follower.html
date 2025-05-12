@@ -2364,11 +2364,10 @@
 <p>Deep learning is based on data, the robot can only learn from the scene that it has seen in the data. If it has not seen the scene, the recognition effect is not very good. So if we use the patrol color and the surrounding environment are different, we still need to collect as much data as possible so that the robot can learn. The complete deep learning process can refer to the following.</p>
 <h2 id="introduction-to-the-principle"><strong>Introduction to the principle</strong></h2>
 <p>The perception of the position of the guide line in the line-tracking task is actually the perception of the characteristics of the guide line. The photoelectric sensor detects the position of the line by using the difference in reflected light. Different colors of surfaces have different reflectivity. For example, white has a high reflectivity and black absorbs light, so the received signal strength is different. The traditional image processing method is to extract features based on the pixel values of the image, while deep learning automatically learns the image features through the neural network and returns the position of the features in the image.</p>
-<p><img alt="line_flow" src="../../assets/img/deeplearning_line_follower/line_flow.png" /></p>
+<p><img alt="line_flow" class="img-fluid" src="../../assets/img/deeplearning_line_follower/line_flow_en.png" tag="1" /></p>
 <p>deeplearning in the line-tracking task is actually a powerful feature matcher. It can extract guide line features from the image and return the position of the features in the image. As long as a certain number of labeled data are prepared, a deep learning model can be trained to achieve guide line position perception, and there is no need to manually adjust the threshold.</p>
 <h3 id="deep-learning-process"><strong>Deep learning process</strong></h3>
 <p>Compared with traditional image processing, deep learning can enable machine vision to adapt to more changes, thereby improving the accuracy of complex environments. Before we begin, let's briefly introduce the basic process of deep learning.</p>
-<p><img alt="image-20220915112906511" class="img-fluid" src="../../assets/img/deeplearning_line_follower/image-20220915112906511.png" tag="1" /></p>
 <p>The core purpose of machine learning is to help us solve problems, which can be broken down into six main steps:</p>
 <ul>
 <li><strong>Problem definition</strong>：What is the problem we are trying to solve? For example, in the case of visual line patrol here, it is necessary to identify the position of the line in the image.</li>
@@ -2389,15 +2388,15 @@
 <p><img alt="img_cut" src="../../assets/img/deeplearning_line_follower/img_cut.png" /></p>
 <p>In the line-tracking scenario, the part that is more concerned about is the lower part of the image, so the part that is not needed can be cut off synchronously during annotation, and the line height can be cut off to 224.</p>
 <p>For the width, you can use scaling. The image size captured by the USB camera is 640x480, and the width will be scaled to 224 during training. This step usually does not modify the original dataset file, but scales it when reading.</p>
-<p><img alt="imgdata_tran" src="../../assets/img/deeplearning_line_follower/imgdata_tran.png" /></p>
+<p><img alt="imgdata_tran" src="../../assets/img/deeplearning_line_follower/imgdata_tran_en.png" /></p>
 <p>Summarizing the process, the USB camera captures a series of 640x480 images with guiding lines; the annotation program reads an image, crops part of the area to get a 640x224 image, and completes the annotation by clicking the position of the guiding line with the mouse; the obtained dataset is passed to ResNet18 before scaling the annotated coordinates and images to 224x224 to start training, and the model file is generated.</p>
 <h3 id="deployment-on-the-board-and-use"><strong>Deployment on the board and use</strong></h3>
 <p>The floating-point model <em>.pth file trained by pytorch will have very low efficiency if run directly on the D-Robotics RDK. In order to improve the operational efficiency and exert the 10T computing power of the BPU, the operation of convert the floating-point model to the fixed-point model is required here. The trained model is first converted.onnx(</em><em>Open Neural Network Exchange</em><em>) - an open format used to represent deep learning models, allowing models between different frameworks to be converted and used mutually. Generate fixed-point models that can run on the D-Robotics RDK BPU </em>.bin file.</p>
 <p>Load the model file on the board, and capture images in real time, crop and scale them, and then input them into the ResNet network to get the position of the guiding line in the image.</p>
-<p><img alt="Line inspection process" src="../../assets/img/deeplearning_line_follower/dlf.png" /></p>
+<p><img alt="Line inspection process" src="../../assets/img/deeplearning_line_follower/dlf_en.png" /></p>
 <p>However, the obtained coordinates at this time are based on 224x224, so the coordinates need to be restored to 640x480. The horizontal coordinate is x*(640/224), and the vertical coordinate is y+ the cropped height. After that, control can be achieved based on the position of the guide line. If the guide line is on the left, the car will turn left accordingly; if it is on the right, the car will turn right accordingly.</p>
 <h2 id="ai-deep-learning"><strong>AI deep learning</strong></h2>
-<p><img alt="deeplearning_flow" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_flow.jpg" tag="1" /></p>
+<p><img alt="deeplearning_flow" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_flow_en.png" tag="1" /></p>
 <p>The next deep learning operation is mainly divided into the above steps, before the operation, you also need to complete the configuration of the PC environment, let's experience deep learning together.</p>
 <h3 id="pc-environment-configuration"><strong>PC environment configuration</strong></h3>
 <p>The basic environment on the PC side is Ubuntu+ROS+pytorch+docker, please complete the configuration of Ubuntu, ROS, and OriginBot function packages according to  <a href="../guide/pc_config.html" target="_blank">Desktop environment configuration</a>.</p>
@@ -2554,7 +2553,7 @@ The image data folder is named input_images, and the line_follower_model package
 <p>The ResNet18 inference performance is up to 232 FPS on the RDK X3 and the ResNet50 inference performance is also over 100 FPS.The high frame rate ensures real-time data processing and is a necessary condition for subsequent speed increases and more complex applications. Here, the ResNet18 network structure is used first, and the deeper ResNet50 network structure is considered when the bottleneck is encountered later. In order to satisfy the output guide line coordinate value x,y, you need to modify the ResNet18 network FC output to 2, that is, directly output the x,y coordinate value of the guide line. The ResNet18 input resolution is 224x224.</p>
 <h4 id="model-training_1"><strong>Model training</strong></h4>
 <p>The above-mentioned models can be directly reused from the definitions in PyTorch, and the sharding of the dataset and the training of the model are all encapsulated in the code of the line_follower_model feature package.</p>
-<p><img alt="model_traning" class="img-fluid" src="../../assets/img/deeplearning_line_follower/model_traning.jpg" tag="1" /></p>
+<p><img alt="model_traning" class="img-fluid" src="../../assets/img/deeplearning_line_follower/model_traning_en.png" tag="1" /></p>
 <p>Directly activate the pytorch environment on the PC and run the following command to start training:</p>
 <p>activate pytorch environment
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nb">source</span><span class="w"> </span>~/.pytorch_venv/bin/activate
@@ -2578,7 +2577,7 @@ The image data folder is named input_images, and the line_follower_model package
 </details>
 <h3 id="model-conversion"><strong>Model conversion</strong></h3>
 <p>The floating-point model trained by pytorch would be inefficient if run directly on RDK X3. In order to improve the operation efficiency and give full play to the 5T computing power of the BPU, the floating-point model conversion operation needs to be performed here.</p>
-<p><img alt="model_transform" class="img-fluid" src="../../assets/img/deeplearning_line_follower/model_transform.jpg" tag="1" /></p>
+<p><img alt="model_transform" class="img-fluid" src="../../assets/img/deeplearning_line_follower/model_transform_en.png" tag="1" /></p>
 <h4 id="generate-an-onnx-model"><strong>Generate an onnx model</strong></h4>
 <p>On the PC side, use generate_onnx to convert the previously trained model into an onnx model by using the following command:</p>
 <p>activate pytorch environment
