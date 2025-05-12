@@ -75,15 +75,13 @@ Deep learning is based on data, the robot can only learn from the scene that it 
 
 The perception of the position of the guide line in the line-tracking task is actually the perception of the characteristics of the guide line. The photoelectric sensor detects the position of the line by using the difference in reflected light. Different colors of surfaces have different reflectivity. For example, white has a high reflectivity and black absorbs light, so the received signal strength is different. The traditional image processing method is to extract features based on the pixel values of the image, while deep learning automatically learns the image features through the neural network and returns the position of the features in the image.
 
-![line_flow](../../assets/img/deeplearning_line_follower/line_flow.png)
+![line_flow](../../assets/img/deeplearning_line_follower/line_flow_en.png){.img-fluid tag=1}
 
 deeplearning in the line-tracking task is actually a powerful feature matcher. It can extract guide line features from the image and return the position of the features in the image. As long as a certain number of labeled data are prepared, a deep learning model can be trained to achieve guide line position perception, and there is no need to manually adjust the threshold.
 
 ### **Deep learning process**
 
 Compared with traditional image processing, deep learning can enable machine vision to adapt to more changes, thereby improving the accuracy of complex environments. Before we begin, let's briefly introduce the basic process of deep learning.
-
-![image-20220915112906511](../../assets/img/deeplearning_line_follower/image-20220915112906511.png){.img-fluid tag=1}
 
 The core purpose of machine learning is to help us solve problems, which can be broken down into six main steps:
 
@@ -118,7 +116,7 @@ In the line-tracking scenario, the part that is more concerned about is the lowe
 
 For the width, you can use scaling. The image size captured by the USB camera is 640x480, and the width will be scaled to 224 during training. This step usually does not modify the original dataset file, but scales it when reading.
 
-![imgdata_tran](../../assets/img/deeplearning_line_follower/imgdata_tran.png)
+![imgdata_tran](../../assets/img/deeplearning_line_follower/imgdata_tran_en.png)
 
 Summarizing the process, the USB camera captures a series of 640x480 images with guiding lines; the annotation program reads an image, crops part of the area to get a 640x224 image, and completes the annotation by clicking the position of the guiding line with the mouse; the obtained dataset is passed to ResNet18 before scaling the annotated coordinates and images to 224x224 to start training, and the model file is generated.
 
@@ -128,7 +126,7 @@ The floating-point model *.pth file trained by pytorch will have very low effici
 
 Load the model file on the board, and capture images in real time, crop and scale them, and then input them into the ResNet network to get the position of the guiding line in the image.
 
-![Line inspection process](../../assets/img/deeplearning_line_follower/dlf.png)
+![Line inspection process](../../assets/img/deeplearning_line_follower/dlf_en.png)
 
 However, the obtained coordinates at this time are based on 224x224, so the coordinates need to be restored to 640x480. The horizontal coordinate is x*(640/224), and the vertical coordinate is y+ the cropped height. After that, control can be achieved based on the position of the guide line. If the guide line is on the left, the car will turn left accordingly; if it is on the right, the car will turn right accordingly.
 
@@ -136,7 +134,7 @@ However, the obtained coordinates at this time are based on 224x224, so the coor
 
 ## **AI deep learning**
 
-![deeplearning_flow](../../assets/img/deeplearning_line_follower/deeplearning_flow.jpg){.img-fluid tag=1}
+![deeplearning_flow](../../assets/img/deeplearning_line_follower/deeplearning_flow_en.png){.img-fluid tag=1}
 
 The next deep learning operation is mainly divided into the above steps, before the operation, you also need to complete the configuration of the PC environment, let's experience deep learning together.
 
@@ -356,7 +354,7 @@ The ResNet18 inference performance is up to 232 FPS on the RDK X3 and the ResNet
 
 The above-mentioned models can be directly reused from the definitions in PyTorch, and the sharding of the dataset and the training of the model are all encapsulated in the code of the line_follower_model feature package.
 
-![model_traning](../../assets/img/deeplearning_line_follower/model_traning.jpg){.img-fluid tag=1}
+![model_traning](../../assets/img/deeplearning_line_follower/model_traning_en.png){.img-fluid tag=1}
 
 
 Directly activate the pytorch environment on the PC and run the following command to start training:
@@ -391,7 +389,7 @@ After training is complete, the .pth model file will be generated.
 
 The floating-point model trained by pytorch would be inefficient if run directly on RDK X3. In order to improve the operation efficiency and give full play to the 5T computing power of the BPU, the floating-point model conversion operation needs to be performed here.
 
-![model_transform](../../assets/img/deeplearning_line_follower/model_transform.jpg){.img-fluid tag=1}
+![model_transform](../../assets/img/deeplearning_line_follower/model_transform_en.png){.img-fluid tag=1}
 
 
 
