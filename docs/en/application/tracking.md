@@ -66,7 +66,7 @@ In this implementation, it can basically be regarded as known coordinate informa
 
 Taking MPC as an example, the diagram is as follows:
 
-![图示](../../assets/img/tracking/图示.png)
+![图示](../../assets/img/tracking/图示_en.png)
 
 ### **PurePursuit**
 
