@@ -101,7 +101,7 @@ typora-copy-images-to: image/hardware_setup
 
 使用螺丝将控制器固定在底盘的4个支撑铜柱上，并将之前穿出的电机线分别连接到控制器的对应端口：
 
-![MVIMG_20240923_170415](../../assets/img/hardware_setup/MVIMG_20240923_170415.jpg){.img-fluid tag=2}
+![controller_install](../../assets/img/hardware_setup/controller_install.png){.img-fluid tag=2}
 
 
 ???+ hint

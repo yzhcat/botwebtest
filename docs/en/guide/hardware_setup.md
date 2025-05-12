@@ -52,7 +52,7 @@ You can fix the power supply between the chassis and the control board, but the 
 Use screws to fix the controller to the four supporting copper pillars of the chassis, and connect the motor wires that were previously passed through to the corresponding ports of the controller:
 ![MVIMG_20240923_170119](../../assets/img/hardware_setup/MVIMG_20240923_170119.jpg){.img-fluid tag=2}
 
-![MVIMG_20240923_170415](../../assets/img/hardware_setup/MVIMG_20240923_170415.jpg){.img-fluid tag=2}
+![controller_install](../../assets/img/hardware_setup/controller_install.png){.img-fluid tag=2}
 
 
 
@@ -149,7 +149,7 @@ RDK X5 is powered by the controller through the Type C port. Use the Type C powe
 ???+ hint
     When plugging or unplugging the Type-C power module, be careful to avoid damaging the SMD pins.
 
-![IMG_20240923_144648](../../assets/img/hardware_setup/IMG_20240923_144648.jpg){.img-fluid tag=2}
+![type-c_model](../../assets/img/hardware_setup/type-c_model.png){.img-fluid tag=2}
 
 
 
@@ -157,7 +157,7 @@ RDK X5 is powered by the controller through the Type C port. Use the Type C powe
 
 Use a serial communication cable to connect the controller and the communication interface of RDK X5:
 
-![IMG_20240923_144708](../../assets/img/hardware_setup/IMG_20240923_144708.jpg){.img-fluid tag=2}
+![Serial_line](../../assets/img/hardware_setup/Serial_line.jpg){.img-fluid tag=2}
 
 
 ???+ hint
@@ -169,7 +169,7 @@ The original Type C data cable of the radar is long. You can use the short cable
 
 
 
-![IMG_20240923_144844](../../assets/img/hardware_setup/IMG_20240923_144844.jpg){.img-fluid tag=2}
+![laser_usb](../../assets/img/hardware_setup/laser_usb.jpg){.img-fluid tag=2}
 
 Connect the main power cord
 
