@@ -26,7 +26,7 @@ After the preparation is completed, you can start the system installation, and t
 
 [Click to download the Ubutnu system image](https://ubuntu.com/download/desktop ){:target="_blank"} 
 
-![image12](../../assets/img/pc_config/image12.jpg)
+![image12](../../assets/img/pc_config/image12.jpg){.img-fluid tag=2}
 
 ???+ attention
     Ubuntu22.04 is recommended to be selected here, the different version choices determine the next ROS2 version installation,  Ubuntu 22.04 is recommended to install ROS2 Humble.
@@ -35,11 +35,11 @@ After the preparation is completed, you can start the system installation, and t
 
 #### (2) Create the system in a virtual machine
 
-![image-20220523191817446](../../assets/img/pc_config/image-20220523191817446.jpg)
+![Create](../../assets/img/pc_config/Create1.jpg){.img-fluid tag=2}
 
 #### (3) Set the size of the virtual machine's hard disk
 
-![image-20220523191849728](../../assets/img/pc_config/image-20220523191849728.jpg)
+![disk_size](../../assets/img/pc_config/disk_size.jpg){.img-fluid tag=2}
 
 ???+ attention
     The size of the hard disk here can be slightly larger, and it is recommended that it should not be less than 60G to avoid insufficient disk space in the future.
@@ -47,23 +47,23 @@ After the preparation is completed, you can start the system installation, and t
 
 #### (4) Set the Ubuntu image path
 
-![image-20220523191911217](../../assets/img/pc_config/image-20220523191911217.jpg)
+![image path](../../assets/img/pc_config/image_path.png){.img-fluid tag=2}
 
 #### (5) Start the virtual machine
 
-![image16](../../assets/img/pc_config/image16.jpg)
+![image16](../../assets/img/pc_config/image16.jpg){.img-fluid tag=2}
 
 #### (6) Set a username and password
 
-![image17](../../assets/img/pc_config/image17.jpg)
+![image17](../../assets/img/pc_config/image17.jpg){.img-fluid tag=2}
 
 #### (7) Wait for the system to be installed
 
-![image18](../../assets/img/pc_config/image18.jpg)
+![image18](../../assets/img/pc_config/image18.jpg){.img-fluid tag=2}
 
 #### (8) Complete the installation
 
-![image19](../../assets/img/pc_config/image19.jpg)
+![image19](../../assets/img/pc_config/image19.jpg){.img-fluid tag=2}
 
 After the Ubuntu system in the virtual machine is installed, you can feel free to use it to familiarize yourself with it.
 
@@ -84,7 +84,7 @@ After the Ubuntu system in the virtual machine is installed, you can feel free t
 #### (1) Download the system image
 [Click to download the Ubutnu system image](https://ubuntu.com/download/desktop ){:target="_blank"}
 
-![Image](../../assets/img/pc_config/Image.jpg)
+![Image](../../assets/img/pc_config/Image.jpg){.img-fluid tag=2}
 
 
 
@@ -93,7 +93,7 @@ Next, make a USB flash drive into a boot disk, as long as it is larger than 4G.
 
 You can use the tools that come with Ubuntu, or the boot disk maker such as UltraISO, after starting the software, select the ISO image path and the location of the USB flash drive, click start, and the production will be completed in about 10 minutes.
 
-![img](../../assets/img/pc_config/Screenshot from 2020-06-04 20-14-15.jpg)
+![img](../../assets/img/pc_config/Screenshot from 2020-06-04 20-14-15.jpg){.img-fluid tag=2}
 
 
 
@@ -102,43 +102,43 @@ Hard disk installation is a key step, be sure to choose the location of partitio
 
 After inserting the made startup U disk, the boot starts from the U disk, press F12 on this computer, and it will soon enter the boot disk, and follow the instructions in the first few steps.
 
-![Image](../../assets/img/pc_config/Image-166238901494114.jpg)
+![Image](../../assets/img/pc_config/Image-166238901494114.jpg){.img-fluid tag=2}
 
 
 
 The key setting is in the partition step, because the computer has multiple systems, it cannot be installed automatically, and it may overwrite the startup items of the original system, select "something else" to set up the partition yourself.
 
-![Image](../../assets/img/pc_config/Image-166238902493316.jpg)
+![Image](../../assets/img/pc_config/Image-166238902493316.jpg){.img-fluid tag=2}
 
 
 
 Here we only divide it into two partitions, "/" and "swap", so that all files share the same space size, which is very flexible.
 
-![Image](../../assets/img/pc_config/Image-166238903977418.jpg)
+![Image](../../assets/img/pc_config/Image-166238903977418.jpg){.img-fluid tag=2}
 
 
 After the partition is set, you also need to pay attention to the location of the bootlodaer, here you choose the hard disk where Ubuntu is located, to avoid conflicts with Windows.
 
-![Image](../../assets/img/pc_config/Image-166238905251920.jpg)
+![Image](../../assets/img/pc_config/Image-166238905251920.jpg){.img-fluid tag=2}
 
 
 
 After the setup is completed, it can be installed, and all the installation will be completed in 10 minutes.
 
-![Image](../../assets/img/pc_config/Image-166238907009622.jpg)
+![Image](../../assets/img/pc_config/Image-166238907009622.jpg){.img-fluid tag=2}
 
 
 
 #### (4) Start the new system
 Restart the computer and see the grub interface smoothly.
 
-![Image](../../assets/img/pc_config/Image-166238908134824.jpg)
+![Image](../../assets/img/pc_config/Image-166238908134824.jpg){.img-fluid tag=2}
 
 
 
 Choosing Ubuntu, the first boot was a little slow.
 
-![Screenshot from 2020-06-05 03-34-49](../../assets/img/pc_config/Screenshot from 2020-06-05 03-34-49.jpg)
+![Screenshot from 2020-06-05 03-34-49](../../assets/img/pc_config/Screenshot from 2020-06-05 03-34-49.jpg){.img-fluid tag=2}
 
 
 
@@ -207,7 +207,7 @@ Start the first terminal ,and start a publisher node of data with the following 
 ros2 run demo_nodes_cpp talker
 ```
 
-![image-20220523191236749](../../assets/img/pc_config/image-20220523191236749.jpg)
+![image-20220523191236749](../../assets/img/pc_config/image-20220523191236749.jpg){.img-fluid tag=2}
 
 
 
@@ -217,7 +217,7 @@ Start the second terminal ,and start a subscriber node with the following comman
 ros2 run demo_nodes_py listener
 ```
 
-![image-20220523191243490](../../assets/img/pc_config/image-20220523191243490.jpg)
+![image-20220523191243490](../../assets/img/pc_config/image-20220523191243490.jpg){.img-fluid tag=2}
 
 
 
@@ -242,7 +242,7 @@ ros2 run turtlesim turtle_teleop_key
 
 The first command will start a turtle simulator with a blue background, and the second command will start a keyboard control node, and you can control the movement of the baby turtle by clicking the "up, down, left, right" buttons on the keyboard in the terminal.
 
-![image-20220523191347938](../../assets/img/pc_config/image-20220523191347938.jpg)
+![image-20220523191347938](../../assets/img/pc_config/image-20220523191347938.jpg){.img-fluid tag=2}
 
 
 

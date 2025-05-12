@@ -66,7 +66,7 @@ SSH连接OriginBot成功后，在终端中输入如下指令：
 
 运行成功后，在同一网络的PC端，打开浏览器，输入 http://IP:8000，选择“web展示端”，即可查看图像和算法效果，IP为OriginBot的IP地址。
 
-![image-20220822150213359](../../assets/img/camera_visualization/imgae-ip-address.jpg)
+![image-20220822150213359](../../assets/img/camera_visualization/imgae-ip-address.png){.img-fluid tag=1 title="浏览器查看相机例程效果"}
 
 
 

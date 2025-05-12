@@ -48,7 +48,7 @@ ifconfig&&ros2 launch originbot_bringup camera.launch.py
 
 After installing Foxglove, click on the software to see the following interface.
 
-![image-1700719347869](../../assets/img/webviz/image-1700719347869.jpg){.img-fluid tag=1 title="Activate foxglove"}
+![foxglove_open](../../assets/img/webviz/foxglove_open.png){.img-fluid tag=1 title="Activate foxglove"}
 
 Click here to open the connection, enter the IP address, and the connection can be completed.
 

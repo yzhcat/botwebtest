@@ -63,7 +63,12 @@ ros2 launch originbot_bringup originbot.launch.py
 
 
 
-![img](../../assets/img/gesture_control/4a1462e1-2097-4458-b594-7da381ddd6ac-17246365.jpg)
+|Control Gesture	|Function	|Gesture Action Example|
+|-|-|-|
+|666 手势/Awesome|	前进|	![image-awesome](https://developer.d-robotics.cc/rdk_doc/assets/images/image-awesome-a47b44f9f6d0425d7e88ec2f05b64d16.jpeg)|
+|yeah/Victory|	后退|	![image-victory](https://developer.d-robotics.cc/rdk_doc/assets/images/image-victory-13c483b7b905156f2c5ced2abf0edaee.jpeg)|
+|大拇指向右|	右转|	![image-thumbright](https://developer.d-robotics.cc/rdk_doc/assets/images/image-thumbright-ec85f3a3a20cd2b2944e284e318adb11.jpeg)|
+|大拇指向左|	左转	|![image-thumbleft](https://developer.d-robotics.cc/rdk_doc/assets/images/image-thumbleft-dc4842190d5dcf6b2f96907125df97dd.jpeg)|
 
 
 ![d7b39314d6](../../assets/img/gesture_control/d7b39314d6.gif)

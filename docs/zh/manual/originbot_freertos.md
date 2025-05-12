@@ -25,7 +25,7 @@ FreeRTOS的写入方式与写入一般固件一致，我们提供了一个能实
 
 （3）在flymcu软件中，选择准备烧写的固件文件，按照下图进行配置后，点击“开始编程”；
 
-![IMG20230403](../../assets/img/originbot_freertos/IMG20230403.jpg)
+![flymcu](../../assets/img/originbot_freertos/flymuc_zh.png)
 
 
 

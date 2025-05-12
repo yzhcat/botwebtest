@@ -264,7 +264,7 @@ sudo fdisk -u -l /dev/sdb
 Now you can use the dd command to back up your SD card to an img file.
 
 ```bash
-sudo dd bs=512 count=[fdisk命令中最大的end数+1] if=/dev/sdb of=originbot_backup.img
+sudo dd bs=512 count=[fdisk command maximum end number + 1] if=/dev/sdb of=originbot_backup.img
 ```
 ![img](../../assets/img/image_install/2022-08-19_18-25.png){.img-fluid tag=1}
 

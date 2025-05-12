@@ -61,7 +61,7 @@ Open the browser and access the IP address of the robot to see the real-time eff
 
 The human body following function is to control the robot to follow the movement of the human body, which is composed of MIPI image acquisition, human body detection and tracking, human body following strategy, image encoding and decoding, and WEB display, and the process is as follows:
 
-![20220922180336](../../assets/img/body_detection/20220922180336.png){.img-fluid tag=1 title="Introduction to the principle"}
+![20220922180336](../../assets/img/body_detection/workflow_en.png){.img-fluid tag=1 title="Introduction to the principle"}
 
 For a detailed explanation of the principle, please see:
 

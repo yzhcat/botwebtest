@@ -49,7 +49,7 @@ ros2 launch originbot_bringup camera.launch.py
 
 安装完Foxglove后，点击软件即可看到如下界面。
 
-![image-1700719347869](../../assets/img/webviz/image-1700719347869.jpg){.img-fluid tag=1 title="启动foxglove"}
+![foxglove_open](../../assets/img/webviz/foxglove_open.png){.img-fluid tag=1 title="启动foxglove"}
 
 此处点击打开连接，输入ip地址，即可完成连接。
 

@@ -27,7 +27,7 @@ The drive function node of the host computer sends motor speed control data to t
 
 ### **Protocol format**
 
-![image-20220831170224421](../../assets/img/protocol_description/image-20220831170224421.png){.img-fluid tag=1 title="speed control"}
+![image-20220831170224421](../../assets/img/protocol_description/Motor_Control.jpg){.img-fluid tag=1 title="speed control"}
 
 
 
@@ -69,7 +69,7 @@ The controller sends motor speed data to the upper computer cycle, and the upper
 
 ### **Protocol format**
 
-![image-20220831171018549](../../assets/img/protocol_description/image-20220831171018549.png){.img-fluid tag=1 title="Speed feedback"}
+![image-20220831171018549](../../assets/img/protocol_description/Motor_feedback.jpg){.img-fluid tag=1 title="Speed feedback"}
 
 - **Identification bit**：0x02 indicates the speed feedback command.
   
@@ -85,7 +85,7 @@ The controller periodically sends gyroscope data to the host computer, and the h
 
 ### **Protocol format**
 
-![image-20220831171357555](../../assets/img/protocol_description/image-20220831171357555.png){.img-fluid tag=1 title="Gyroscope data feedback"}
+![image-20220831171357555](../../assets/img/protocol_description/gyroscope.jpg){.img-fluid tag=1 title="Gyroscope data feedback"}
 
 
 
@@ -145,7 +145,7 @@ The controller feeds back voltage and other data to the host computer periodical
 
 ### **Protocol format**
 
-![image-20220831171837413](../../assets/img/protocol_description/image-20220831171837413.png){.img-fluid tag=1 title="Sensor data feedback"}
+![image-20220831171837413](../../assets/img/protocol_description/sensor_data.jpg){.img-fluid tag=1 title="Sensor data feedback"}
 
 The voltage value is sent in two parts, integer and decimal, and the voltage value = integer part + decimal part / 100, the unit is V.
 
@@ -163,7 +163,7 @@ The host computer sends instructions to the controller to control LED, buzzer, I
 
 ### **Protocol format**
 
-![image-20220831172001592](../../assets/img/protocol_description/image-20220831172001592.png){.img-fluid tag=1 title="Controller resource control"}
+![image-20220831172001592](../../assets/img/protocol_description/resource_control.jpg){.img-fluid tag=1 title="Controller resource control"}
 
 The enable control fields and status fields of LED, buzzer, and IMU calibration commands can be set to zero and non-zero values, and the verification calculation is the same as above.
 
@@ -187,7 +187,7 @@ The host computer sends PID parameters to the controller, and the controller dyn
 
 ### **Protocol format**
 
-![image-20220831172131388](../../assets/img/protocol_description/image-20220831172131388.png){.img-fluid tag=1 title="PID parameter adjustment"}
+![image-20220831172131388](../../assets/img/protocol_description/PID.jpg){.img-fluid tag=1 title="PID parameter adjustment"}
 
 The PID parameters are reserved externally, and the driver board has a set of factory-calibrated PID parameters.
 

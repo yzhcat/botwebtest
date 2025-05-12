@@ -25,7 +25,7 @@ FreeRTOS is written in the same way as general firmware, and we provide a FreeRT
 
 （3）In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";
 
-![IMG20230403](../../assets/img/originbot_freertos/IMG20230403.jpg)
+![flymcu](../../assets/img/originbot_freertos/flymcu_en.png)
 
 
 
@@ -37,9 +37,7 @@ RTOS stands for Real Time Operation System. RTOS emphasizes real-time, which is 
 
 #### FreeRTOS
 
-FreeRTOS is a type of RTOS that is very small and can be run on a microcontroller. A microcontroller is a small, resource-constrained processor that contains the processor itself, read-only memory (ROM or Flash) to hold the program to be executed, and random access memory (RAM) required for the program to be executed, which is generally executed directly from the read-only memory. On the official website of FreeRTOS, we can see the features it supports.
-
-![IMG20230403_freertos_introduce](../../assets/img/originbot_freertos/IMG20230403_freertos_introduce.png)
+FreeRTOS is a type of RTOS that is very small and can be run on a microcontroller. A microcontroller is a small, resource-constrained processor that contains the processor itself, read-only memory (ROM or Flash) to hold the program to be executed, and random access memory (RAM) required for the program to be executed, which is generally executed directly from the read-only memory. On the official website of FreeRTOS, we can see the features it supports.[FreeRTOS](https://www.freertos.org/Documentation/00-Overview)
 
 ## **Configure FreeRTOS**
 

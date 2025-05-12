@@ -58,7 +58,7 @@ Please select the following table to download the controller firmware suitable f
 （2）Click Port and select the serial port for burning the firmware (select the serial port with the "CH340" number);
 
 （3） In the FlyMCU software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";
-![img](../../assets/img/firmware_install/20220813215508.png){.img-fluid tag=1 title="Download the official firmware"}
+![img](../../assets/img/firmware_install/flymcu.png){.img-fluid tag=1 title="Download the official firmware"}
 
 （4）Wait for the log on the right to prompt that programming is complete and the firmware download/update is complete;
 
@@ -80,7 +80,7 @@ Visit [the download page](https://www.keil.com/demo/eval/arm.htm){:target="_blan
 
 After the download is complete, you can follow the steps below to complete the installation of the software:
 
-![image-20220928230841119](../../assets/img/firmware_install/image-20220928230841119.png){.img-fluid tag=2 title="Install the Keil software"}
+![image-20220928230841119](../../assets/img/firmware_install/MDK_keil.png){.img-fluid tag=2 title="Install the Keil software"}
 
 ### **Download the firmware source code**
 
@@ -96,7 +96,7 @@ git clone https://github.com/guyuehome/originbot_controller
 
 After starting the Keil software, choose to open the project, select the project file in the source code downloaded in the previous step, and then continue to install the necessary software packages:
 
-![image-20220928231025049](../../assets/img/firmware_install/image-20220928231025049.png){.img-fluid tag=2 title="Install the dependencies"}
+![image-20220928231025049](../../assets/img/firmware_install/keil_packages.png){.img-fluid tag=2 title="Install the dependencies"}
 
 
 ### **Compiler configuration**
@@ -109,13 +109,13 @@ The OriginBot controller firmware needs to be compiled using the Keil V5 compile
 
 If you use the debugger to debug online, you need to configure the following parameters:
 
-![image-20220928231135852](../../assets/img/firmware_install/image-20220928231135852.png){.img-fluid tag=2 title="Configure debugging options"}
+![image-20220928231135852](../../assets/img/firmware_install/debug.png){.img-fluid tag=2 title="Configure debugging options"}
 
 
 
 If you want to compile and generate the HEX binary file and download it via USB, you need to configure the following configurations, and then compile it to appear the HEX file, which can be downloaded through the FlyMCU software:
 
-![image-20220928231314555](../../assets/img/firmware_install/image-20220928231314555.png){.img-fluid tag=2 title="Configuration output options"}
+![image-20220928231314555](../../assets/img/firmware_install/output.png){.img-fluid tag=2 title="Configuration output options"}
 
 [![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
 

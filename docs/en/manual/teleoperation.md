@@ -154,7 +154,7 @@ You can see the change of the robot's position and posture in the odometer coord
 
 If you use a virtual machine to run the Ubuntu system on the PC, you need to set the virtual machine's network to bridge mode to ensure that the robot and the Ubuntu system are in the same LAN:
 
-![image-20220922172243444](../../assets/img/teleoperation/image-20220922172243444.png){.img-fluid tag=3 title="Configure the VM network"}
+![Configure the VM network](../../assets/img/teleoperation/VM_network.png){.img-fluid tag=3 title="Configure the VM network"}
 
 
 

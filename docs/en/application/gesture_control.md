@@ -43,7 +43,12 @@ After the startup is successful, stand in front of the OriginBot camera and use 
 
 
 
-![img](../../assets/img/gesture_control/4a1462e1-2097-4458-b594-7da381ddd6ac-17246365.jpg)
+|Control Gesture	|Function	|Gesture Action Example|
+|-|-|-|
+|666 Gesture/Awesome|	Move forward|	![image-awesome](https://developer.d-robotics.cc/rdk_doc/assets/images/image-awesome-a47b44f9f6d0425d7e88ec2f05b64d16.jpeg)|
+|yeah/Victory|	Move backward|	![image-victory](https://developer.d-robotics.cc/rdk_doc/assets/images/image-victory-13c483b7b905156f2c5ced2abf0edaee.jpeg)|
+|Thumb Right|	Turn right|	![image-thumbright](https://developer.d-robotics.cc/rdk_doc/assets/images/image-thumbright-ec85f3a3a20cd2b2944e284e318adb11.jpeg)|
+|Thumb Left|	Turn left	|![image-thumbleft](https://developer.d-robotics.cc/rdk_doc/assets/images/image-thumbleft-dc4842190d5dcf6b2f96907125df97dd.jpeg)|
 
 
 ![d7b39314d6](../../assets/img/gesture_control/d7b39314d6.gif)
@@ -62,7 +67,7 @@ Open the browser and access the robot's IP address to see the real-time effect o
 
 The gesture control function is to control the movement of the robot car through gestures, including left and right rotation and front and back translation. It consists of MIPI image acquisition, human body detection and tracking, human hand key point detection, gesture recognition, gesture control strategy, image encoding and decoding, and WEB display terminal. The process is as follows:
 
-![20220922181402](../../assets/img/gesture_control/20220922181402.png){.img-fluid tag=1 title="Introduction to the principle"}
+![20220922181402](../../assets/img/gesture_control/workflow_en.png){.img-fluid tag=1 title="Introduction to the principle"}
 
 For a detailed explanation of the principle, please see:
 

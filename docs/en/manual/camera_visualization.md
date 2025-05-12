@@ -50,7 +50,7 @@ ros2 launch originbot_bringup camera_websoket_display.launch.py
 
 After successful operation, open the browser on the PC in the same network, enter http://IP:8000, select "web display terminal", and you can view the image and algorithm effects. IP is the IP address of OriginBot.
 
-![image-20220822150213359](../../assets/img/camera_visualization/imgae-ip-address.jpg)
+![image-20220822150213359](../../assets/img/camera_visualization/imgae-ip-address.png){.img-fluid tag=1 title="Check the effect of the routine on the host computer"}
 
 If the camera is driven smoothly, we can not only see the real-time image, but also an example of human skeleton point recognition, which shows that the camera is operating normally.
 
