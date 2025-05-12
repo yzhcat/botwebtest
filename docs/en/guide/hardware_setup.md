@@ -25,7 +25,7 @@
 ???+ note
     Power supply can refer to [**Resources Link**](../material/open_source_link.md#power-bank)
     
-## **Remove the robot chassis**
+## **Take out the robot chassis**
 
 ### Install the universal wheels:
 
