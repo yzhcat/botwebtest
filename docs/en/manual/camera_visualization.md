@@ -13,7 +13,7 @@ typora-copy-images-to: image/camera_visualization
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866105646&page=12&autoplay=0"
   scrolling="no"
   border="0"
@@ -23,7 +23,7 @@ typora-copy-images-to: image/camera_visualization
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 

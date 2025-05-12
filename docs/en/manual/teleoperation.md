@@ -16,7 +16,7 @@ Based on the distributed characteristics of ROS2, OriginBot can easily achieve r
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866092965&page=11&autoplay=0"
   scrolling="no"
   border="0"
@@ -26,7 +26,7 @@ Based on the distributed characteristics of ROS2, OriginBot can easily achieve r
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 ## **Keyboard remote control**
 
@@ -148,7 +148,7 @@ You can see the change of the robot's position and posture in the odometer coord
 
 
 ???+ hint
-    Make sure that the Ubuntu+ROS2 system has been installed on the PC, and the download and compilation of the [originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"} code repository have been completed. In addition, you can use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure the Fixed Frame to select **the odom**（odometer coordinate system），and add **the TF display** through the "Add" button, you can also achieve a similar effect.
+    Make sure that the Ubuntu+ROS2 system has been installed on the PC, and the download and compilation of the [originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"} code repository have been completed. In addition, you can use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure the Fixed Frame to select **the odom**（odometer coordinate system），and add **the TF display** through the "Add" button, you can also achieve a similar effect.
 
 
 

@@ -17,7 +17,7 @@ After starting the bot, OriginBot provides a variety of parameters that can be d
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866149913&page=15&autoplay=0"
   scrolling="no"
   border="0"
@@ -27,7 +27,7 @@ After starting the bot, OriginBot provides a variety of parameters that can be d
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 

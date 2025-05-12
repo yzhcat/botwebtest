@@ -2,7 +2,7 @@
 
 After completing the kit assembly and system flashing, you can prepare to start OriginBot.
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866084308&page=8&autoplay=0"
   scrolling="no"
   border="0"
@@ -12,7 +12,7 @@ After completing the kit assembly and system flashing, you can prepare to start 
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 

@@ -14,7 +14,7 @@ Based on the originbot.launch.py ​​startup file, we can not only start the O
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866084401&page=10&autoplay=0"
   scrolling="no"
   border="0"
@@ -24,7 +24,7 @@ Based on the originbot.launch.py ​​startup file, we can not only start the O
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 

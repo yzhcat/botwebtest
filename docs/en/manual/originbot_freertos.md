@@ -49,7 +49,7 @@ Configuring FreeRTOS requires refactoring the original code, refactoring part of
 
 The first thing you need to do is choose a distribution, each version of the API will have some slight differences, in this project you choose V10.2.1, all of which is hosted on the [code hosting platform](https://sourceforge.net/projects/freertos/files/FreeRTOS/) 
 
-After the code is downloaded, some files need to be configured into the originbot_controller, mainly including the kernel and hardware interface layers that match the MCU, refer to [code repository](https://github.com/yzhcat/originbot_controller/tree/support_Freertos/source/originbot_controller_project/FreeRTOS)
+After the code is downloaded, some files need to be configured into the originbot_controller, mainly including the kernel and hardware interface layers that match the MCU, refer to [code repository](https://github.com/guyuehome/originbot_controller/tree/support_Freertos/source/originbot_controller_project/FreeRTOS)
 
 ![IMG20230403_freertos_frame](../../assets/img/originbot_freertos/IMG20230403_freertos_frame.png)
 

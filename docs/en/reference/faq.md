@@ -250,7 +250,7 @@ For details, please refer to [the ROS2 installation](../guide/pc_config.md#2-ros
 
 ### **OriginBot code does not compile on PC**
 
-Some of the function packages in the [OriginBot code repository](https://github.com/yzhcat/originbot){:target="_blank"}need to call the software resources in RDK X5, so they cannot be fully compiled on the PC side.If necessary, you can copy the required files or separate function packages to the PC for compilation and use.
+Some of the function packages in the [OriginBot code repository](https://github.com/guyuehome/originbot){:target="_blank"}need to call the software resources in RDK X5, so they cannot be fully compiled on the PC side.If necessary, you can copy the required files or separate function packages to the PC for compilation and use.
 
 
 

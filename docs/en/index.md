@@ -108,11 +108,11 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 - If you have any questions or suggestions while using the OriginBot kit, please ask and discuss in the [Guyuehome Community Forum](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}.
 
-- If you encounter any bugs while using OriginBot, please submit an issue in the [code repository](https://github.com/yzhcat/originbot){:target="_blank"}.
+- If you encounter any bugs while using OriginBot, please submit an issue in the [code repository](https://github.com/guyuehome/originbot){:target="_blank"}.
 
 ### **Contribute Code**
 
-- If you have any optimizations, additions, or other modifications to the native code while using the OriginBot kit, feel free to submit a pull request in the [code repository](https://github.com/yzhcat/originbot){:target="_blank"}.
+- If you have any optimizations, additions, or other modifications to the native code while using the OriginBot kit, feel free to submit a pull request in the [code repository](https://github.com/guyuehome/originbot){:target="_blank"}.
 
 ### **Open-Source Sharing**
 
@@ -128,9 +128,9 @@ We warmly invite all developers to participate in the OriginBot project. There a
   
   | Name                   | Link                                                                                                                     | Description                |
   | ---------------------- | ---------------------------------------------------------------------------------------------------------------------- | -------------------------- |
-  | originbot             | [https://github.com/yzhcat/originbot](https://github.com/yzhcat/originbot){:target="_blank"}                       | Repository for OriginBot's functional package |
-  | originbot_desktop     | [https://github.com/yzhcat/originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"}       | Repository for OriginBot's desktop application |
-  | originbot_controller  | [https://github.com/yzhcat/originbot_controller](https://github.com/yzhcat/originbot_controller){:target="_blank"} | Repository for OriginBot's controller source code |
+  | originbot             | [https://github.com/guyuehome/originbot](https://github.com/guyuehome/originbot){:target="_blank"}                       | Repository for OriginBot's functional package |
+  | originbot_desktop     | [https://github.com/guyuehome/originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"}       | Repository for OriginBot's desktop application |
+  | originbot_controller  | [https://github.com/guyuehome/originbot_controller](https://github.com/guyuehome/originbot_controller){:target="_blank"} | Repository for OriginBot's controller source code |
 
 - Forum Exchange: [https://www.guyuehome.com/interlocution?id=1826932316801544194](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}
 

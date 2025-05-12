@@ -13,7 +13,7 @@ typora-copy-images-to: image\imu_visualization
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866114680&page=14&autoplay=0"
   scrolling="no"
   border="0"
@@ -23,7 +23,7 @@ typora-copy-images-to: image\imu_visualization
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 
@@ -61,7 +61,7 @@ You can see the visualized IMU information. If you shake the robot, the coordina
 ![img](../../assets/img/imu_visualization/Clip_2024-09-14_17-59-47.png){.img-fluid tag=1 title="Real-time data visualization for IMU"}
 
 ???+ hint
-    Make sure that Ubuntu+ROS2 system has been installed on the PC, and the [originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled. In addition, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure Fixed Frame to select base_link, add imu display items, and subscribe to imu topics to achieve similar effects.
+    Make sure that Ubuntu+ROS2 system has been installed on the PC, and the [originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled. In addition, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure Fixed Frame to select base_link, add imu display items, and subscribe to imu topics to achieve similar effects.
 
 
 

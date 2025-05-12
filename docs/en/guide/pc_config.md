@@ -276,7 +276,7 @@ The feature packages of OriginBot on the PC are placed in the originbot_desktop 
 
 ```bash
 cd ~/dev_ws/src
-git clone https://github.com/yzhcat/originbot_desktop.git 
+git clone https://github.com/guyuehome/originbot_desktop.git 
 ```
 
 

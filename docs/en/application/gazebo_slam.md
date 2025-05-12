@@ -34,7 +34,7 @@ ros2 launch originbot_navigation cartographer_gazebo.launch.py
 ![image-20230705215512805](../../assets/img/gazebo_slam/image-20230705215512805.png){.img-fluid tag=1}
 
 ???+ hint
-    Make sure that the [originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"}  code repository has been downloaded and compiled on the PC. If it is inconvenient to use the originbot_desktop code repository, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, and manually add display plug-ins such as map, tf, laserscan, etc. to achieve similar results.
+    Make sure that the [originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"}  code repository has been downloaded and compiled on the PC. If it is inconvenient to use the originbot_desktop code repository, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, and manually add display plug-ins such as map, tf, laserscan, etc. to achieve similar results.
 
 
 

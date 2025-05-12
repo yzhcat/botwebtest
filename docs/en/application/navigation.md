@@ -8,7 +8,7 @@
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866157912&page=17&autoplay=0"
   scrolling="no"
   border="0"
@@ -18,7 +18,7 @@
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 
@@ -72,7 +72,7 @@ ros2 launch originbot_viz display_navigation.launch.py
 
 
 ???+ hint
-    Make sure that the [originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled on the PC. If it is inconvenient to use the originbot_desktop code repository, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, and manually add display plug-ins such as map, tf, laserscan, etc. to achieve similar results.
+    Make sure that the [originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled on the PC. If it is inconvenient to use the originbot_desktop code repository, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, and manually add display plug-ins such as map, tf, laserscan, etc. to achieve similar results.
 
 
 

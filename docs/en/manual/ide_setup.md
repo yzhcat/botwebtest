@@ -13,7 +13,7 @@ OriginBot supports ssh remote login for development, if you are not used to remo
      - OriginBot Bot
      - PC：Ubuntu(≥22.04) + ROS2(≥humble) + VSCode
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866084309&page=9&autoplay=0"
   scrolling="no"
   border="0"
@@ -23,7 +23,7 @@ OriginBot supports ssh remote login for development, if you are not used to remo
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 

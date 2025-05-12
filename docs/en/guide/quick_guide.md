@@ -93,7 +93,7 @@ This section introduces OriginBot's application functions:
 
 ### **Application Function Demo**
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=1151686599&bvid=BV1QZ42187kv&cid=1466229297&page=1&autoplay=0"
   scrolling="no"
   border="0"
@@ -103,7 +103,7 @@ This section introduces OriginBot's application functions:
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 ## **Explore More Possibilities**
 

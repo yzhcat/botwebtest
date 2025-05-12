@@ -9,7 +9,7 @@ The OriginBot controller does not have firmware burned in the factory. You can i
 
 ## **<span id="download_controller_firmware">Burn the controller firmware</span >**
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865911983&page=7&autoplay=0"
   scrolling="no"
   border="0"
@@ -19,7 +19,7 @@ The OriginBot controller does not have firmware burned in the factory. You can i
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 ### **Download the official firmware**
 
@@ -68,7 +68,7 @@ Please select the following table to download the controller firmware suitable f
 
 ## **<span id="debug_controller_code">Debugging and downloading the source code</span >**
 
-The source code of the OriginBot controller firmware is completely open source, you can also download it from [the originbot_controller](https://github.com/yzhcat/originbot_controller){:target="_blank"},and then configure the development environment for online debugging or secondary development.
+The source code of the OriginBot controller firmware is completely open source, you can also download it from [the originbot_controller](https://github.com/guyuehome/originbot_controller){:target="_blank"},and then configure the development environment for online debugging or secondary development.
 
 ### **Install the Keil software**
 
@@ -87,7 +87,7 @@ After the download is complete, you can follow the steps below to complete the i
 Run the following command to download the source code of the OriginBot controller firmware:
 
 ```bash
-git clone https://github.com/yzhcat/originbot_controller
+git clone https://github.com/guyuehome/originbot_controller
 ```
 
 

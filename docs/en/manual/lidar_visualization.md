@@ -13,7 +13,7 @@ typora-copy-images-to: image\lidar_visualization
 
 
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=866110216&page=13&autoplay=0"
   scrolling="no"
   border="0"
@@ -23,7 +23,7 @@ typora-copy-images-to: image\lidar_visualization
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 
@@ -53,7 +53,7 @@ You will soon be able to see real-time radar data
 
 
 ???+ hint
-    Make sure that Ubuntu+ROS2 system has been installed on the PC, and the [originbot_desktop](https://github.com/yzhcat/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled. In addition, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure Fixed Frame to select base_link, add Laserscan, and subscribe to the radar topic to achieve a similar effect.
+    Make sure that Ubuntu+ROS2 system has been installed on the PC, and the [originbot_desktop](https://github.com/guyuehome/originbot_desktop){:target="_blank"} code repository has been downloaded and compiled. In addition, you can also use "ros2 run rviz2 rviz2" to start Rivz2 separately, manually configure Fixed Frame to select base_link, add Laserscan, and subscribe to the radar topic to achieve a similar effect.
 
 
 

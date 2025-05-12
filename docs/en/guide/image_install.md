@@ -37,7 +37,7 @@ Please download the SD card image of the robot from the table below and extract 
 
 
 
-### **Burn the SD card image**
+<!-- ### **Burn the SD card image**
 
 <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865880997&page=2&autoplay=0"
@@ -49,7 +49,7 @@ Please download the SD card image of the robot from the table below and extract 
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 （1） Use a card reader to insert the SD card into the computer. The recommended SD card capacity is ≥ 16GB.
@@ -97,7 +97,7 @@ Please download the SD card image of the robot from the table below and extract 
 
 ### **Expand SD card space**
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865882863&page=4&autoplay=0"
   scrolling="no"
   border="0"
@@ -107,7 +107,7 @@ Please download the SD card image of the robot from the table below and extract 
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 
 In order to reduce the size of the system image and facilitate downloading and burning, the free space in the system image has been compressed. If you need to use the full space of the SD card, you need to expand it manually.
@@ -130,7 +130,7 @@ After the operation is successful, restart the system to take effect. Use the fo
 
 ### **CWireless WIFI connection introduction**
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865881701&page=5&autoplay=0"
   scrolling="no"
   border="0"
@@ -140,7 +140,7 @@ After the operation is successful, restart the system to take effect. Use the fo
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 After completing the Ubuntu installation, start the system and refer to the following link to complete the wireless network configuration:
 
@@ -159,7 +159,7 @@ When the terminal returns the message "successfully activated", it means that th
 
 ### **SSH telnet**
 
-<iframe
+<!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865881692&page=6&autoplay=0"
   scrolling="no"
   border="0"
@@ -169,7 +169,7 @@ When the terminal returns the message "successfully activated", it means that th
   framespacing="0"
   allowfullscreen="true"
 >
-</iframe>
+</iframe> -->
 
 After the network configuration is completed, you will no longer be restricted by cables, and you can remotely log in to the robot through the wireless network to carry out development.
 
