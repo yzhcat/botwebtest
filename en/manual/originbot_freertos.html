@@ -1932,13 +1932,12 @@
 <p>（1）Start the flymcu software on the computer（<a href="../material/common_software.html">click here to download</a>）；</p>
 <p>（2）Click Port and select the serial port to burn the firmware (select the serial port with the "CH340" number);</p>
 <p>（3）In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";</p>
-<p><img alt="IMG20230403" src="../../assets/img/originbot_freertos/IMG20230403.jpg" /></p>
+<p><img alt="flymcu" src="../../assets/img/originbot_freertos/flymcu_en.png" /></p>
 <h2 id="introduction-to-freertos"><strong>Introduction to FreeRTOS</strong></h2>
 <h4 id="rtosreal-time-operation-system">RTOS（Real Time Operation System）</h4>
 <p>RTOS stands for Real Time Operation System. RTOS emphasizes real-time, which is divided into hard real-time and soft real-time. Hard real-time requires that the operation must be completed within the specified time, and timeouts are not allowed; In soft real-time, however, the requirements for processing timeouts are not very strict. At the heart of an RTOS is task scheduling.<img alt="IMG20230403_RTOS" src="../../assets/img/originbot_freertos/IMG20230403_RTOS.png" /></p>
 <h4 id="freertos">FreeRTOS</h4>
-<p>FreeRTOS is a type of RTOS that is very small and can be run on a microcontroller. A microcontroller is a small, resource-constrained processor that contains the processor itself, read-only memory (ROM or Flash) to hold the program to be executed, and random access memory (RAM) required for the program to be executed, which is generally executed directly from the read-only memory. On the official website of FreeRTOS, we can see the features it supports.</p>
-<p><img alt="IMG20230403_freertos_introduce" src="../../assets/img/originbot_freertos/IMG20230403_freertos_introduce.png" /></p>
+<p>FreeRTOS is a type of RTOS that is very small and can be run on a microcontroller. A microcontroller is a small, resource-constrained processor that contains the processor itself, read-only memory (ROM or Flash) to hold the program to be executed, and random access memory (RAM) required for the program to be executed, which is generally executed directly from the read-only memory. On the official website of FreeRTOS, we can see the features it supports.<a href="https://www.freertos.org/Documentation/00-Overview">FreeRTOS</a></p>
 <h2 id="configure-freertos"><strong>Configure FreeRTOS</strong></h2>
 <p>Configuring FreeRTOS requires refactoring the original code, refactoring part of the code according to the FreeRTOS code template to make it follow the rules of FreeRTOS, and then introducing the most basic FreeRTOS configuration and some APIs.</p>
 <h3 id="basic-configuration">Basic configuration</h3>

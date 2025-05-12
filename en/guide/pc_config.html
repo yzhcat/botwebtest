@@ -2273,29 +2273,29 @@
 <p>After the preparation is completed, you can start the system installation, and the installation steps are as follows:</p>
 <h4 id="1-download-the-system-image">(1)  Download the system image</h4>
 <p><a href="https://ubuntu.com/download/desktop" target="_blank">Click to download the Ubutnu system image</a> </p>
-<p><img alt="image12" src="../../assets/img/pc_config/image12.jpg" /></p>
+<p><img alt="image12" class="img-fluid" src="../../assets/img/pc_config/image12.jpg" tag="2" /></p>
 <details class="attention" open="open">
 <summary>Attention</summary>
 <p>Ubuntu22.04 is recommended to be selected here, the different version choices determine the next ROS2 version installation,  Ubuntu 22.04 is recommended to install ROS2 Humble.</p>
 </details>
 <h4 id="2-create-the-system-in-a-virtual-machine">(2) Create the system in a virtual machine</h4>
-<p><img alt="image-20220523191817446" src="../../assets/img/pc_config/image-20220523191817446.jpg" /></p>
+<p><img alt="Create" class="img-fluid" src="../../assets/img/pc_config/Create1.jpg" tag="2" /></p>
 <h4 id="3-set-the-size-of-the-virtual-machines-hard-disk">(3) Set the size of the virtual machine's hard disk</h4>
-<p><img alt="image-20220523191849728" src="../../assets/img/pc_config/image-20220523191849728.jpg" /></p>
+<p><img alt="disk_size" class="img-fluid" src="../../assets/img/pc_config/disk_size.jpg" tag="2" /></p>
 <details class="attention" open="open">
 <summary>Attention</summary>
 <p>The size of the hard disk here can be slightly larger, and it is recommended that it should not be less than 60G to avoid insufficient disk space in the future.</p>
 </details>
 <h4 id="4-set-the-ubuntu-image-path">(4) Set the Ubuntu image path</h4>
-<p><img alt="image-20220523191911217" src="../../assets/img/pc_config/image-20220523191911217.jpg" /></p>
+<p><img alt="image path" class="img-fluid" src="../../assets/img/pc_config/image_path.png" tag="2" /></p>
 <h4 id="5-start-the-virtual-machine">(5) Start the virtual machine</h4>
-<p><img alt="image16" src="../../assets/img/pc_config/image16.jpg" /></p>
+<p><img alt="image16" class="img-fluid" src="../../assets/img/pc_config/image16.jpg" tag="2" /></p>
 <h4 id="6-set-a-username-and-password">(6) Set a username and password</h4>
-<p><img alt="image17" src="../../assets/img/pc_config/image17.jpg" /></p>
+<p><img alt="image17" class="img-fluid" src="../../assets/img/pc_config/image17.jpg" tag="2" /></p>
 <h4 id="7-wait-for-the-system-to-be-installed">(7) Wait for the system to be installed</h4>
-<p><img alt="image18" src="../../assets/img/pc_config/image18.jpg" /></p>
+<p><img alt="image18" class="img-fluid" src="../../assets/img/pc_config/image18.jpg" tag="2" /></p>
 <h4 id="8-complete-the-installation">(8) Complete the installation</h4>
-<p><img alt="image19" src="../../assets/img/pc_config/image19.jpg" /></p>
+<p><img alt="image19" class="img-fluid" src="../../assets/img/pc_config/image19.jpg" tag="2" /></p>
 <p>After the Ubuntu system in the virtual machine is installed, you can feel free to use it to familiarize yourself with it.</p>
 <h3 id="method-2-ubuntu-dual-system-installation"><strong>Method 2: Ubuntu dual system installation</strong></h3>
 <details class="attention" open="open">
@@ -2312,28 +2312,28 @@
 </details>
 <h4 id="1-download-the-system-image_1">(1) Download the system image</h4>
 <p><a href="https://ubuntu.com/download/desktop" target="_blank">Click to download the Ubutnu system image</a></p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image.jpg" tag="2" /></p>
 <h4 id="2-create-a-usb-installation-image">(2) Create a USB installation image</h4>
 <p>Next, make a USB flash drive into a boot disk, as long as it is larger than 4G.</p>
 <p>You can use the tools that come with Ubuntu, or the boot disk maker such as UltraISO, after starting the software, select the ISO image path and the location of the USB flash drive, click start, and the production will be completed in about 10 minutes.</p>
-<p><img alt="img" src="../../assets/img/pc_config/Screenshot%20from%202020-06-04%2020-14-15.jpg" /></p>
+<p><img alt="img" class="img-fluid" src="../../assets/img/pc_config/Screenshot%20from%202020-06-04%2020-14-15.jpg" tag="2" /></p>
 <h4 id="3-hard-disk-installation">(3) Hard disk installation</h4>
 <p>Hard disk installation is a key step, be sure to choose the location of partitions and startup items, otherwise the computer may become bricked after installation.</p>
 <p>After inserting the made startup U disk, the boot starts from the U disk, press F12 on this computer, and it will soon enter the boot disk, and follow the instructions in the first few steps.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238901494114.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238901494114.jpg" tag="2" /></p>
 <p>The key setting is in the partition step, because the computer has multiple systems, it cannot be installed automatically, and it may overwrite the startup items of the original system, select "something else" to set up the partition yourself.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238902493316.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238902493316.jpg" tag="2" /></p>
 <p>Here we only divide it into two partitions, "/" and "swap", so that all files share the same space size, which is very flexible.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238903977418.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238903977418.jpg" tag="2" /></p>
 <p>After the partition is set, you also need to pay attention to the location of the bootlodaer, here you choose the hard disk where Ubuntu is located, to avoid conflicts with Windows.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238905251920.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238905251920.jpg" tag="2" /></p>
 <p>After the setup is completed, it can be installed, and all the installation will be completed in 10 minutes.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238907009622.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238907009622.jpg" tag="2" /></p>
 <h4 id="4-start-the-new-system">(4) Start the new system</h4>
 <p>Restart the computer and see the grub interface smoothly.</p>
-<p><img alt="Image" src="../../assets/img/pc_config/Image-166238908134824.jpg" /></p>
+<p><img alt="Image" class="img-fluid" src="../../assets/img/pc_config/Image-166238908134824.jpg" tag="2" /></p>
 <p>Choosing Ubuntu, the first boot was a little slow.</p>
-<p><img alt="Screenshot from 2020-06-05 03-34-49" src="../../assets/img/pc_config/Screenshot%20from%202020-06-05%2003-34-49.jpg" /></p>
+<p><img alt="Screenshot from 2020-06-05 03-34-49" class="img-fluid" src="../../assets/img/pc_config/Screenshot%20from%202020-06-05%2003-34-49.jpg" tag="2" /></p>
 <p>At this point, the installation of Ubuntu dual system is complete.</p>
 <h2 id="ros2-system-installation"><strong><span id="ros2_install">ROS2 system installation</span></strong></h2>
 <p>Next, we can install ROS2 on Ubuntu. The installation steps are as follows:</p>
@@ -2364,11 +2364,11 @@
 <p>Start the first terminal ,and start a publisher node of data with the following command:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_cpp<span class="w"> </span>talker
 </code></pre></div>
-<p><img alt="image-20220523191236749" src="../../assets/img/pc_config/image-20220523191236749.jpg" /></p>
+<p><img alt="image-20220523191236749" class="img-fluid" src="../../assets/img/pc_config/image-20220523191236749.jpg" tag="2" /></p>
 <p>Start the second terminal ,and start a subscriber node with the following command:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_py<span class="w"> </span>listener
 </code></pre></div>
-<p><img alt="image-20220523191243490" src="../../assets/img/pc_config/image-20220523191243490.jpg" /></p>
+<p><img alt="image-20220523191243490" class="img-fluid" src="../../assets/img/pc_config/image-20220523191243490.jpg" tag="2" /></p>
 <p>If the "Hello World" string is transmitted normally between the two terminals, there is no problem with the communication system.</p>
 <h4 id="baby-turtle-simulation"><strong>Baby turtle simulation</strong></h4>
 <p>Let's try another classic example in ROS - the Little Turtle Emulator.</p>
@@ -2377,7 +2377,7 @@
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>ros2<span class="w"> </span>run<span class="w"> </span>turtlesim<span class="w"> </span>turtle_teleop_key
 </code></pre></div>
 <p>The first command will start a turtle simulator with a blue background, and the second command will start a keyboard control node, and you can control the movement of the baby turtle by clicking the "up, down, left, right" buttons on the keyboard in the terminal.</p>
-<p><img alt="image-20220523191347938" src="../../assets/img/pc_config/image-20220523191347938.jpg" /></p>
+<p><img alt="image-20220523191347938" class="img-fluid" src="../../assets/img/pc_config/image-20220523191347938.jpg" tag="2" /></p>
 <p>We will continue to explore the mystery of ROS in baby turtles in the following tutorials.</p>
 <p>So far, the ROS2 installation has been successful.</p>
 <h2 id="downloadcompile-the-pc-feature-pack"><strong><span id="package_install">Download/compile the PC feature pack</span></strong></h2>

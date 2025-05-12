@@ -2101,7 +2101,7 @@
 <h3 id="key-features"><strong>Key features</strong></h3>
 <p>The drive function node of the host computer sends motor speed control data to the controller, and the controller drives the motor to execute.</p>
 <h3 id="protocol-format"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831170224421" class="img-fluid" src="../../assets/img/protocol_description/image-20220831170224421.png" tag="1" title="speed control" /></p>
+<p><img alt="image-20220831170224421" class="img-fluid" src="../../assets/img/protocol_description/Motor_Control.jpg" tag="1" title="speed control" /></p>
 <ul>
 <li>
 <p><strong>Frame header</strong>：0x55, as the identifier of the start of the data, custom 0x55.</p>
@@ -2133,7 +2133,7 @@
 <h3 id="key-features_1"><strong>Key features</strong></h3>
 <p>The controller sends motor speed data to the upper computer cycle, and the upper computer can calculate the odometer data according to the speed.</p>
 <h3 id="protocol-format_1"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831171018549" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171018549.png" tag="1" title="Speed feedback" /></p>
+<p><img alt="image-20220831171018549" class="img-fluid" src="../../assets/img/protocol_description/Motor_feedback.jpg" tag="1" title="Speed feedback" /></p>
 <ul>
 <li><strong>Identification bit</strong>：0x02 indicates the speed feedback command.</li>
 </ul>
@@ -2141,7 +2141,7 @@
 <h3 id="key-features_2"><strong>Key features</strong></h3>
 <p>The controller periodically sends gyroscope data to the host computer, and the host computer can publish IMU topic messages according to the data.</p>
 <h3 id="protocol-format_2"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831171357555" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171357555.png" tag="1" title="Gyroscope data feedback" /></p>
+<p><img alt="image-20220831171357555" class="img-fluid" src="../../assets/img/protocol_description/gyroscope.jpg" tag="1" title="Gyroscope data feedback" /></p>
 <p>There is a lot of gyroscope data, which is divided into three groups to transmit separately. Distinguish what the current data is by identifying bits. The check digits are still calculated using the data bits that add &amp; 0xFF of each data.</p>
 <p>For the conversion of raw data, please refer to the official agreement of Witt: <a href="https://wit-motion.yuque.com/books/share/29a9c291-ebf5-4f6f-83e3-4093832dce78/locehn" target="_blank">click to jump</a></p>
 <p><strong>Acceleration is calculated as follows:</strong></p>
@@ -2172,14 +2172,14 @@
 <h3 id="key-features_3"><strong>Key features</strong></h3>
 <p>The controller feeds back voltage and other data to the host computer periodically, and the host computer can perform the corresponding functions according to the information.</p>
 <h3 id="protocol-format_3"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831171837413" class="img-fluid" src="../../assets/img/protocol_description/image-20220831171837413.png" tag="1" title="Sensor data feedback" /></p>
+<p><img alt="image-20220831171837413" class="img-fluid" src="../../assets/img/protocol_description/sensor_data.jpg" tag="1" title="Sensor data feedback" /></p>
 <p>The voltage value is sent in two parts, integer and decimal, and the voltage value = integer part + decimal part / 100, the unit is V.</p>
 <p>Reserve two sensor data bits, and the data is 0x00 when not in use, and the verification calculation is the same as above.</p>
 <h2 id="controller-resource-control"><strong>Controller resource control</strong></h2>
 <h3 id="key-features_4"><strong>Key features</strong></h3>
 <p>The host computer sends instructions to the controller to control LED, buzzer, IMU calibration, etc.</p>
 <h3 id="protocol-format_4"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831172001592" class="img-fluid" src="../../assets/img/protocol_description/image-20220831172001592.png" tag="1" title="Controller resource control" /></p>
+<p><img alt="image-20220831172001592" class="img-fluid" src="../../assets/img/protocol_description/resource_control.jpg" tag="1" title="Controller resource control" /></p>
 <p>The enable control fields and status fields of LED, buzzer, and IMU calibration commands can be set to zero and non-zero values, and the verification calculation is the same as above.</p>
 <p>The status field takes effect only when the control field is enabled to be non-zero. The LED, buzzer, and IMU are calibrated with independent enable control and status field control.</p>
 <ul>
@@ -2197,7 +2197,7 @@
 <h3 id="key-features_5"><strong>Key features</strong></h3>
 <p>The host computer sends PID parameters to the controller, and the controller dynamically adjusts the motor control effect. Among them, the identification bits 0x08 and 0x09 correspond to the PID settings of the left and right motors respectively.</p>
 <h3 id="protocol-format_5"><strong>Protocol format</strong></h3>
-<p><img alt="image-20220831172131388" class="img-fluid" src="../../assets/img/protocol_description/image-20220831172131388.png" tag="1" title="PID parameter adjustment" /></p>
+<p><img alt="image-20220831172131388" class="img-fluid" src="../../assets/img/protocol_description/PID.jpg" tag="1" title="PID parameter adjustment" /></p>
 <p>The PID parameters are reserved externally, and the driver board has a set of factory-calibrated PID parameters.</p>
 <p>Since the value of PID is small, the actual parameter = data field/1000, and the verification calculation is the same as above.</p>
 <p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer_en.png" /></a></p>

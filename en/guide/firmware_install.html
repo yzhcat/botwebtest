@@ -1961,7 +1961,7 @@
 <p>（1）Start the FlyMCU software on your computer（<a href="../material/common_software.html" target="_blank">click here to download</a>）；</p>
 <p>（2）Click Port and select the serial port for burning the firmware (select the serial port with the "CH340" number);</p>
 <p>（3） In the FlyMCU software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";
-<img alt="img" class="img-fluid" src="../../assets/img/firmware_install/20220813215508.png" tag="1" title="Download the official firmware" /></p>
+<img alt="img" class="img-fluid" src="../../assets/img/firmware_install/flymcu.png" tag="1" title="Download the official firmware" /></p>
 <p>（4）Wait for the log on the right to prompt that programming is complete and the firmware download/update is complete;</p>
 <p>（5）After the download is complete, restore the serial port communication connection between the controller and RDK X5.</p>
 <h2 id="debugging-and-downloading-the-source-code"><strong><span id="debug_controller_code">Debugging and downloading the source code</span ></strong></h2>
@@ -1970,22 +1970,22 @@
 <p>Visit <a href="https://www.keil.com/demo/eval/arm.htm" target="_blank">the download page</a> of Keil software and click to download the software:</p>
 <p><img alt="image-20220928230625461" class="img-fluid" src="../../assets/img/firmware_install/image-20220928230625461.png" tag="2" title="Download the Keil software" /></p>
 <p>After the download is complete, you can follow the steps below to complete the installation of the software:</p>
-<p><img alt="image-20220928230841119" class="img-fluid" src="../../assets/img/firmware_install/image-20220928230841119.png" tag="2" title="Install the Keil software" /></p>
+<p><img alt="image-20220928230841119" class="img-fluid" src="../../assets/img/firmware_install/MDK_keil.png" tag="2" title="Install the Keil software" /></p>
 <h3 id="download-the-firmware-source-code"><strong>Download the firmware source code</strong></h3>
 <p>Run the following command to download the source code of the OriginBot controller firmware:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/guyuehome/originbot_controller
 </code></pre></div>
 <h3 id="open-the-project-and-install-the-dependencies"><strong>Open the project and install the dependencies</strong></h3>
 <p>After starting the Keil software, choose to open the project, select the project file in the source code downloaded in the previous step, and then continue to install the necessary software packages:</p>
-<p><img alt="image-20220928231025049" class="img-fluid" src="../../assets/img/firmware_install/image-20220928231025049.png" tag="2" title="Install the dependencies" /></p>
+<p><img alt="image-20220928231025049" class="img-fluid" src="../../assets/img/firmware_install/keil_packages.png" tag="2" title="Install the dependencies" /></p>
 <h3 id="compiler-configuration"><strong>Compiler configuration</strong></h3>
 <p>The OriginBot controller firmware needs to be compiled using the Keil V5 compiler. Some users who directly download Keil may need to download the v5 version compiler separately. Here is a reference link for users' reference:
 <a href="https://j7h4nezmu0.feishu.cn/docx/UsbUdQdShoxhpLxFPTvceJsmnQb?from=from_copylink" target="_blank">Stm32 configs the compiled version of keil5</a></p>
 <h3 id="debug-the-download"><strong>Debug the download</strong></h3>
 <p>If you use the debugger to debug online, you need to configure the following parameters:</p>
-<p><img alt="image-20220928231135852" class="img-fluid" src="../../assets/img/firmware_install/image-20220928231135852.png" tag="2" title="Configure debugging options" /></p>
+<p><img alt="image-20220928231135852" class="img-fluid" src="../../assets/img/firmware_install/debug.png" tag="2" title="Configure debugging options" /></p>
 <p>If you want to compile and generate the HEX binary file and download it via USB, you need to configure the following configurations, and then compile it to appear the HEX file, which can be downloaded through the FlyMCU software:</p>
-<p><img alt="image-20220928231314555" class="img-fluid" src="../../assets/img/firmware_install/image-20220928231314555.png" tag="2" title="Configuration output options" /></p>
+<p><img alt="image-20220928231314555" class="img-fluid" src="../../assets/img/firmware_install/output.png" tag="2" title="Configuration output options" /></p>
 <p><a href="https://www.guyuehome.com/" target="_blank"><img alt="图片1" src="../../assets/img/footer_en.png" /></a></p>
 
 
