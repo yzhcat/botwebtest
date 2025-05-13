@@ -34,6 +34,6 @@ After successful running, open the browser on the PC in the same network, enter 
 
 The license plate recognition function is realized by detecting the contour of the license plate and identifying the numbers in the contour, which is composed of MIPI image acquisition, glyph detection, OCR, image encoding and decoding, and WEB display, and the process is as follows:
 
-![流程图](../../assets/img/vlpr/流程图.svg)
+![流程图](../../assets/img/vlpr/流程图_en.png)
 
 [![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}

@@ -4,7 +4,7 @@ OriginBot is an open source kit for intelligent robots and a community-built ope
 
 The project was jointly initiated by Guyuehome and D-Robotics, and more companies, organizations and developers are welcome to join.
 
-![20220904153119](../assets/img/20220904153119.jpg)
+![gyh_dr](../assets/img/gyh_dr_en.png)
 
 
 
@@ -18,5 +18,5 @@ Guyuehome is a well-known ROS robot community in the Chinese-speaking world（[w
 
 
 
-![20220904153219](../assets/img/20220904153219.jpg)
+![footer](../assets/img/footer_en.png)
 

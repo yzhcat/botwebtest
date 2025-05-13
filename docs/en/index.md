@@ -1,6 +1,7 @@
 # **OriginBot Intelligent Robot Open-Source Kit**
 
-> **Notice to Users**: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. If you have any questions, please join the [Discord](https://discord.gg/AajhFJgPAs) community group (see the product QR code).
+> **Notice to Users**: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. Due to regional restrictions, all overseas versions of OriginBot are battery-free. Any batteries shown in the pictures are for illustration purposes only. Thank you for your understanding.
+If you have any questions, please join the [Discord](https://discord.gg/AajhFJgPAs) community group (see the product QR code).
 
 ![OriginBot](../assets/img/originbot_pro.png)
 

@@ -2,7 +2,7 @@
 
 ## **Core contributors**
 
-![20220904153119](../../assets/img/20220904153119.jpg)
+![gyh_dr](../../assets/img/gyh_dr_en.png)
 
 
 
