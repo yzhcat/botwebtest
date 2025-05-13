@@ -2,7 +2,7 @@
 
 > **最新消息**：OriginBot V3.0.0版本正式发布，OriginBot全系升级，同时推出OriginBot Pro版，九大升级，[点击查看](./reference/changelog.md){:target="_blank"}
 
-![originbot](./assets/img/originbot_lastest.jpg)
+![originbot](../assets/img/originbot_lastest.jpg){.img-fluid tag=1}
 
 <div style="text-align: right;">
     <a href="#originbot_1" class="md-button">了解OriginBot</a>
@@ -93,7 +93,7 @@ OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的�
 
 | 主要配置项 | Pro版 | 标准版 | Lite版 |
 | ----- |:----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| 效果图 | ![originbot_nav](./assets/img/quick_guide/originbot_x5_nav.jpg){.img-fluid tag=1 title="OriginBot Pro"}  | ![originbot_nav](./assets/img/quick_guide/originbot_x3_nav.jpg){.img-fluid tag=1 title="OriginBot 标准版"}  | ![originbot_x3_cv](./assets/img/quick_guide/originbot_x3_cv.jpg){.img-fluid tag=1 title="OriginBotLite版"} |
+| 效果图 | ![originbot_nav](../assets/img/quick_guide/originbot_x5_nav.jpg){.img-fluid tag=1 title="OriginBot Pro"}  | ![originbot_nav](../assets/img/quick_guide/originbot_x3_nav.jpg){.img-fluid tag=1 title="OriginBot 标准版"}  | ![originbot_x3_cv](../assets/img/quick_guide/originbot_x3_cv.jpg){.img-fluid tag=1 title="OriginBotLite版"} |
 | 应用处理器 | RDK X5<br />CPU：八核ARM Cortex-A55@1.5GHz<br />GPU：32Gflops，等效算力<font color='green'>10TOPS</font><br />内存：8GB LPDDR4 RAM<br />存储：32GB（TF卡） | RDK X3<br />CPU：四核ARM Cortex-A53@1.5GHz<br />BPU：双核@1GHz，等效算力<font color='green'>5TOPS</font><br />内存：4GB LPDDR4 RAM<br />存储：32GB（TF卡） | RDK X3<br />CPU：四核ARM Cortex-A53@1.5GHz<br />BPU：双核@1GHz，等效算力<font color='green'>5TOPS</font><br />内存：4GB LPDDR4 RAM<br />存储：32GB（TF卡） |
 | 运动控制器 | MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /> | MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /> | MCU：STM32F103<br />Flash容量：64K<br />RAM容量：20KB<br /> |
 | 差速底盘 | 带编码器TT电机 2<br />摄像头支架<br />万向轮及支架 | 带编码器TT电机 2<br />摄像头支架<br />万向轮及支架 | 带编码器TT电机 2<br />摄像头支架<br />万向轮及支架 |
@@ -156,6 +156,6 @@ OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的�
   
   
 
-![交流群](./assets/img/group.png)
+![交流群](../assets/img/group.png)
 
-[![图片1](./assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![图片1](../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
