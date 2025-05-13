@@ -3,7 +3,7 @@
 > **Notice to Users**: This English document is intended for users outside of China. Overseas users can refer to this document to use OriginBot. **Due to regional restrictions, all overseas versions of OriginBot are battery-free. Any batteries shown in the pictures are for illustration purposes only.** Thank you for your understanding.
 If you have any questions, please join the [Discord](https://discord.gg/AajhFJgPAs) community group (see the product QR code).
 
-![OriginBot](../assets/img/originbot_pro.png){.img-fluid tag=1}
+![OriginBot](../assets/img/originbot_pro_bank.jpg){.img-fluid tag=1}
 
 <div style="text-align: right;">
   <a href="#originbot_1" class="md-button">Learn About OriginBot</a>
@@ -87,7 +87,7 @@ OriginBot aims to awaken every developer's original dream and help them find a d
 
 | Main Configuration Items | OriginBot                                      |                                                                                                                                      |
 | ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------- |
-| Renderings               | ![OriginBot](../assets/img/quick_guide/originbot_x5_nav.jpg){.img-fluid tag=1 title="OriginBot Navigation Version"}                                        |                                        |
+| Renderings               | ![OriginBot](../assets/img/originbot_pro_bank.jpg){.img-fluid tag=1 title="OriginBot Navigation Version"}                                        |                                        |
 | Application Processor    | **RDK X5**<br />CPU: Octa-core ARM Cortex-A55@1.5GHz<br />BPU: 32Gflops, equivalent computing power <font color='green'>10TOPS</font><br />Memory: 8GB LPDDR4 RAM<br />Storage: 32GB (TF Card) | 
 | Motion Controller        | MCU: STM32F103<br />Flash Capacity: 64K<br />RAM Capacity: 20KB<br />                                                                                                                                  |
 | Differential Chassis     | TT motor with encoder 2 * 2<br />Camera bracket<br />Universal wheel and bracket                                                                                                       | 
