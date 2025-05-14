@@ -25,7 +25,7 @@ ros2 launch originbot_bringup originbot.launch.py
 
 ``` bash
 cd /userdata/dev_ws
-
+export CAM_TYPE=usb
 # Start the launch file
 ros2 launch gesture_control gesture_control.launch.py
 ```
