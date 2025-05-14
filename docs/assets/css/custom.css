@@ -10,8 +10,8 @@ img {
 }
 
 .md-header__chat .chat-icon {
-    width: 30px; /* 图标宽度 */
-    height: 30px; /* 图标高度 */
+    width: 25px; /* 图标宽度 */
+    height: 25px; /* 图标高度 */
     border-radius: 50%; /* 圆形效果 */
     object-fit: cover; /* 确保图片内容适应圆形 */
     border: 2px solid #ccc; /* 可选：添加边框 */
@@ -19,7 +19,7 @@ img {
 }
 
 .md-header__chat .chat-text {
-    font-size: 14px; /* 文本大小 */
+    font-size: 12px; /* 文本大小 */
     color: #ffffff; /* 文本颜色 */
     font-weight:normal; /* 文本加粗 */
 }
