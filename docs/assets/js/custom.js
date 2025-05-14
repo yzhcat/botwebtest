@@ -38,6 +38,26 @@ document.addEventListener("DOMContentLoaded", function() {
             ? 'https://github.com/guyuehome/originbot' 
             : 'https://gitee.com/guyuehome/originbot';
     }
+
+    // 动态添加聊天图标
+    var chatIconContainer = document.createElement('div');
+    chatIconContainer.className = 'md-header__chat';
+    chatIconContainer.innerHTML = `
+        <a href="${isEnglish ? 'http://59.110.158.57:3000/chat/share?shareId=tejmuidvy2pl6i15bwazh0na' : 'https://www.guyuehome.com/chat'}" 
+           title="Chat with GYH AI" 
+           class="md-chat" 
+           target="_blank" 
+           rel="noopener noreferrer">
+            <img src="/assets/img/gyh_100x100.png" alt="Chat Icon" class="chat-icon">
+            <span class="chat-text">GYH AI</span>
+        </a>
+    `;
+    var searchElement = document.querySelector('.md-search');
+    var sourceElement = document.querySelector('.md-header__source');
+    if (searchElement && sourceElement) {
+        searchElement.parentNode.insertBefore(chatIconContainer, sourceElement);
+    }
+
     // 设置导航项的显示状态
     setElementVisibility(navTitles);
     setElementVisibility(navItems);
