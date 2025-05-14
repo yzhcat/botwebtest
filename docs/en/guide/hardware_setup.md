@@ -77,7 +77,7 @@ Materials Required:
 
 The RDK X5 can be screwed directly onto the support copper pillar on the controller
 
-![MVIMG_20240923_170601](../../assets/img/hardware_setup/MVIMG_20240923_170601.jpg){.img-fluid tag=2}
+![MVIMG_20240923_170601](../../assets/img/hardware_setup/RDK_install.png){.img-fluid tag=2}
 
 
 
@@ -86,24 +86,11 @@ The RDK X5 can be screwed directly onto the support copper pillar on the control
 
 Materials Required:
 
-![MVIMG_20240923_171127](../../assets/img/hardware_setup/MVIMG_20240923_171127.jpg){.img-fluid tag=2}
+Take out the camera, bracket and No. 2 screw bag
+![MVIMG_20240923_171127](../../assets/img/hardware_setup/camera_parts.png){.img-fluid tag=2}
 
 
-
- Install the camera mount (I)
-
- The camera mount has its own threads, tighten the two screws directly:
-![MVIMG_20240923_171237](../../assets/img/hardware_setup/MVIMG_20240923_171237.jpg){.img-fluid tag=2}
-
- Install the camera mount (II)
-
-Using two screws, mount the camera module on the mounting bracket:
-![MVIMG_20240923_171334](../../assets/img/hardware_setup/MVIMG_20240923_171334.jpg){.img-fluid tag=2}
-
-Install the camera
-
-Connect the four yellow copper posts, then attach the camera to the bracket:
-![MVIMG_20240923_171443](../../assets/img/hardware_setup/MVIMG_20240923_171443.jpg){.img-fluid tag=2}
+Take out the 4 thin copper pillars and install them on the bottom plate of the bracket respectively, then fix the camera on the copper pillar, fix the lower bracket on the bottom shell of the trolley, and fix the two brackets with hand screws
 
 ![MVIMG_20240923_171648](../../assets/img/hardware_setup/PixPin_2025-05-09_17-00-58.png){.img-fluid tag=2}
 
@@ -127,10 +114,7 @@ Pass the three copper pillars through the corresponding holes on the radar drive
 
 ![MVIMG_20240923_172121](../../assets/img/hardware_setup/MVIMG_20240923_172121.jpg){.img-fluid tag=2}
 
-Use four screws to fix the radar driver board to the supporting copper column of the car:
-
-![MVIMG_20240923_172304](../../assets/img/hardware_setup/MVIMG_20240923_172304.jpg){.img-fluid tag=2}
-Connect the other end of the serial cable to the radar:
+Use four screws to fix the radar driver board to the supporting copper column of the car.Connect the other end of the serial cable to the radar:
 ![MVIMG_20240923_172405](../../assets/img/hardware_setup/MVIMG_20240923_172405.jpg){.img-fluid tag=2}
 
 Install the radar and use three screws to fix the radar to the supporting copper pillars of the radar driver board:

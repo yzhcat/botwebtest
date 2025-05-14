@@ -124,7 +124,7 @@ typora-copy-images-to: image/hardware_setup
 
 如果不需要安装激光雷达，可以直接通过螺丝将RDK X5安装到控制器上的支撑铜柱上,还可以贴上散热片：
 
-![MVIMG_20240923_170601](../../assets/img/hardware_setup/MVIMG_20240923_170601.jpg){.img-fluid tag=2}
+![MVIMG_20240923_170601](../../assets/img/hardware_setup/RDK_install.png){.img-fluid tag=2}
 
 
 ## **安装相机**
