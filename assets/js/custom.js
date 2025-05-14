@@ -21,17 +21,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // 修改站点名称
     var siteNameElement = document.querySelector('.md-header__title');
     if (siteNameElement) {
-        var isEnglish = window.location.pathname.startsWith('/en/');
         siteNameElement.textContent = isEnglish ? 'OriginBot Open Source Kit' : 'OriginBot智能机器人开源套件';
     }
     var siteNameElement_ = document.querySelector('.md-nav__title');
     if (siteNameElement_) {
-        var isEnglish = window.location.pathname.startsWith('/en/');
         siteNameElement_.textContent = isEnglish ? 'OriginBot Open Source Kit' : 'OriginBot智能机器人开源套件';
     }
 
+    // 修改仓库链接
+    var repoLinkElement = document.querySelector('.md-header__source a');
+    if (repoLinkElement) {
+        repoLinkElement.href = isEnglish 
+            ? 'https://github.com/guyuehome/originbot' 
+            : 'https://gitee.com/guyuehome/originbot';
+    }
     // 设置导航项的显示状态
     setElementVisibility(navTitles);
     setElementVisibility(navItems);
