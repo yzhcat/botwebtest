@@ -19,13 +19,31 @@
 接下来我们就尝试下让机器人识别二维码，并且跟随二维码运动。
 
 ## **二维码识别**
-
 SSH连接OriginBot成功后，在终端中输入如下指令，启动二维码识别功能：
 
-```bash
-ros2 launch qr_code_detection qr_code_detection.launch.py
-```
-![二维码识别命令](../../assets/img/qrcode_detection/二维码识别命令.png)
+=== ":fontawesome-solid-car: 3.x"
+
+    ```bash
+    ros2 run originbot_qrcode_detect qr_decoder
+    ```
+    ![qr_decoder](../../assets/img/qrcode_detection/qr_decoder.png)
+
+    在终端中输入如下指令，打开相机
+
+    ```bash
+    ros2 launch originbot_bringup camera.launch.py
+    ```
+    启动web端显示：
+
+    ```bash
+    ros2 run websocket websocket --ros-args -p image_topic:=/image_jpeg -p image_type:=mjpeg -p only_show_image:=true & ros2 launch hobot_codec hobot_codec.launch.py codec_in_mode:=ros codec_in_format:=bgr8 codec_out_mode:=ros codec_out_format:=jpeg codec_sub_topic:=/qr_code_image codec_pub_topic:=/image_jpeg
+    ```
+=== ":fontawesome-solid-car: 2.x"
+
+    ```bash
+    ros2 launch qr_code_detection qr_code_detection.launch.py
+    ```
+    ![二维码识别命令](../../assets/img/qrcode_detection/二维码识别命令.png)
 
 ### **WEB端查看例程效果**
 
@@ -47,11 +65,29 @@ ros2 launch originbot_bringup originbot.launch.py
 
 ### **启动二维码控制节点**
 
-SSH连接OriginBot，在二维码识别节点启动之后，在终端中输入如下指令，启动二维码控制节点：
+=== ":fontawesome-solid-car: 3.x"
+    关闭二维码识别节点，在终端中输入如下指令，启动二维码控制节点：
 
-```bash
-ros2 run qr_code_control qr_code_control_node
-```
+    ```bash
+    ros2 launch originbot_qrcode_detect qrcode_control.launch.py
+    ```
+    打开相机(同上,如果已经打开相机，可以跳过)
+
+    ```bash
+    ros2 launch originbot_bringup camera.launch.py
+    ```
+    启动web端显示(同上,如果已经打开web端或者不需要显示，可以跳过)
+
+    ```bash
+    ros2 run websocket websocket --ros-args -p image_topic:=/image_jpeg -p image_type:=mjpeg -p only_show_image:=true & ros2 launch hobot_codec hobot_codec.launch.py codec_in_mode:=ros codec_in_format:=bgr8 codec_out_mode:=ros codec_out_format:=jpeg codec_sub_topic:=/qr_code_image codec_pub_topic:=/image_jpeg
+    ```
+
+=== ":fontawesome-solid-car: 2.x"
+    SSH连接OriginBot，在二维码识别节点启动之后，在终端中输入如下指令，启动二维码控制节点：
+
+    ```bash
+    ros2 launch qr_code_control qr_code_control.launch.py
+    ```
 
 ### **二维码控制**
 
@@ -93,8 +129,13 @@ ros2 param set /qrcode_control control_with_qrcode_info False
 
 ![二维码跟随效果](../../assets/img/qrcode_detection/二维码跟随效果.png)
 
- 可以在文件 qr_code_control_node.py 中调整移动速度
- ![调整速度代码](../../assets/img/qrcode_detection/调整速度代码.png)
+=== ":fontawesome-solid-car: 3.x"
+    可以在文件 qrcode_control.cpp 中调整移动速度
+    ![调整速度代码](../../assets/img/qrcode_detection/调整速度代码_c.png)
+
+=== ":fontawesome-solid-car: 2.x"
+    可以在文件 qr_code_control_node.py 中调整移动速度
+    ![调整速度代码](../../assets/img/qrcode_detection/调整速度代码.png)
 
 
 

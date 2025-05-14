@@ -1,85 +1,103 @@
-# **QR code detection and tracking**
+# **QR Code Detection and Tracking**
 
 ???+ hint
-    The operating environment and software and hardware configurations are as follows:
+    The operating environment and hardware configuration are as follows:
 
-     - OriginBot Pro
+     - OriginBot Robot (Lite/Standard/Pro versions)
     
-     - PC：Ubuntu (≥22.04) + ROS2 (≥humble)
+     - PC: Ubuntu (≥22.04) + ROS2 (≥humble)
 
+In our daily lives, one of the most common image recognition scenarios is scanning QR codes. 
 
-In our daily lives, what are the most common image recognition scenarios we encounter every day? Scanning a QR code must be one of them.
+Whether it's logging into WeChat, making mobile payments, or unlocking shared bikes, QR code scanning has become ubiquitous. Beyond these everyday applications, QR codes are also widely used in industrial production, such as marking material models or storing production information. By simply scanning a QR code with a camera, the corresponding information can be quickly retrieved.
 
-You need to scan a QR code to log in to WeChat, to pay with your mobile phone, and to ride a shared bicycle. In addition to these scanning scenarios that are already very popular in daily life, QR codes have also been widely used in industrial production. For example, QR codes are used to mark material models, or to save product production information in QR codes. Just scan them with a camera and you can quickly see the corresponding content.
+QR codes can store a lot of information. Can they be combined with robots? For example, when a robot recognizes different QR codes, it can perform corresponding actions.
 
-There are many ways to encode a QR code, the most common one is QR Code, which is mainly used on mobile devices.
+Next, let's try enabling the robot to recognize QR codes and follow their movement.
 
-Since QR codes can store a lot of information, can they be combined with robots? For example, when the robot recognizes different QR codes, it can perform different actions accordingly?
-
-Next, we will try to let the robot recognize the QR code and follow the movement of the QR code.
-
-## **QR code recognition**
-
-After successfully connecting to OriginBot through SSH, enter the following command in the terminal to start the QR code recognition function:
+## **QR Code Detection**
+After successfully connecting to the OriginBot via SSH, enter the following command in the terminal to start the QR code detection feature:
 
 ```bash
-ros2 launch qr_code_detection qr_code_detection.launch.py
+ros2 run originbot_qrcode_detect qr_decoder
 ```
-![二维码识别命令](../../assets/img/qrcode_detection/二维码识别命令.png)
+![qr_decoder](../../assets/img/qrcode_detection/qr_decoder.png)
 
-### **View the routine effect on the WEB side**
+To open the camera, enter the following command:
 
-After the operation is successful, on the PC side of the same network, open the browser, enter http://IP:8000 ，and select "web display side" to view the image and algorithm effect, and the IP is the IP address of OriginBot.
+```bash
+ros2 launch originbot_bringup camera.launch.py
+```
 
-![二维码识别效果](../../assets/img/qrcode_detection/二维码识别效果.png)
+To enable web display, run:
 
-## **QR code tracking**
+```bash
+ros2 run websocket websocket --ros-args -p image_topic:=/image_jpeg -p image_type:=mjpeg -p only_show_image:=true & ros2 launch hobot_codec hobot_codec.launch.py codec_in_mode:=ros codec_in_format:=bgr8 codec_out_mode:=ros codec_out_format:=jpeg codec_sub_topic:=/qr_code_image codec_pub_topic:=/image_jpeg
+```
 
-### **Start the chassis**
+### **Viewing the Example on the Web**
 
-After the SSH connection to OriginBot is successful, enter the following command in the terminal to start the robot chassis:
+Once successfully running, open a browser on a PC connected to the same network, enter `http://IP:8000`, and select "Web Display" to view the image and algorithm results. Replace `IP` with the IP address of the OriginBot.
+
+![QR Code Detection Result](../../assets/img/qrcode_detection/二维码识别效果.png)
+
+## **QR Code Tracking**
+
+### **Starting the Chassis**
+
+After successfully connecting to the OriginBot via SSH, enter the following command in the terminal to start the robot chassis:
 
 ```bash
 ros2 launch originbot_bringup originbot.launch.py
 ```
 
-![底盘命令](../../assets/img/qrcode_detection/底盘命令.png)
+![Chassis Command](../../assets/img/qrcode_detection/底盘命令.png)
 
-### **Start the QR code control node**
+### **Starting the QR Code Control Node**
 
-SSH connects to OriginBot, and after the QR code recognition node is activated, enter the following command in the terminal to start the QR code control node:
+Close the QR code detection node, then enter the following command in the terminal to start the QR code control node:
 
 ```bash
-ros2 run qr_code_control qr_code_control_node
+ros2 launch originbot_qrcode_detect qrcode_control.launch.py
 ```
 
-### **QR code control**
+To open the camera (if not already opened), run:
 
-By default, the QR code content Front, Back, Left, Right is used to control the OriginBot, and the following QR code can be used to control OriginBot.
+```bash
+ros2 launch originbot_bringup camera.launch.py
+```
+
+To enable web display (if not already enabled or not needed, this step can be skipped), run:
+
+```bash
+ros2 run websocket websocket --ros-args -p image_topic:=/image_jpeg -p image_type:=mjpeg -p only_show_image:=true & ros2 launch hobot_codec hobot_codec.launch.py codec_in_mode:=ros codec_in_format:=bgr8 codec_out_mode:=ros codec_out_format:=jpeg codec_sub_topic:=/qr_code_image codec_pub_topic:=/image_jpeg
+```
+
+### **QR Code Control**
+
+By default, the robot recognizes QR code content such as `Front`, `Back`, `Left`, and `Right` to control the robot's movement. You can use the following QR codes to control the robot:
 
 | ![F](../../assets/img/qrcode_detection/F.png) | ![B](../../assets/img/qrcode_detection/B.png) |
-| ---------------------------------- | ---------------------------------- |
+| --------------------------------------------- | --------------------------------------------- |
 | ![L](../../assets/img/qrcode_detection/L.png) | ![R](../../assets/img/qrcode_detection/R.png) |
 
+![QR Code Control Result](../../assets/img/qrcode_detection/二维码控制效果.png)
 
+### **Viewing the Control Mode**
 
-![二维码控制效果](../../assets/img/qrcode_detection/二维码控制效果.png)
-
-### **View control mode**
-
-It can also identify the relative position of the QR code to track the QR code
+You can also track the relative position of the QR code to follow it. 
 
 Enter the following command in the terminal to view the control mode:
 
 ```bash
 ros2 param get /qrcode_control control_with_qrcode_info
-# False Do not understand the content of the QR code, only follow the position of the QR code
-# True  Identify the contents of the two-dimensional code and execute the command according to the contents of the two-dimensional code
+# False: Does not recognize QR code content, only follows the QR code's position
+# True:  Recognizes QR code content and executes commands based on it
 ```
 
-![查看控制模式](../../assets/img/qrcode_detection/查看控制模式.png)
+![View Control Mode](../../assets/img/qrcode_detection/查看控制模式.png)
 
-### **Modify the control mode**
+### **Modifying the Control Mode**
 
 Enter the following command in the terminal to modify the control mode:
 
@@ -87,15 +105,14 @@ Enter the following command in the terminal to modify the control mode:
 ros2 param set /qrcode_control control_with_qrcode_info False
 ```
 
-![修改控制模式](../../assets/img/qrcode_detection/修改控制模式.png)
+![Modify Control Mode](../../assets/img/qrcode_detection/修改控制模式.png)
 
-At this point, the relative position of the QR code will be recognized, and the sending speed will be recognized.
+In this mode, the robot will follow the relative position of the QR code and adjust its speed accordingly.
 
-![二维码跟随效果](../../assets/img/qrcode_detection/二维码跟随效果.png)
+![QR Code Following Result](../../assets/img/qrcode_detection/二维码跟随效果.png)
 
- You can adjust the movement speed in File qr_code_control_node.py.
- ![调整速度代码](../../assets/img/qrcode_detection/调整速度代码.png)
+You can adjust the movement speed in the `qrcode_control.cpp` file:
 
+![Adjust Speed Code](../../assets/img/qrcode_detection/调整速度代码_c.png)
 
-
-[![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
+[![Footer Image](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
