@@ -2,3 +2,24 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+.md-header__chat {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.md-header__chat .chat-icon {
+    width: 25px; /* 图标宽度 */
+    height: 25px; /* 图标高度 */
+    border-radius: 50%; /* 圆形效果 */
+    object-fit: cover; /* 确保图片内容适应圆形 */
+    border: 2px solid #ccc; /* 可选：添加边框 */
+    margin-right: 0.5rem; /* 图标与文本之间的间距 */
+}
+
+.md-header__chat .chat-text {
+    font-size: 12px; /* 文本大小 */
+    color: #ffffff; /* 文本颜色 */
+    font-weight:normal; /* 文本加粗 */
+}
