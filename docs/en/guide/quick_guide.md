@@ -9,7 +9,7 @@ Let’s embark on the journey of intelligent robot development together!
     2. What is SSH? What are the commonly used SSH tools in Windows and Ubuntu? How do you use them?
     3. What is ROS/ROS2? What are its core concepts? How do you install and use it? How do you compile a workspace and set environment variables?
     
-    If you can answer these questions, feel free to continue with the guide. Otherwise, it is recommended to spend 3–5 days researching these topics using search tools or [reference materials](../reference/reference.md){:target="_blank"} and [GYH Chat](https://chat.guyuehome.com/chat/share?shareId=akqzahosg0gexgypl09suvz3). This preparation will help you better understand the subsequent robot development process.
+    If you can answer these questions, feel free to continue with the guide. Otherwise, it is recommended to spend 3–5 days researching these topics using search tools or [reference materials](../reference/reference.md){:target="_blank"} and [GYH Chat](http://59.110.158.57:3000/chat/share?shareId=tejmuidvy2pl6i15bwazh0na). This preparation will help you better understand the subsequent robot development process.
 
 ## **1. Choose the Right Kit**
 For a detailed list of materials included in the OriginBot kit, refer to: [**OriginBot Kit List**](../material/material_list.md){:target="_blank"}.

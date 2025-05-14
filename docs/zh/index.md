@@ -153,6 +153,8 @@ OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的�
 - 论坛交流：[https://www.guyuehome.com/interlocution?id=1826932316801544194](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}
 
 - 地瓜机器人开发者社区：[https://developer.d-robotics.cc/](https://developer.d-robotics.cc/){:target="_blank"}
+
+- 古月知道：[https://www.guyuehome.com/chat/](https://www.guyuehome.com/chat/){:target="_blank"}
   
   
 

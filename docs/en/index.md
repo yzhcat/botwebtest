@@ -137,6 +137,8 @@ We warmly invite all developers to participate in the OriginBot project. There a
 
 - D-Robotics Developer Community: [https://developer.d-robotics.cc/en](https://developer.d-robotics.cc/en){:target="_blank"}
 
+- GYH Chat: [https://chat.guyuehome.com/chat/](http://59.110.158.57:3000/chat/share?shareId=tejmuidvy2pl6i15bwazh0na){:target="_blank"}
+
 [![Communication Group](../assets/img/group_discord.png)](https://discord.gg/AajhFJgPAs)
 
 [![Footer](../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
