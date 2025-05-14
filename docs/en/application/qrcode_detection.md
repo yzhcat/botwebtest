@@ -115,4 +115,4 @@ You can adjust the movement speed in the `qrcode_control.cpp` file:
 
 ![Adjust Speed Code](../../assets/img/qrcode_detection/调整速度代码_c.png)
 
-[![Footer Image](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}
+[![Footer Image](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
