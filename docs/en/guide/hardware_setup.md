@@ -39,6 +39,7 @@ Install the upper support copper column of the controller Materials Required:
 The fixing holes of the chassis have their own threads, and the four copper pillars can be tightened directly
 ![IMG20220831103744](../../assets/img/hardware_setup/IMG20220831103744.jpg){.img-fluid tag=2}
 
+![pkg1](../../assets/img/hardware_setup/PixPin_2025-05-09_16-59-08.png){.img-fluid tag=2}
 
 Installing the controller board
 Materials Required:
@@ -46,11 +47,11 @@ Materials Required:
 You can fix the power supply between the chassis and the control board, but the power supply size cannot exceed 90x70x30mm
 ???+ note
     Power supply can refer to [**Resources Link**](../material/open_source_link.md#power-bank)
-![MVIMG_20240923_165943](../../assets/img/hardware_setup/PixPin_2025-05-09_16-59-08.png){.img-fluid tag=2}
+
 
 
 Use screws to fix the controller to the four supporting copper pillars of the chassis, and connect the motor wires that were previously passed through to the corresponding ports of the controller:
-![MVIMG_20240923_170119](../../assets/img/hardware_setup/MVIMG_20240923_170119.jpg){.img-fluid tag=2}
+![controller_screws](../../assets/img/hardware_setup/controller_screws.jpg){.img-fluid tag=2}
 
 ![controller_install](../../assets/img/hardware_setup/controller_install.png){.img-fluid tag=2}
 
@@ -75,7 +76,7 @@ Materials Required:
 ![MVIMG_20240923_170445](../../assets/img/hardware_setup/MVIMG_20240923_170445.jpg){.img-fluid tag=2}
 
 
-The RDK X5 can be screwed directly onto the support copper pillar on the controller
+ Take out the No.4 screw pack and RDK X5，The RDK X5 can be screwed directly onto the support copper pillar on the controller
 
 ![MVIMG_20240923_170601](../../assets/img/hardware_setup/RDK_install.png){.img-fluid tag=2}
 
@@ -107,7 +108,7 @@ Pass the camera's USB cable through the chassis controller and the battery, and 
 
 ## **Install lidar**
 Materials required:
-
+No.3 screw pack
 ![MVIMG_20240923_171944](../../assets/img/hardware_setup/MVIMG_20240923_171944.jpg){.img-fluid tag=2}
 
 Pass the three copper pillars through the corresponding holes on the radar driver board, fix the other side with three screws, tighten the copper pillars, and connect the radar serial port cable:
