@@ -6,8 +6,8 @@ If you have any questions, please join the [Discord](https://discord.gg/AajhFJgP
 ![OriginBot](../assets/img/originbot_pro_bank.jpg){.img-fluid tag=1}
 
 <div style="text-align: right;">
-  <a href="#originbot_1" class="md-button">Learn About OriginBot</a>
-  <a href="./guide/quick_guide/" class="md-button md-button--primary">Explore OriginBot Now!</a>
+  <a href="#originbot" class="md-button">Learn About OriginBot</a>
+  <a href="./guide/quick_guide.html" class="md-button md-button--primary">Explore OriginBot Now!</a>
 </div>
 
 ## **OriginBot**
@@ -80,7 +80,7 @@ OriginBot aims to awaken every developer's original dream and help them find a d
 </br>
 </br>
 </br>
-<a href="guide/quick_guide/" class="md-button">Start Developing with Qihang Robot</a>
+<a href="./guide/quick_guide.html" class="md-button">Start Developing with OriginBot</a>
 </div>
 
 ## **Configuration Parameters**

@@ -107,8 +107,8 @@ Pass the camera's USB cable through the chassis controller and the battery, and 
     Do not unplug or plug the camera cable when the power is on, as this will damage the camera.
 
 ## **Install lidar**
-Materials required:
-No.3 screw pack
+Materials required:      
+Use the No.3 screw pack
 ![MVIMG_20240923_171944](../../assets/img/hardware_setup/MVIMG_20240923_171944.jpg){.img-fluid tag=2}
 
 Pass the three copper pillars through the corresponding holes on the radar driver board, fix the other side with three screws, tighten the copper pillars, and connect the radar serial port cable:

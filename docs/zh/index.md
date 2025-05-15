@@ -6,7 +6,7 @@
 
 <div style="text-align: right;">
     <a href="#originbot_1" class="md-button">了解OriginBot</a>
-    <a href="/guide/quick_guide/" class="md-button md-button--primary">马上开始</a>
+    <a href="./guide/quick_guide.html" class="md-button md-button--primary">马上开始</a>
 </div>
 
 ## **OriginBot**
@@ -86,7 +86,7 @@ OriginBot希望唤醒每一位开发者最初的梦想，寻找适合自己的�
 </br>
 </br>
 </br>
-<a href="guide/quick_guide/" class="md-button">起航机器人开发</a>
+<a href="guide/quick_guide.html" class="md-button">起航机器人开发</a>
 </div>
 
 ## **配置参数**
