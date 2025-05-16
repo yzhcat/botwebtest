@@ -35,12 +35,12 @@ The principle of linear speed calibration is to find the linear proportional rel
 
 The steps are as follows:
 - Spread the tape measure out on the ground as a reference for the actual straight-line mileage:
-  ![img](../../assets/img/odom_calibration/2022-08-31-1.jpg){.img-fluid tag=1 title="odometer calibration"}
+  ![img](../../assets/img/odom_calibration/odom1.jpg){.img-fluid tag=1 title="odometer calibration"}
 
   
 
 - Place the robot at the zero position of the tape measure, using the front edge of the robot chassis as a reference line:
-  ![img](../../assets/img/odom_calibration/2022-08-31-2.jpg){.img-fluid tag=1 title="odometer calibration"}
+  ![img](../../assets/img/odom_calibration/odom2.jpg){.img-fluid tag=1 title="odometer calibration"}
 
   
 
@@ -74,7 +74,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
   
   
   
-  ![img](../../assets/img/odom_calibration/2022-08-31-8.jpg){.img-fluid tag=1 title="odometer calibration"}
+  ![img](../../assets/img/odom_calibration/odom3.jpg){.img-fluid tag=1 title="odometer calibration"}
 
 
 
@@ -109,7 +109,7 @@ The principle of angular velocity calibration is to find the linear proportional
 
 
 - Place the robot on a level ground and look for a reference line on the ground, or artificially draw a reference line as the zero point for the robot to rotate:
-![img](../../assets/img/odom_calibration/2022-08-31-3.jpg){.img-fluid tag=1 title="odometer calibration"}
+![img](../../assets/img/odom_calibration/Angular1.jpg){.img-fluid tag=1 title="odometer calibration"}
 
 
 
@@ -138,7 +138,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 
 - After rotating at a certain angle, such as about 300 degrees, stop the operation and mark the attitude reference line of the robot at this time
-  ![img](../../assets/img/odom_calibration/2022-08-31-4.jpg){.img-fluid tag=1 title="odometer calibration"}
+  ![img](../../assets/img/odom_calibration/Angular2.png){.img-fluid tag=1 title="odometer calibration"}
 
 
 

@@ -45,7 +45,7 @@ Please select the following table to download the controller firmware suitable f
 
 （3） Use a Type-C cable to connect the "Burning" port of the expansion board to the computer (you can use the Type-C cable that comes with the radar)
 
-![736661483e4184749a860599d569d80](../../assets/img/firmware_install/736661483e4184749a860599d569d80.jpg)
+![USB_burn](../../assets/img/firmware_install/USB_burn.jpg)
 
 ???+ hint
     The Burning port will power the controller via USB. 

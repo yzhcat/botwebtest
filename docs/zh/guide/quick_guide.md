@@ -162,6 +162,6 @@ OriginBot是一个社区共建的开源项目，大家可以二次开发，让�
 
 
 
-祝愿大家都有一段美妙的机器人开发之旅☻
+祝愿大家都有一段美妙的机器人开发之旅！😊
 
 [![图片1](../../assets/img/footer.png)](https://www.guyuehome.com/){:target="_blank"}

@@ -65,7 +65,7 @@ Open the browser and access the robot's IP address to see the real-time effect o
 
 ## **Introduction to the principle**
 
-The gesture control function is to control the movement of the robot car through gestures, including left and right rotation and front and back translation. It consists of MIPI image acquisition, human body detection and tracking, human hand key point detection, gesture recognition, gesture control strategy, image encoding and decoding, and WEB display terminal. The process is as follows:
+The gesture control function is to control the movement of the robot car through gestures, including left and right rotation and front and back translation. It consists of Hobot Sensor image acquisition, human body detection and tracking, human hand key point detection, gesture recognition, gesture control strategy, image encoding and decoding, and WEB display terminal. The process is as follows:
 
 ![20220922181402](../../assets/img/gesture_control/workflow_en.png){.img-fluid tag=1 title="Introduction to the principle"}
 

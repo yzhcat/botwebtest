@@ -111,6 +111,6 @@ OriginBot is an open-source project built by the community. You can customize an
 
 If you create new features or improvements based on the OriginBot open-source project, please share them [here](https://www.guyuehome.com/interlocution?id=1826932316801544194){:target="_blank"}!
 
-We wish you an exciting journey in robot development! ☻
+We wish you an exciting journey in robot development! 😊
 
 [![Footer Image](../../assets/img/footer_en.png)](https://www.guyuehome.com){:target="_blank"}

@@ -49,7 +49,7 @@ OriginBot的控制器出厂未烧写固件，大家可以通过以下两种方�
 
 （3）使用typeC线连接扩展板的“Burning”口和电脑（可使用雷达自带的TypeC线）
 
-![736661483e4184749a860599d569d80](../../assets/img/firmware_install/736661483e4184749a860599d569d80.jpg)
+![USB_burn](../../assets/img/firmware_install/USB_burn.jpg)
 
 ???+ hint
     Burning口会通过USB给控制器供电，如果控制器中已有固件，其中加入了电池保护，电压低于9.4V时蜂鸣器会常响报警，所以若此时蜂鸣器一直响，可以忽略。
