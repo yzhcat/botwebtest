@@ -25,14 +25,13 @@ Follow the instructions to complete the download.
 To connect OriginBot to Foxglove, you need to build a ROS environment on OriginBot.
 
 ```bash
-#Install rosbridge. The purpose of using galactic here is to avoid conflict with tros and not affect the communication effect.
-sudo apt install ros-galactic-rosbridge-suite
+sudo apt install ros-${ROS_DISTRO}-rosbridge-suite
 ```
 
 After the installation is complete, you can run the following command to enable the remote service of OriginBot:
 
 ```bash
-source /opt/ros/galactic/setup.bash
+source /opt/ros/${ROS_DISTRO}/setup.bash
 ros2 launch rosbridge_server rosbridge_websocket_launch.xml
 ```
 
@@ -56,11 +55,11 @@ Click here to open the connection, enter the IP address, and the connection can 
 
 After the connection is successful, you can use Foxglove in a variety of ways, and in the + in the upper left corner, you can use various plug-ins of the software to assist you in development.
 
-![image-1700720501265](../../assets/img/webviz/image-1700720501265.jpg){.img-fluid tag=1 title="foxglove connects to originbot2"}
+![image-1700720501265](../../assets/img/webviz/PixPin_2025-05-16_15-23-59.png){.img-fluid tag=1 title="foxglove connects to originbot2"}
 
 Select one of the images to see the image information we opened on OriginBot at the beginning, and select different topics to display the image.
 
-![image-d57ad61d81c4dd582d6ca0589327fdd](../../assets/img/webviz/image-d57ad61d81c4dd582d6ca0589327fdd.png){.img-fluid tag=1 title="Image visualization"}
+![image-d57ad61d81c4dd582d6ca0589327fdd](../../assets/img/webviz/PixPin_2025-05-16_15-33-10.png){.img-fluid tag=1 title="Image visualization"}
 
 ## **Foxglove posting the topic**
 

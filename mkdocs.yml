@@ -133,7 +133,7 @@ plugins:
                 # - Voice Control: en/application/audio_control.md
                 - Image Acquisition: en/application/take_pictures.md
                 - QR Code Detection and Tracking: en/application/qrcode_detection.md
-                - License Plate Recognition: en/application/vlpr.md
+                # - License Plate Recognition: en/application/vlpr.md
                 - Segment Everything : en/application/mobilesam.md
             # - FAQ: en/reference/faq.md
             # - Teaching Courses: en/course/courses.md

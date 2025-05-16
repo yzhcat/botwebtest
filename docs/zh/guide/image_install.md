@@ -101,6 +101,9 @@ OriginBot出厂未安装系统，大家可以通过以下方式进行安装：
 ![image-1726224133059](../../assets/img/image_install/1726224133059.jpg){.img-fluid tag=1}
 
 
+???+ warning
+    OriginBot功能默认在root用户下运行，后续开发使用过程中，请使用root用户进行操作。
+    你可以通过 `su root` 命令切换到root用户。
 
 
 ### **扩展SD卡空间**
@@ -227,6 +230,8 @@ RDK X5则是使用MicroUSB的方式进行连接，如下图所示：
 设置成功后点击OK，即可进入系统界面，如果已经开机则不会显示LOG信息，如果线连接再进行开机则会出现开机LOG信息，输入账号密码后即可进行操作界面：
 ![image-20220902151620051](../../assets/img/image_install/image-20220902151620051.png){.img-fluid tag=1}
 
+???+ attention
+  originbot功能和程序默认在root用户下，后续操作均需要在root用户下进行。
 
 ## **<span id="backup_sd_image">备份OriginBot SD卡镜像</span >**
 

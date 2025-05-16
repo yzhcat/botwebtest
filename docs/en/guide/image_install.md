@@ -88,8 +88,10 @@ Please download the SD card image of the robot from the table below and extract 
 (4)Start the MoboXterm software, click Session in the upper left corner, and then click SSH connection:
 ![ssh_host](../../assets/img/image_install/ssh_host.png){.img-fluid tag=1}
 
-(5) In the MoboXterm software, you can see a login prompt. Enter the username and password. Both the username and password are root:
+(5) In the MoboXterm software, you can see a login prompt. Enter the username and password. Both the username and password are root.
 
+???+ warning
+    OriginBot are running under the **root** user by default. Please use the root user for operation during subsequent development.You can switch to the root user by entering the command `su root` during subsequent development.
 
 ### **Expand SD card space**
 
