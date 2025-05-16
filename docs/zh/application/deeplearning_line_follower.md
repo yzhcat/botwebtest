@@ -102,7 +102,7 @@ ros2 launch originbot_bringup originbot.launch.py
 
 ### **视觉巡线流程**
 
-![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg){.img-fluid tag=1}
+![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.png){.img-fluid tag=1}
 
 OriginBot具有两个主动轮，一个从动轮，通过两个主动轮差速进行旋转控制。其中MCU模块主要用于小车的电机运动控制通过串口与主控RDK X5进行通信。主控制器选用地瓜RDK X5，具备10T算力，能够轻松处理复杂的CNN推理工作。
 

@@ -35,7 +35,7 @@ After successfully connecting to OriginBot through SSH, enter the following comm
 ros2 launch originbot_bringup originbot.launch.py use_lidar:=true
 ```
 
-![image-20220822150642309](../../assets/img/teleoperation/image-20220822150642309.png){.img-fluid tag=1 title="start the robot chassis and lidar drive"}
+![image-20220822150642309](../../assets/img/lidar_visualization/usb_lidar.png){.img-fluid tag=1 title="start the robot chassis and lidar drive"}
 
 
 

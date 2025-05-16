@@ -6,7 +6,6 @@
      - OriginBot Pro
      - PC：Ubuntu (≥22.04) + ROS2 (≥humble) + pytorch + docker
      - Line following scene: black path line, with obvious contrast with the background
-     - RDK X3 Please refer to [Visual Line Following (AI Deep Learning)_x3](./deeplearning_line_follower_x3.md)
 
 
 ## **Apply goals**
@@ -96,7 +95,7 @@ The core purpose of machine learning is to help us solve problems, which can be 
 
 ### **Visual line inspection process**
 
-![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg){.img-fluid tag=1}
+![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.png){.img-fluid tag=1}
 
 The OriginBot has two active wheels, one passive wheel, and the two active wheels are used to rotate the robot through differential speed. The MCU module is mainly used for motor control of the robot and communicates with the main control RDK X5 through UART. The main controller is selected to be the earthmelon RDK X5, which has 10T computing power and can easily handle complex CNN inference tasks.
 

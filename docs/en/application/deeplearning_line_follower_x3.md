@@ -42,7 +42,7 @@ The core purpose of machine learning is to help us solve problems, which can be 
 
 ### **Visual line inspection process**
 
-![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg){.img-fluid tag=1}
+![deeplearning_struct](../../assets/img/deeplearning_line_follower/deeplearning_struct.png){.img-fluid tag=1}
 
 The OriginBot has two drive wheels, a driven wheel, which is rotated and controlled by the differential speed of the two drive wheels. Among them, the MCU module is mainly used for motor motion control of the OriginBot, and communicates with the main control RDK X3 through the serial port. The main controller is Horizon RDK X3, which has 5T computing power and can easily handle complex CNN inference work.
 

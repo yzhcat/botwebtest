@@ -111,7 +111,7 @@ plugins:
                 - Dynamic Monitoring of Robot Parameters: en/manual/parameter_config.md
                 - Robot Odometer Calibration: en/manual/odom_calibration.md
                 - Communication Protocol Description: en/manual/protocol_description.md
-                - HMI Control Description: en/manual/hmi.md
+                # - HMI Control Description: en/manual/hmi.md
                 - Real-Time Operating System RTOS Configuration: en/manual/originbot_freertos.md
                 - EKF Multi-Sensor Fusion Positioning: en/manual/ekf.md
                 - WebViz Visualization: en/manual/webviz.md
@@ -128,7 +128,7 @@ plugins:
                 - Visual Line Following (AI Deep Learning): en/application/deeplearning_line_follower.md
                 - Visual Line Following (Gazebo): en/application/gazebo_line_follower.md
                 - Parking Spot Finding (AI Deep Learning): en/application/parking_search.md
-                - Playing Football: en/application/play_football.md
+                # - Playing Football: en/application/play_football.md
                 - Trajectory Tracking: en/application/tracking.md
                 # - Voice Control: en/application/audio_control.md
                 - Image Acquisition: en/application/take_pictures.md

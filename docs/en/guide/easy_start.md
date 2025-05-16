@@ -20,7 +20,11 @@ After completing the kit assembly and system flashing, you can prepare to start 
 
 （1） Turn on the main power switch, the expansion board power indicator lights up, and the RDK X5 power indicator lights up.
 
-![image-20220902154832754](../../assets/img/easy_start/image-20220902154832754.jpg){.img-fluid tag=1}
+![image-20220902154832754](../../assets/img/easy_start/x5led.png){.img-fluid tag=1}
+
+ After connecting the power adapter to the development board, the green power indicator light is on, indicating that the development board is powered normally, and the orange status indicator light is flashing after version 3.1.0, indicating that the system is running normally.
+
+（2） Turn on the power switch of the robot controller, and the buzzer of the robot controller will sound for 0.5s.
 
 （2）The lidar starts to rotate (if connected)
 

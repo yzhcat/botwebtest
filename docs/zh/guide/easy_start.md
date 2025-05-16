@@ -25,6 +25,9 @@ typora-copy-images-to: image\easy_start
 （1）打开电源总开关，扩展板电源灯点亮、RDK X3/RDK X5电源指示灯点亮
 
 ![image-20220902154832754](../../assets/img/easy_start/image-20220902154832754.jpg){.img-fluid tag=1}
+x3:将电源适配器接入开发板后，开发板红色电源指示灯亮起，说明开发板供电正常。
+![image-20220902154832754](../../assets/img/easy_start/x5led.png){.img-fluid tag=1}
+x5:将电源适配器接入开发板后，绿色 电源指示灯 亮起，说明开发板供电正常，3.1.0版本后，橙色 状态指示灯 闪烁，说明系统运行正常。
 
 （2）雷达开始旋转（如有连接）
 

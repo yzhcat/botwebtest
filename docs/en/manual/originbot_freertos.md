@@ -19,11 +19,11 @@ FreeRTOS is written in the same way as general firmware, and we provide a FreeRT
 
 **Here's how it works:**：
 
-（1）Start the flymcu software on the computer（[click here to download](../material/common_software.md)）；
+1. Start the flymcu software on the computer（[click here to download](../material/common_software.md)）；
 
-（2）Click Port and select the serial port to burn the firmware (select the serial port with the "CH340" number);
+2. Click Port and select the serial port to burn the firmware (select the serial port with the "CH340" number);
 
-（3）In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";
+3. In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";
 
 ![flymcu](../../assets/img/originbot_freertos/flymcu_en.png)
 
@@ -118,19 +118,19 @@ void start_task(void *pvParameters)
 
 In addition to the task creation API, task latency is also an extremely important implementation in FreeRTOS, as you can see in the introduction to FreeRTOS, in essence, each task has four states, ready, suspended, running, and blocking. A brief introduction to the process is described as follows:
 
-(1)：Create a task → ready state (Ready): After the task is created, it enters the ready state, indicating that the task is ready to run at any time, and only waits for the scheduler to schedule.
+1. Create a task → ready state (Ready): After the task is created, it enters the ready state, indicating that the task is ready to run at any time, and only waits for the scheduler to schedule.
 
-(2)：Ready state → Running state: When a task switch occurs, the highest priority task in the ready list is executed, thus entering the running state.
+2. Ready state → Running state: When a task switch occurs, the highest priority task in the ready list is executed, thus entering the running state.
 
-(3)：Running state → ready state: After a higher priority task is created or restored, task scheduling will occur, and the highest priority task in the ready list becomes running state, then the original running task changes from running state to ready state, and is still in the ready list, waiting for the highest priority task to finish running and continue to run the original task (this can be regarded as the CPU usage is preempted by a higher priority task).
+3. Running state → ready state: After a higher priority task is created or restored, task scheduling will occur, and the highest priority task in the ready list becomes running state, then the original running task changes from running state to ready state, and is still in the ready list, waiting for the highest priority task to finish running and continue to run the original task (this can be regarded as the CPU usage is preempted by a higher priority task).
 
-(4)：Running state → blocking state (Blocked): When the running task is blocked (suspended, delayed, read semaphore waiting), the task will be deleted from the ready list, and the task status will change from the running state to the blocking state, and then the task switch will occur, and the current highest priority task in the ready list will be run.
+4. Running state → blocking state (Blocked): When the running task is blocked (suspended, delayed, read semaphore waiting), the task will be deleted from the ready list, and the task status will change from the running state to the blocking state, and then the task switch will occur, and the current highest priority task in the ready list will be run.
 
-(5)： Blocking state → ready state: After the blocked task is resumed (task recovery, delay time timeout, read semaphore timeout or read semaphore, etc.), the resumed task will be added to the ready list, so as to change from the blocking state to the ready state; If the priority of the restored task is higher than the priority of the running task, a task switchover will occur, and the task will be transitioned from the ready state to the running state again.
+5. Blocking state → ready state: After the blocked task is resumed (task recovery, delay time timeout, read semaphore timeout or read semaphore, etc.), the resumed task will be added to the ready list, so as to change from the blocking state to the ready state; If the priority of the restored task is higher than the priority of the running task, a task switchover will occur, and the task will be transitioned from the ready state to the running state again.
 
-(6) ：Ready, Blocking, Running→ Suspended: The task can be suspended in any state by calling the vTaskSuspend() API function, and the suspended task does not get the right to use the CPU, nor will it participate in the scheduling unless it is lifted from the suspended state.
+6. Ready, Blocking, Running→ Suspended: The task can be suspended in any state by calling the vTaskSuspend() API function, and the suspended task does not get the right to use the CPU, nor will it participate in the scheduling unless it is lifted from the suspended state.
 
-(7)：Suspended state → ready state: The only way to resume a task in a suspended state is to call the vTaskResume() or vTaskResumeFromISR() API function, if the priority of the resumed task is higher than the priority of the running task, a task switch will occur, and the task will be converted to the task state again, from the ready state to the running state.
+7. Suspended state → ready state: The only way to resume a task in a suspended state is to call the vTaskResume() or vTaskResumeFromISR() API function, if the priority of the resumed task is higher than the priority of the running task, a task switch will occur, and the task will be converted to the task state again, from the ready state to the running state.
 
 Task latency is the transformation of a task into a blocking state, and there are two task delay APIs in FreeRTOS.
 

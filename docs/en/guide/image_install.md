@@ -72,7 +72,7 @@ Please download the SD card image of the robot from the table below and extract 
 
 (1) Confirm that the robot kit has been installed correctly and the corresponding version system has been successfully installed, then insert the SD card and start the power;
 
-![image-20221021115537957](../../assets/img/image_install/image-20221021115537957.png)
+![image-SD_card](../../assets/img/image_install/SD_card.png)
 
 (2) Use the network cable in the kit to connect the robot to the network port of RDK X5;
 
@@ -81,18 +81,14 @@ Please download the SD card image of the robot from the table below and extract 
 
 
 (3) Connect the other end of the network cable to the network port on the PC. First, configure your computer properties. Take RDK X5 as an example:
-![image-1726223687817](../../assets/img/image_install/1726223687817.jpg){.img-fluid tag=1}
-![image-1726223701019](../../assets/img/image_install/1726223701019.jpg){.img-fluid tag=1}
+![Network_internet](../../assets/img/image_install/Network_internet.png){.img-fluid tag=1}
+![Edit_ip](../../assets/img/image_install/Edit_ip.png){.img-fluid tag=1}
 
 
 (4)Start the MoboXterm software, click Session in the upper left corner, and then click SSH connection:
-![1726223618546](../../assets/img/image_install/1726223618546.jpg){.img-fluid tag=1}
+![ssh_host](../../assets/img/image_install/ssh_host.png){.img-fluid tag=1}
 
 (5) In the MoboXterm software, you can see a login prompt. Enter the username and password. Both the username and password are root:
-![image-20220902150943452](../../assets/img/image_install/image-20220902150943452.png){.img-fluid tag=1}
-
-(6) At this point, you have successfully entered the robot's system:
-![image-20220902151620051](../../assets/img/image_install/image-20220902151620051.png){.img-fluid tag=1}
 
 
 ### **Expand SD card space**
@@ -115,9 +111,8 @@ In order to reduce the size of the system image and facilitate downloading and b
 After starting OriginBot and logging in via wireless connection, you can use the following command to expand:
 
 ```bash
-#If V3.x is used, run the following command
-sudo growpart /dev/mmcblk2 2
-sudo resize2fs /dev/mmcblk2p2
+sudo growpart /dev/mmcblk1 2
+sudo resize2fs /dev/mmcblk1p2
 ```
 
 ![image-20220902151655008](../../assets/img/image_install/image-20220902151655008.png){.img-fluid tag=1}

@@ -35,7 +35,7 @@ SSH连接OriginBot成功后，在终端中输入如下指令，即可启动机�
 ros2 launch originbot_bringup originbot.launch.py use_lidar:=true
 ```
 
-![image-20220822150642309](../../assets/img/teleoperation/image-20220822150642309.png){.img-fluid tag=1 title="启动机器人底盘及雷达驱动"}
+![image-20220822150642309](../../assets/img/lidar_visualization/usb_lidar.png){.img-fluid tag=1 title="启动机器人底盘及雷达驱动"}
 
 
 

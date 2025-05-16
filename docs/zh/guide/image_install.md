@@ -74,7 +74,7 @@ OriginBot出厂未安装系统，大家可以通过以下方式进行安装：
 ### **启动 OriginBot**
 
 （1）确认机器人套件已经正确安装，并成功安装对应版本系统，然后插入SD卡启动电源；
-
+![image-SD_card](../../assets/img/image_install/SD_card.png)
 （2）使用套件中的网线连接机器人端RDK X3/RDK X5的网口；
 
 ???+ Attention
@@ -84,12 +84,12 @@ OriginBot出厂未安装系统，大家可以通过以下方式进行安装：
 
 （3）将网线的另一端连接到PC端的网口，首先配置自己的电脑属性，以RDK X3为例：
 
-![image-1726223687817](../../assets/img/image_install/1726223687817.jpg){.img-fluid tag=1}
-![image-1726223701019](../../assets/img/image_install/1726223701019.jpg){.img-fluid tag=1}
+![Network_internet](../../assets/img/image_install/Network_internet.png){.img-fluid tag=1}
+![Edit_ip](../../assets/img/image_install/Edit_ip.png){.img-fluid tag=1}
 
 启动MoboXterm软件，点击左上角Session，然后点击SSH连接：
 
-![1726223618546](../../assets/img/image_install/1726223618546.jpg){.img-fluid tag=1}
+![ssh_host](../../assets/img/image_install/ssh_host.png){.img-fluid tag=1}
 
 
 （4）在MoboXterm软件中可以看到出现登录提示,输入用户名及密码，用户名和密码均为root：
@@ -123,13 +123,13 @@ OriginBot出厂未安装系统，大家可以通过以下方式进行安装：
 启动 OriginBot 并通过无线连接登录后，使用如下指令即可扩展：
 
 ```bash
-#如使用V1.x版本，使用以下命令
-sudo growpart /dev/mmcblk2 1
-sudo resize2fs /dev/mmcblk2p1
-
-#如使用V2.x版本，使用以下命令
+# RDK x3
 sudo growpart /dev/mmcblk2 2
 sudo resize2fs /dev/mmcblk2p2
+
+#RDK x5
+sudo growpart /dev/mmcblk1 2
+sudo resize2fs /dev/mmcblk1p2
 ```
 
 ![image-20220902151655008](../../assets/img/image_install/image-20220902151655008.png){.img-fluid tag=1}

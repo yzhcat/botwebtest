@@ -26,7 +26,7 @@ Due to the characteristics of the lidar itself, it will rotate all the time afte
 
 After the SD card is burned to the image, insert it into the card slot on the front of the robot and the back of the RDK X5 board.
 
-![image-20221021115537957](../../assets/img/faq/image-20221021115537957.png){.img-fluid tag=1}
+![image-20221021115537957](../../assets/img/image_install/SD_card.png){.img-fluid tag=1}
 
 
 ### **The motor of the machine is not moving properly**

@@ -21,7 +21,7 @@ OriginBot is an open-source kit for intelligent robots and a community-driven pr
 **▶ Open-Source Ecosystem**
 
 <div style="display: inline-block">
-<img src="../assets/img/originbot_explode.jpg" style="max-width:256px;" align="left">
+<!-- <img src="../assets/img/originbot_explode.jpg" style="max-width:256px;" align="left"> -->
 What you gain is more than what you see, and what you see is open source. From structure to electronics, from drivers to applications, OriginBot's compact design houses a vast open-source ecosystem. Every developer is welcome to learn from it and contribute to its growth.
 </div>
 
@@ -68,14 +68,14 @@ Every robot developer dreams of "building a robot from scratch," and OriginBot w
 **▶ Unique Identity**
 
 <div style="display: inline-block">
-<img src="../assets/img/20220906134853.jpg" style="max-width:256px;" align="left">
+<img src="../assets/img/b2.png" style="max-width:256px;" align="left">
 Each OriginBot is unique. The kit includes a license plate with a unique serial number, starting from "0000." When you attach the license plate to your robot, you become its owner. Endless possibilities await exploration.
 </div>
 
 **<p align="right">Start Development ◀</p>**
 
 <div style="display: inline-block">
-<img src="../assets/img/hello_robot.jpg" style="max-width:256px;" align="right">
+<!-- <img src="../assets/img/hello_robot.jpg" style="max-width:256px;" align="right"> -->
 OriginBot aims to awaken every developer's original dream and help them find a development path that suits them. The journey ahead is long, but together, we will set sail now!
 </br>
 </br>

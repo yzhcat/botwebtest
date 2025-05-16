@@ -1,6 +1,12 @@
 # **OriginBot suite changelog**
+## **[v3.0.2] - 2025-5-16**
+### New
+OriginBot series upgraded, added overseas version
 
-## **[v3.0.0] - 2024-09-18**
+### Optimize
+Network connection issues;
+
+## **[v3.0.0] - 2025-03-1**
 
 ### New
 
@@ -27,24 +33,3 @@
 - Upgraded the battery capacity to 3000mAh, increasing battery life to 3-4 hours
 
 - Upgraded the acrylic omnidirectional wheel to a sheet metal omnidirectional wheel
-
-## **[v2.1.0] - 2024-03-01**
-
-### New
-
-- Added [license plate recognition](../application/vlpr.md){:target="_blank"}
-
-- Added one-click configuration of shell scripts to allow portable installation and compilation of dependencies
-
-- Added simulation plug-ins/environment configurations such as rtab and Fortess
-
-### Optimize
-
-- Optimize the code structure of the OriginBot repository, clear redundant content at the file and code levels, and clear redundant compilation information
-
-- Optimized the PID unit conversion issue in OriginBot Controller
-
-- Optimized the originbot_teleop function package to support speed regulation 
-
-- Upgrade the TROS version to v2.1.2
-

@@ -1,6 +1,6 @@
 # **Hardware Assembly**
 
-![exploded ](../../assets/img/hardware_setup/exploded.jpg){.img-fluid tag=0 title="=OriginBot Exploded View"}
+<!-- ![exploded ](../../assets/img/hardware_setup/exploded.jpg){.img-fluid tag=0 title="=OriginBot Exploded View"} -->
 
 ???+ attention
     The installation steps are expected to take 30~60 minutes, please note the following:
@@ -48,7 +48,7 @@ You can fix the power supply between the chassis and the control board, but the 
 ???+ note
     Power supply can refer to [**Resources Link**](../material/open_source_link.md#power-bank)
 
-
+![screws_set](../../assets/img/hardware_setup/screws_set.png){.img-fluid tag=2}
 
 Use screws to fix the controller to the four supporting copper pillars of the chassis, and connect the motor wires that were previously passed through to the corresponding ports of the controller:
 ![controller_screws](../../assets/img/hardware_setup/controller_screws.jpg){.img-fluid tag=2}
