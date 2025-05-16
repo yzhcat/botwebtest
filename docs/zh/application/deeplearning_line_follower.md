@@ -192,7 +192,7 @@ horizon_x5_open_explorer_v1.2.6-py310_20240724.tar.gz
 wget -c ftp://x5ftp@vrftp.horizon.ai/OpenExplorer/v1.2.6_release/horizon_x5_open_explorer_v1.2.6-py310_20240724.tar.gz --ftp-password=x5ftp@123$%
 ```
 
-- Ubuntu20.04 CPU Docker镜像 (1.65GB)       
+- CPU Docker镜像 (1.65GB)       
 docker_openexplorer_ubuntu_20_x5_cpu_v1.2.8.tar.gz
 ```bash
 wget -c ftp://x5ftp@vrftp.horizon.ai/OpenExplorer/v1.2.8_release/docker_openexplorer_ubuntu_20_x5_cpu_v1.2.8.tar.gz --ftp-password=x5ftp@123$%
