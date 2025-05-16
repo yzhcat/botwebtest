@@ -1708,13 +1708,13 @@
 <p>We often see vehicles park autonomously and find their own parking spaces in parking garages. Can we implement this function on the OriginBot car? Of course, no problem. By using deep learning to train and collecting relevant images for training, we can build a simple application environment. Let's try it out.</p>
 <h2 id="start-the-robot-chassis"><strong>Start the robot chassis</strong></h2>
 <p>After successfully connecting to OriginBot through SSH, enter the following command in the terminal to start the robot chassis:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ros2 launch originbot_bringup originbot.launch.py
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ros2<span class="w"> </span>launch<span class="w"> </span>originbot_bringup<span class="w"> </span>originbot.launch.py
 </code></pre></div>
 <h2 id="start-the-car-parking-space-search-function"><strong>Start the car parking space search function</strong></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Copy the configuration files needed to run the example from the TogetheROS installation path</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>cp<span class="w"> </span>-r<span class="w"> </span>/opt/tros/lib/parking_perception/config/<span class="w"> </span>.
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Start the launch file</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>/opt/tros/humble/setup.bash
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>cp<span class="w"> </span>-r<span class="w"> </span>/opt/tros/<span class="si">${</span><span class="nv">TROS_DISTRO</span><span class="si">}</span>/lib/parking_perception/config/<span class="w"> </span>.
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">CAM_TYPE</span><span class="o">=</span>usb
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ros2<span class="w"> </span>launch<span class="w"> </span>parking_search<span class="w"> </span>parking_search.launch.py
 </code></pre></div>
 <h2 id="check-the-implementation-effect"><strong>Check the implementation effect</strong></h2>
