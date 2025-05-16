@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://www.guyuehome.com/en/manual/originbot_freertos.html">
       
       
-        <link rel="prev" href="hmi.html">
+        <link rel="prev" href="protocol_description.html">
       
       
         <link rel="next" href="ekf.html">
@@ -894,29 +894,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="hmi.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HMI Control Description
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -1475,29 +1452,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../application/play_football.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Playing Football
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../application/tracking.html" class="md-nav__link">
         
   
@@ -1929,9 +1883,17 @@
 <p>In the controller firmware installation column, you have already equipped the general microcontroller processing firmware, but in addition to the general processing firmware, here will provide you with the processing firmware of the FreeRTOS in the microcontroller real-time operating system.</p>
 <p>FreeRTOS is written in the same way as general firmware, and we provide a FreeRTOS sample firmware that can achieve the same function as the general processing firmware for you to burn.</p>
 <p><strong>Here's how it works:</strong>：</p>
-<p>（1）Start the flymcu software on the computer（<a href="../material/common_software.html">click here to download</a>）；</p>
-<p>（2）Click Port and select the serial port to burn the firmware (select the serial port with the "CH340" number);</p>
-<p>（3）In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";</p>
+<ol>
+<li>
+<p>Start the flymcu software on the computer（<a href="../material/common_software.html">click here to download</a>）；</p>
+</li>
+<li>
+<p>Click Port and select the serial port to burn the firmware (select the serial port with the "CH340" number);</p>
+</li>
+<li>
+<p>In the flymcu software, select the firmware file to be burned, configure it according to the figure below, and click "Start Programming";</p>
+</li>
+</ol>
 <p><img alt="flymcu" src="../../assets/img/originbot_freertos/flymcu_en.png" /></p>
 <h2 id="introduction-to-freertos"><strong>Introduction to FreeRTOS</strong></h2>
 <h4 id="rtosreal-time-operation-system">RTOS（Real Time Operation System）</h4>
@@ -1994,13 +1956,29 @@ vTaskStartScheduler();   /* Start a task and enable scheduling */
 </code></pre></div>
 <h4 id="task-delay">Task delay</h4>
 <p>In addition to the task creation API, task latency is also an extremely important implementation in FreeRTOS, as you can see in the introduction to FreeRTOS, in essence, each task has four states, ready, suspended, running, and blocking. A brief introduction to the process is described as follows:</p>
-<p>(1)：Create a task → ready state (Ready): After the task is created, it enters the ready state, indicating that the task is ready to run at any time, and only waits for the scheduler to schedule.</p>
-<p>(2)：Ready state → Running state: When a task switch occurs, the highest priority task in the ready list is executed, thus entering the running state.</p>
-<p>(3)：Running state → ready state: After a higher priority task is created or restored, task scheduling will occur, and the highest priority task in the ready list becomes running state, then the original running task changes from running state to ready state, and is still in the ready list, waiting for the highest priority task to finish running and continue to run the original task (this can be regarded as the CPU usage is preempted by a higher priority task).</p>
-<p>(4)：Running state → blocking state (Blocked): When the running task is blocked (suspended, delayed, read semaphore waiting), the task will be deleted from the ready list, and the task status will change from the running state to the blocking state, and then the task switch will occur, and the current highest priority task in the ready list will be run.</p>
-<p>(5)： Blocking state → ready state: After the blocked task is resumed (task recovery, delay time timeout, read semaphore timeout or read semaphore, etc.), the resumed task will be added to the ready list, so as to change from the blocking state to the ready state; If the priority of the restored task is higher than the priority of the running task, a task switchover will occur, and the task will be transitioned from the ready state to the running state again.</p>
-<p>(6) ：Ready, Blocking, Running→ Suspended: The task can be suspended in any state by calling the vTaskSuspend() API function, and the suspended task does not get the right to use the CPU, nor will it participate in the scheduling unless it is lifted from the suspended state.</p>
-<p>(7)：Suspended state → ready state: The only way to resume a task in a suspended state is to call the vTaskResume() or vTaskResumeFromISR() API function, if the priority of the resumed task is higher than the priority of the running task, a task switch will occur, and the task will be converted to the task state again, from the ready state to the running state.</p>
+<ol>
+<li>
+<p>Create a task → ready state (Ready): After the task is created, it enters the ready state, indicating that the task is ready to run at any time, and only waits for the scheduler to schedule.</p>
+</li>
+<li>
+<p>Ready state → Running state: When a task switch occurs, the highest priority task in the ready list is executed, thus entering the running state.</p>
+</li>
+<li>
+<p>Running state → ready state: After a higher priority task is created or restored, task scheduling will occur, and the highest priority task in the ready list becomes running state, then the original running task changes from running state to ready state, and is still in the ready list, waiting for the highest priority task to finish running and continue to run the original task (this can be regarded as the CPU usage is preempted by a higher priority task).</p>
+</li>
+<li>
+<p>Running state → blocking state (Blocked): When the running task is blocked (suspended, delayed, read semaphore waiting), the task will be deleted from the ready list, and the task status will change from the running state to the blocking state, and then the task switch will occur, and the current highest priority task in the ready list will be run.</p>
+</li>
+<li>
+<p>Blocking state → ready state: After the blocked task is resumed (task recovery, delay time timeout, read semaphore timeout or read semaphore, etc.), the resumed task will be added to the ready list, so as to change from the blocking state to the ready state; If the priority of the restored task is higher than the priority of the running task, a task switchover will occur, and the task will be transitioned from the ready state to the running state again.</p>
+</li>
+<li>
+<p>Ready, Blocking, Running→ Suspended: The task can be suspended in any state by calling the vTaskSuspend() API function, and the suspended task does not get the right to use the CPU, nor will it participate in the scheduling unless it is lifted from the suspended state.</p>
+</li>
+<li>
+<p>Suspended state → ready state: The only way to resume a task in a suspended state is to call the vTaskResume() or vTaskResumeFromISR() API function, if the priority of the resumed task is higher than the priority of the running task, a task switch will occur, and the task will be converted to the task state again, from the ready state to the running state.</p>
+</li>
+</ol>
 <p>Task latency is the transformation of a task into a blocking state, and there are two task delay APIs in FreeRTOS.</p>
 <h5 id="vtaskdelay">vTaskDelay()</h5>
 <p>vTaskDelay() is used a lot in our tasks, and each task must be in an endless loop, and there must be a block, otherwise the lower priority tasks will not be able to run. To use the vTaskDelay() function in FreeRTOS, you must define INCLUDE_vTaskDelay as 1 in FreeRTOSConfig.h to enable it.</p>

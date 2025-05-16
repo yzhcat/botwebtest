@@ -891,29 +891,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/hmi.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HMI Control Description
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../manual/originbot_freertos.html" class="md-nav__link">
         
   
@@ -1287,29 +1264,6 @@
   
   <span class="md-ellipsis">
     Parking Spot Finding (AI Deep Learning)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="play_football.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Playing Football
     
   </span>
   
@@ -1959,7 +1913,7 @@
 <li><strong>Deployment</strong>：After everything is ready, you can put the trained model on the robot, that is, officially transfer the knowledge to a certain robot, and it can solve the problem raised earlier.</li>
 </ul>
 <h3 id="visual-line-inspection-process"><strong>Visual line inspection process</strong></h3>
-<p><img alt="deeplearning_struct" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg" tag="1" /></p>
+<p><img alt="deeplearning_struct" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_struct.png" tag="1" /></p>
 <p>The OriginBot has two drive wheels, a driven wheel, which is rotated and controlled by the differential speed of the two drive wheels. Among them, the MCU module is mainly used for motor motion control of the OriginBot, and communicates with the main control RDK X3 through the serial port. The main controller is Horizon RDK X3, which has 5T computing power and can easily handle complex CNN inference work.</p>
 <p>The whole system is shown in the figure above, RDK X3 obtains the environmental data in front of the OriginBot through the camera, and the image data is inferred through the trained CNN model to obtain the coordinate value of the guide line, and then calculates the movement mode of the OriginBot according to a certain control strategy, and issues motion control instructions to the OriginBot through UART to realize the closed-loop control of the whole system.</p>
 <p>The PC is used for data annotation and training, and in order to improve efficiency, RDK X3 is used to send the image to the PC via Ethernet for annotation.</p>

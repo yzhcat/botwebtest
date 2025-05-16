@@ -1041,29 +1041,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/hmi.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HMI Control Description
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../manual/originbot_freertos.html" class="md-nav__link">
         
   
@@ -1437,29 +1414,6 @@
   
   <span class="md-ellipsis">
     Parking Spot Finding (AI Deep Learning)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../application/play_football.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Playing Football
     
   </span>
   
@@ -1931,21 +1885,18 @@
 <p>（5）The progress bar will display the current burning progress, and after the burning is completed, you can exit the software.</p>
 <h3 id="start-originbot"><strong>Start OriginBot</strong></h3>
 <p>(1) Confirm that the robot kit has been installed correctly and the corresponding version system has been successfully installed, then insert the SD card and start the power;</p>
-<p><img alt="image-20221021115537957" src="../../assets/img/image_install/image-20221021115537957.png" /></p>
+<p><img alt="image-SD_card" src="../../assets/img/image_install/SD_card.png" /></p>
 <p>(2) Use the network cable in the kit to connect the robot to the network port of RDK X5;</p>
 <details class="info" open="open">
 <summary>Info</summary>
 <p>The RDK X5 wired network uses a static IP configuration by default, and the initial IP address is 192.168.127.10.</p>
 </details>
 <p>(3) Connect the other end of the network cable to the network port on the PC. First, configure your computer properties. Take RDK X5 as an example:
-<img alt="image-1726223687817" class="img-fluid" src="../../assets/img/image_install/1726223687817.jpg" tag="1" />
-<img alt="image-1726223701019" class="img-fluid" src="../../assets/img/image_install/1726223701019.jpg" tag="1" /></p>
+<img alt="Network_internet" class="img-fluid" src="../../assets/img/image_install/Network_internet.png" tag="1" />
+<img alt="Edit_ip" class="img-fluid" src="../../assets/img/image_install/Edit_ip.png" tag="1" /></p>
 <p>(4)Start the MoboXterm software, click Session in the upper left corner, and then click SSH connection:
-<img alt="1726223618546" class="img-fluid" src="../../assets/img/image_install/1726223618546.jpg" tag="1" /></p>
-<p>(5) In the MoboXterm software, you can see a login prompt. Enter the username and password. Both the username and password are root:
-<img alt="image-20220902150943452" class="img-fluid" src="../../assets/img/image_install/image-20220902150943452.png" tag="1" /></p>
-<p>(6) At this point, you have successfully entered the robot's system:
-<img alt="image-20220902151620051" class="img-fluid" src="../../assets/img/image_install/image-20220902151620051.png" tag="1" /></p>
+<img alt="ssh_host" class="img-fluid" src="../../assets/img/image_install/ssh_host.png" tag="1" /></p>
+<p>(5) In the MoboXterm software, you can see a login prompt. Enter the username and password. Both the username and password are root:</p>
 <h3 id="expand-sd-card-space"><strong>Expand SD card space</strong></h3>
 <!-- <iframe
   src="//player.bilibili.com/player.html?aid=516658213&bvid=BV1eg411a7A9&cid=865882863&page=4&autoplay=0"
@@ -1961,9 +1912,8 @@
 
 <p>In order to reduce the size of the system image and facilitate downloading and burning, the free space in the system image has been compressed. If you need to use the full space of the SD card, you need to expand it manually.</p>
 <p>After starting OriginBot and logging in via wireless connection, you can use the following command to expand:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">#If V3.x is used, run the following command</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>growpart<span class="w"> </span>/dev/mmcblk2<span class="w"> </span><span class="m">2</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>sudo<span class="w"> </span>resize2fs<span class="w"> </span>/dev/mmcblk2p2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>growpart<span class="w"> </span>/dev/mmcblk1<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>resize2fs<span class="w"> </span>/dev/mmcblk1p2
 </code></pre></div>
 <p><img alt="image-20220902151655008" class="img-fluid" src="../../assets/img/image_install/image-20220902151655008.png" tag="1" /></p>
 <p>After the operation is successful, restart the system to take effect. Use the following command to confirm that the system space expansion is successful. The SD card used here is 32GB:</p>

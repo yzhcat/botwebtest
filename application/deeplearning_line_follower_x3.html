@@ -2070,7 +2070,7 @@
 <li><strong>部署</strong>：一切准备就绪之后，就可以把训练好的模型放到机器人上了，也就是正式把知识传授给某一个机器人，它就可以解决之前提出的问题啦。</li>
 </ul>
 <h3 id="_4"><strong>视觉巡线流程</strong></h3>
-<p><img alt="deeplearning_struct" class="img-fluid" src="../assets/img/deeplearning_line_follower/deeplearning_struct.jpg" tag="1" /></p>
+<p><img alt="deeplearning_struct" class="img-fluid" src="../assets/img/deeplearning_line_follower/deeplearning_struct.png" tag="1" /></p>
 <p>OriginBot具有两个主动轮，一个从动轮，通过两个主动轮差速进行旋转控制。其中MCU模块主要用于小车的电机运动控制通过串口与主控RDK X3进行通信。主控制器选用地瓜RDK X3，具备10T算力，能够轻松处理复杂的CNN推理工作。</p>
 <p>整套系统如上图所示，RDK X3通过摄像头获取小车前方环境数据，图像数据通过训练好的CNN模型进行推理得到引导线的坐标值，然后依据一定的控制策略计算小车的运动方式，通过UART向小车下发运动控制指令实现整个系统的闭环控制。</p>
 <p>PC用于进行数据标注以及训练,为了提高效率这里采用RDK X3将图片通过以太网发送至PC端进行标注的方式。</p>

@@ -895,29 +895,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../manual/hmi.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HMI Control Description
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../manual/originbot_freertos.html" class="md-nav__link">
         
   
@@ -1679,29 +1656,6 @@
   
   
     <li class="md-nav__item">
-      <a href="play_football.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Playing Football
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="tracking.html" class="md-nav__link">
         
   
@@ -2332,7 +2286,6 @@
 <li>OriginBot Pro</li>
 <li>PC：Ubuntu (≥22.04) + ROS2 (≥humble) + pytorch + docker</li>
 <li>Line following scene: black path line, with obvious contrast with the background</li>
-<li>RDK X3 Please refer to <a href="deeplearning_line_follower_x3.html">Visual Line Following (AI Deep Learning)_x3</a></li>
 </ul>
 </details>
 <h2 id="apply-goals"><strong>Apply goals</strong></h2>
@@ -2378,7 +2331,7 @@
 <li><strong>Deployment</strong>：After everything is ready, you can put the trained model on the robot, that is, officially transfer the knowledge to a certain robot, and it can solve the problem raised earlier.</li>
 </ul>
 <h3 id="visual-line-inspection-process"><strong>Visual line inspection process</strong></h3>
-<p><img alt="deeplearning_struct" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_struct.jpg" tag="1" /></p>
+<p><img alt="deeplearning_struct" class="img-fluid" src="../../assets/img/deeplearning_line_follower/deeplearning_struct.png" tag="1" /></p>
 <p>The OriginBot has two active wheels, one passive wheel, and the two active wheels are used to rotate the robot through differential speed. The MCU module is mainly used for motor control of the robot and communicates with the main control RDK X5 through UART. The main controller is selected to be the earthmelon RDK X5, which has 10T computing power and can easily handle complex CNN inference tasks.</p>
 <p>The whole system is shown in the figure above. The RDK X5 obtains the data of the environment in front of the car through the camera, and the image data is inferred by the trained CNN model to obtain the coordinate value of the guide line, and then the motion mode of the car is calculated according to a certain control strategy, and the motion control command is issued to the car through UART to realize the closed-loop control of the whole system.</p>
 <p>The PC is used for data annotation and training.</p>
