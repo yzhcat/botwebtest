@@ -547,7 +547,7 @@ ros2 launch originbot_bringup originbot.launch.py
 
 ???+ reference
     - [Line Following](https://developer.d-robotics.cc/rdk_doc/en/Application_case/line_follower)
-    - [D-robotics X5 OpenExplorer](https://developer.d-robotics.cc/forumDetail/251934919646096384)
+    - [D-robotics X5 OpenExplorer](https://developer.d-robotics.cc/forumDetail/251934919646096384)(view after login)
 
 
 [![图片1](../../assets/img/footer_en.png)](https://www.guyuehome.com/){:target="_blank"}
