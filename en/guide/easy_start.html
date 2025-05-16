@@ -1432,29 +1432,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../application/vlpr.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    License Plate Recognition
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../application/mobilesam.html" class="md-nav__link">
         
   
@@ -1716,16 +1693,28 @@
 <p>（2）The lidar starts to rotate (if connected)</p>
 <p>（3）Wait for 5~10s for the start to be successful</p>
 <h2 id="remote-connection"><strong>Remote connection</strong></h2>
-<p>（1） Start the SSH software and log in to OriginBot remotely</p>
+<ol>
+<li>Start the SSH software and log in to OriginBot remotely</li>
+</ol>
 <details class="info" open="open">
 <summary>Info</summary>
 <p>If you are in an Ubuntu environment on the PC side, you can also use the following command in the terminal to implement ssh remote login (note to change the IP address to the actual address; if you are using a virtual machine, you need to set the network to <strong>bridge mode</strong>)：
 ssh root@192.168.31.246</p>
 </details>
 <p><img alt="image-20220902155122903" class="img-fluid" src="../../assets/img/easy_start/image-20220902155122903.png" tag="1" /></p>
-<p>（2）Enter the username and password: root（username），root（password）</p>
-<p>（3）Remote login is successful</p>
+<ol>
+<li>
+<p>Enter the username and password: root（username），root（password）</p>
+</li>
+<li>
+<p>Remote login is successful</p>
+</li>
+</ol>
 <p><img alt="image-20220902155325842" class="img-fluid" src="../../assets/img/easy_start/image-20220902155325842.png" tag="1" /></p>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>OriginBot are running under the <strong>root</strong> user by default. Please use the root user for operation during subsequent development.You can switch to the root user by entering the command <code>su root</code> during subsequent development.</p>
+</details>
 <h2 id="example-run"><strong>Example run</strong></h2>
 <p>Let's start with the example of running a robot remote control to familiarize ourselves with the basic operation of the robot.</p>
 <p>After the SSH connection is successful, enter the following command to start the robot chassis drive:</p>
@@ -1741,7 +1730,7 @@ ssh root@192.168.31.246</p>
 </code></pre></div>
 <p><img alt="image-20220902160009166" class="img-fluid" src="../../assets/img/easy_start/image-20220902160009166.png" tag="1" /></p>
 <p>According to the prompts in the terminal, you can control the movement of the robot forward, backward, left and right, or you can refer to the prompts to dynamically adjust the movement speed of the robot.</p>
-<p><img alt="2995580f9fc5123d2cdab7dc9b225fc" class="img-fluid" src="../../assets/img/easy_start/2995580f9fc5123d2cdab7dc9b225fc.jpg" tag="1" /></p>
+<p><img alt="draw_circle" class="img-fluid" src="../../assets/img/basic_program/draw_circle.gif" tag="1" /></p>
 <details class="hint" open="open">
 <summary>Hint</summary>
 <p>If the robot starts the automatic parking function, the robot will automatically stop after releasing the button for 0.5 seconds, and if the automatic parking function is turned off (default), the robot will not automatically stop after releasing the button, and must click "k" to control the parking.</p>

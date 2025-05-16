@@ -1443,29 +1443,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../application/vlpr.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    License Plate Recognition
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../application/mobilesam.html" class="md-nav__link">
         
   
@@ -1732,11 +1709,10 @@
 <p>Follow the instructions to complete the download.</p>
 <h2 id="environment-setup"><strong>Environment setup</strong></h2>
 <p>To connect OriginBot to Foxglove, you need to build a ROS environment on OriginBot.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">#Install rosbridge. The purpose of using galactic here is to avoid conflict with tros and not affect the communication effect.</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-galactic-rosbridge-suite
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>ros-<span class="si">${</span><span class="nv">ROS_DISTRO</span><span class="si">}</span>-rosbridge-suite
 </code></pre></div>
 <p>After the installation is complete, you can run the following command to enable the remote service of OriginBot:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>/opt/ros/galactic/setup.bash
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">source</span><span class="w"> </span>/opt/ros/<span class="si">${</span><span class="nv">ROS_DISTRO</span><span class="si">}</span>/setup.bash
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>ros2<span class="w"> </span>launch<span class="w"> </span>rosbridge_server<span class="w"> </span>rosbridge_websocket_launch.xml
 </code></pre></div>
 <p><img alt="image-1700720022222" class="img-fluid" src="../../assets/img/webviz/image-1700720022222.jpg" tag="1" title="originbotStarting remote services" /></p>
@@ -1749,9 +1725,9 @@
 <p>Click here to open the connection, enter the IP address, and the connection can be completed.</p>
 <p><img alt="image-1700719435746" class="img-fluid" src="../../assets/img/webviz/iamge-1700719435746.jpg" tag="1" title="foxglove connects to originbot1" /></p>
 <p>After the connection is successful, you can use Foxglove in a variety of ways, and in the + in the upper left corner, you can use various plug-ins of the software to assist you in development.</p>
-<p><img alt="image-1700720501265" class="img-fluid" src="../../assets/img/webviz/image-1700720501265.jpg" tag="1" title="foxglove connects to originbot2" /></p>
+<p><img alt="image-1700720501265" class="img-fluid" src="../../assets/img/webviz/PixPin_2025-05-16_15-23-59.png" tag="1" title="foxglove connects to originbot2" /></p>
 <p>Select one of the images to see the image information we opened on OriginBot at the beginning, and select different topics to display the image.</p>
-<p><img alt="image-d57ad61d81c4dd582d6ca0589327fdd" class="img-fluid" src="../../assets/img/webviz/image-d57ad61d81c4dd582d6ca0589327fdd.png" tag="1" title="Image visualization" /></p>
+<p><img alt="image-d57ad61d81c4dd582d6ca0589327fdd" class="img-fluid" src="../../assets/img/webviz/PixPin_2025-05-16_15-33-10.png" tag="1" title="Image visualization" /></p>
 <h2 id="foxglove-posting-the-topic"><strong>Foxglove posting the topic</strong></h2>
 <p>In addition to displaying topics and information, you can also use Foxglove to post topic information, such as common cmd_vel.</p>
 <p>Click "+" and select Publish, you can see the following interface, where you can set the topic, format and content you want to publish, which are synchronized with OriginBot.</p>
