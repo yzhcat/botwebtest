@@ -21,7 +21,7 @@ We often see vehicles park autonomously and find their own parking spaces in par
 
 After successfully connecting to OriginBot through SSH, enter the following command in the terminal to start the robot chassis:
 
-```
+```bash
 ros2 launch originbot_bringup originbot.launch.py
 ```
 
@@ -31,10 +31,10 @@ ros2 launch originbot_bringup originbot.launch.py
 
 
 ``` bash
-# Copy the configuration files needed to run the example from the TogetheROS installation path
-cp -r /opt/tros/lib/parking_perception/config/ .
+source /opt/tros/humble/setup.bash
+cp -r /opt/tros/${TROS_DISTRO}/lib/parking_perception/config/ .
+export CAM_TYPE=usb
 
-# Start the launch file
 ros2 launch parking_search parking_search.launch.py
 ```
 
